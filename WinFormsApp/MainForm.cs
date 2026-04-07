@@ -56,7 +56,7 @@ namespace WinFormsApp
       private string ShowInputDialog(string request)
       {
          // Простой модальный диалог через форму
-         using (Form dialog = new Form())
+         using (Form dialog = new MainForm())
          {
             dialog.Text = "Введите ответ";
             dialog.StartPosition = FormStartPosition.CenterParent;
