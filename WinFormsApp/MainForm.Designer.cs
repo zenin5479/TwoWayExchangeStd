@@ -37,9 +37,9 @@
          lblStatus.AutoSize = true;
          lblStatus.Location = new System.Drawing.Point(12, 9);
          lblStatus.Name = "lblStatus";
-         lblStatus.Size = new System.Drawing.Size(38, 15);
+         lblStatus.Size = new System.Drawing.Size(120, 15);
          lblStatus.TabIndex = 0;
-         lblStatus.Text = "label1";
+         lblStatus.Text = "Ожидание запроса...";
          // 
          // txtLastRequest
          // 

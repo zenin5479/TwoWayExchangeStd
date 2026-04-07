@@ -7,6 +7,9 @@ namespace WinFormsApp
       public MainForm()
       {
          InitializeComponent();
+
+         // Запускаем цикл обмена ПОСЛЕ того, как форма показана
+         this.Shown += MainForm_Shown;
       }
    }
 }
