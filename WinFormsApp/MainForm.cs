@@ -9,7 +9,7 @@ namespace WinFormsApp
       {
          InitializeComponent();
 
-         // Запускаем цикл обмена ПОСЛЕ того, как форма показана
+         // Запускаем цикл обмена после того, как форма показана
          Shown += MainForm_Shown;
       }
 
@@ -22,7 +22,8 @@ namespace WinFormsApp
             string request = Console.ReadLine();
             if (request == null)
             {
-               break; // консоль закрыла поток
+               // Консоль закрыла поток
+               break; 
             }
 
             if (request.ToLower() == "exit")
@@ -33,6 +34,7 @@ namespace WinFormsApp
             // 2. Показываем запрос в форме (форма всё ещё не реагирует на клики, но текст обновится)
             lblStatus.Text = string.Format("Получен запрос: {0}", request);
             txtLastRequest.Text = request;
+            
             Refresh(); // принудительная перерисовка
 
             // 3. Показываем модальное диалоговое окно для ввода ответа оно блокирует выполнение кода
