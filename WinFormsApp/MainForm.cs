@@ -32,7 +32,7 @@ namespace WinFormsApp
 
             // 2. Показываем запрос в форме (форма всё ещё не реагирует на клики,
             //    но текст обновится)
-            lblStatus.Text = $"Получен запрос: {request}";
+            lblStatus.Text = string.Format("Получен запрос: {0}", request);
             txtLastRequest.Text = request;
             Refresh(); // принудительная перерисовка
 
