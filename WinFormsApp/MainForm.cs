@@ -10,7 +10,7 @@ namespace WinFormsApp
          InitializeComponent();
 
          // Запускаем цикл обмена ПОСЛЕ того, как форма показана
-         this.Shown += MainForm_Shown;
+         Shown += MainForm_Shown;
       }
 
       private void MainForm_Shown(object sender, EventArgs e)
