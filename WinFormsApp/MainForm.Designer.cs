@@ -29,6 +29,7 @@
       private void InitializeComponent()
       {
          lblStatus = new System.Windows.Forms.Label();
+         txtLastRequest = new System.Windows.Forms.TextBox();
          SuspendLayout();
          // 
          // lblStatus
@@ -40,11 +41,19 @@
          lblStatus.TabIndex = 0;
          lblStatus.Text = "label1";
          // 
+         // txtLastRequest
+         // 
+         txtLastRequest.Location = new System.Drawing.Point(12, 27);
+         txtLastRequest.Name = "txtLastRequest";
+         txtLastRequest.Size = new System.Drawing.Size(100, 23);
+         txtLastRequest.TabIndex = 1;
+         // 
          // MainForm
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(800, 450);
+         Controls.Add(txtLastRequest);
          Controls.Add(lblStatus);
          Name = "MainForm";
          StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -56,5 +65,6 @@
       #endregion
 
       private System.Windows.Forms.Label lblStatus;
+      private System.Windows.Forms.TextBox txtLastRequest;
    }
 }
