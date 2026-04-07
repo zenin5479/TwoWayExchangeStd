@@ -60,7 +60,7 @@ namespace WinFormsApp
          {
 
             Label label = new Label() { Text = request, Location = new System.Drawing.Point(10, 10), AutoSize = true };
-            
+
 
             dialog.Controls.Add(label);
 
