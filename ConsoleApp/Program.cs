@@ -7,7 +7,7 @@ namespace ConsoleApp
    {
       static void Main(string[] args)
       {
-         var process = new Process
+         Process process = new Process
          {
             StartInfo = new ProcessStartInfo
             {
@@ -24,14 +24,19 @@ namespace ConsoleApp
          {
             Console.Write("Введите сообщение (или 'exit'): ");
             input = Console.ReadLine();
-            if (string.IsNullOrEmpty(input)) continue;
+            if (string.IsNullOrEmpty(input))
+            {
+               continue;
+            }
 
             // Отправляем запрос
             process.StandardInput.WriteLine(input);
             process.StandardInput.Flush();
 
             if (input.ToLower() == "exit")
+            {
                break;
+            }
 
             // Ждём ответ (блокирует консоль)
             string response = process.StandardOutput.ReadLine();
@@ -40,7 +45,10 @@ namespace ConsoleApp
          } while (true);
 
          process.WaitForExit(1000);
-         if (!process.HasExited) process.Kill();
+         if (!process.HasExited)
+         {
+            process.Kill();
+         }
       }
    }
 }
