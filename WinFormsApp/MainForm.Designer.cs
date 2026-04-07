@@ -44,15 +44,16 @@
          // txtLastRequest
          // 
          txtLastRequest.Location = new System.Drawing.Point(12, 27);
+         txtLastRequest.Multiline = true;
          txtLastRequest.Name = "txtLastRequest";
-         txtLastRequest.Size = new System.Drawing.Size(100, 23);
+         txtLastRequest.Size = new System.Drawing.Size(210, 130);
          txtLastRequest.TabIndex = 1;
          // 
          // MainForm
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         ClientSize = new System.Drawing.Size(800, 450);
+         ClientSize = new System.Drawing.Size(237, 173);
          Controls.Add(txtLastRequest);
          Controls.Add(lblStatus);
          Name = "MainForm";
