@@ -23,7 +23,7 @@ namespace WinFormsApp
             if (request == null)
             {
                // Консоль закрыла поток
-               break; 
+               break;
             }
 
             if (request.ToLower() == "exit")
@@ -34,8 +34,8 @@ namespace WinFormsApp
             // 2. Показываем запрос в форме (форма всё ещё не реагирует на клики, но текст обновится)
             lblStatus.Text = string.Format("Получен запрос: {0}", request);
             txtLastRequest.Text = request;
-            
-            Refresh(); // принудительная перерисовка
+            // Принудительная перерисовка
+            Refresh();
 
             // 3. Показываем модальное диалоговое окно для ввода ответа оно блокирует выполнение кода
             string response = ShowInputDialog(request);
@@ -58,10 +58,7 @@ namespace WinFormsApp
          // Простой модальный диалог через форму
          using (MainForm dialog = new MainForm())
          {
-
-            Label label = new Label() { Text = request, Location = new System.Drawing.Point(10, 10), AutoSize = true };
-
-
+            Label label = new Label { Text = request, Location = new System.Drawing.Point(10, 10), AutoSize = true };
             dialog.Controls.Add(label);
 
             if (dialog.ShowDialog() == DialogResult.OK)
