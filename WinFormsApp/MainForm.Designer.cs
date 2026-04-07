@@ -28,19 +28,33 @@
       /// </summary>
       private void InitializeComponent()
       {
+         lblStatus = new System.Windows.Forms.Label();
          SuspendLayout();
+         // 
+         // lblStatus
+         // 
+         lblStatus.AutoSize = true;
+         lblStatus.Location = new System.Drawing.Point(12, 9);
+         lblStatus.Name = "lblStatus";
+         lblStatus.Size = new System.Drawing.Size(38, 15);
+         lblStatus.TabIndex = 0;
+         lblStatus.Text = "label1";
          // 
          // MainForm
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(800, 450);
+         Controls.Add(lblStatus);
          Name = "MainForm";
          StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
          Text = "Двусторонний обмен WinForms и консоли";
          ResumeLayout(false);
+         PerformLayout();
       }
 
       #endregion
+
+      private System.Windows.Forms.Label lblStatus;
    }
 }
