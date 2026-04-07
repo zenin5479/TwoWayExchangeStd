@@ -20,7 +20,10 @@ namespace WinFormsApp
          {
             // 1. Синхронно читаем запрос из stdin (блокирует форму)
             string request = Console.ReadLine();
-            if (request == null) break; // консоль закрыла поток
+            if (request == null)
+            {
+               break; // консоль закрыла поток
+            }
 
             if (request.ToLower() == "exit")
                break;
