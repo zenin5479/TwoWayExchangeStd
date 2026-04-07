@@ -56,30 +56,17 @@ namespace WinFormsApp
       private string ShowInputDialog(string request)
       {
          // Простой модальный диалог через форму
-         using (Form dialog = new MainForm())
+         using (MainForm dialog = new MainForm())
          {
-            dialog.Text = "Введите ответ";
-            dialog.StartPosition = FormStartPosition.CenterParent;
-            dialog.FormBorderStyle = FormBorderStyle.FixedDialog;
-            dialog.MaximizeBox = false;
-            dialog.MinimizeBox = false;
-            dialog.Size = new System.Drawing.Size(300, 120);
 
             Label label = new Label() { Text = request, Location = new System.Drawing.Point(10, 10), AutoSize = true };
-            TextBox textBox = new TextBox() { Location = new System.Drawing.Point(10, 35), Size = new System.Drawing.Size(260, 23) };
-            Button buttonOk = new Button() { Text = "OK", Location = new System.Drawing.Point(120, 65), DialogResult = DialogResult.OK };
-            Button buttonCancel = new Button() { Text = "Отмена", Location = new System.Drawing.Point(200, 65), DialogResult = DialogResult.Cancel };
+            
 
             dialog.Controls.Add(label);
-            dialog.Controls.Add(textBox);
-            dialog.Controls.Add(buttonOk);
-            dialog.Controls.Add(buttonCancel);
-            dialog.AcceptButton = buttonOk;
-            dialog.CancelButton = buttonCancel;
 
             if (dialog.ShowDialog() == DialogResult.OK)
             {
-               return textBox.Text;
+               return txtLastRequest.Text;
             }
 
             return null;
