@@ -39,7 +39,10 @@ namespace WinFormsApp
             // 3. Показываем модальное диалоговое окно для ввода ответа
             //    Оно блокирует выполнение кода, но не требует DoEvents.
             string response = ShowInputDialog(request);
-            if (response == null) response = "";
+            if (response == null)
+            {
+               response = "";
+            }
 
             // 4. Отправляем ответ обратно в консоль
             Console.WriteLine(response);
@@ -53,7 +56,7 @@ namespace WinFormsApp
       private string ShowInputDialog(string request)
       {
          // Простой модальный диалог через форму
-         using (var dialog = new Form())
+         using (Form dialog = new Form())
          {
             dialog.Text = "Введите ответ";
             dialog.StartPosition = FormStartPosition.CenterParent;
@@ -62,10 +65,10 @@ namespace WinFormsApp
             dialog.MinimizeBox = false;
             dialog.Size = new System.Drawing.Size(300, 120);
 
-            var label = new Label() { Text = request, Location = new System.Drawing.Point(10, 10), AutoSize = true };
-            var textBox = new TextBox() { Location = new System.Drawing.Point(10, 35), Size = new System.Drawing.Size(260, 23) };
-            var buttonOk = new Button() { Text = "OK", Location = new System.Drawing.Point(120, 65), DialogResult = DialogResult.OK };
-            var buttonCancel = new Button() { Text = "Отмена", Location = new System.Drawing.Point(200, 65), DialogResult = DialogResult.Cancel };
+            Label label = new Label() { Text = request, Location = new System.Drawing.Point(10, 10), AutoSize = true };
+            TextBox textBox = new TextBox() { Location = new System.Drawing.Point(10, 35), Size = new System.Drawing.Size(260, 23) };
+            Button buttonOk = new Button() { Text = "OK", Location = new System.Drawing.Point(120, 65), DialogResult = DialogResult.OK };
+            Button buttonCancel = new Button() { Text = "Отмена", Location = new System.Drawing.Point(200, 65), DialogResult = DialogResult.Cancel };
 
             dialog.Controls.Add(label);
             dialog.Controls.Add(textBox);
@@ -75,9 +78,11 @@ namespace WinFormsApp
             dialog.CancelButton = buttonCancel;
 
             if (dialog.ShowDialog() == DialogResult.OK)
+            {
                return textBox.Text;
-            else
-               return null;
+            }
+
+            return null;
          }
       }
    }
