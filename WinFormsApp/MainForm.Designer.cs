@@ -49,12 +49,6 @@ namespace WinFormsApp
          this.lblStatus.Location = new System.Drawing.Point(12, 12);
          this.lblStatus.Size = new System.Drawing.Size(350, 20);
          this.lblStatus.Text = "Инициализация...";
-
-         // Form1
-         this.ClientSize = new System.Drawing.Size(400, 100);
-         this.Controls.Add(this.lblStatus);
-         this.FormClosing += new FormClosingEventHandler(this.Form1_FormClosing);
-
       }
 
       #endregion

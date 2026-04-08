@@ -47,23 +47,5 @@ namespace WinFormsApp
             Close();
          }
       }
-
-      private void btnClose_Click(object sender, EventArgs e)
-      {
-         Close();
-      }
-
-      private void Form1_FormClosing(object sender, FormClosingEventArgs e)
-      {
-         DialogResult result = MessageBox.Show(
-            ("Вы уверены, что хотите закрыть приложение?"),
-            "Подтверждение закрытия",
-            MessageBoxButtons.YesNo,
-            MessageBoxIcon.Question);
-         if (result == DialogResult.No)
-         {
-            e.Cancel = true;
-         }
-      }
    }
 }
