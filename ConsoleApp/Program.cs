@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Diagnostics;
-using System.IO;
 using System.Threading;
 
 namespace ConsoleApp
@@ -10,7 +9,7 @@ namespace ConsoleApp
       static void Main()
       {
          Console.WriteLine("Запуск Windows Forms приложения...");
-         
+
          // Путь к exe Windows Forms приложения (скомпилируйте его первым)
          string formExePath = "WinFormsApp.exe";
 
