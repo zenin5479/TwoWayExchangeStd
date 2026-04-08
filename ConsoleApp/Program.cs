@@ -5,7 +5,7 @@ namespace ConsoleApp
 {
    internal class Program
    {
-      static void Main(string[] args)
+      static void Main()
       {
          Process process = new Process
          {
