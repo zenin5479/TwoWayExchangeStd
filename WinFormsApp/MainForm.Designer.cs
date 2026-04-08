@@ -28,44 +28,19 @@
       /// </summary>
       private void InitializeComponent()
       {
-         lblStatus = new System.Windows.Forms.Label();
-         txtLastRequest = new System.Windows.Forms.TextBox();
          SuspendLayout();
-         // 
-         // lblStatus
-         // 
-         lblStatus.AutoSize = true;
-         lblStatus.Location = new System.Drawing.Point(12, 9);
-         lblStatus.Name = "lblStatus";
-         lblStatus.Size = new System.Drawing.Size(120, 15);
-         lblStatus.TabIndex = 0;
-         lblStatus.Text = "Ожидание запроса...";
-         // 
-         // txtLastRequest
-         // 
-         txtLastRequest.Location = new System.Drawing.Point(12, 27);
-         txtLastRequest.Multiline = true;
-         txtLastRequest.Name = "txtLastRequest";
-         txtLastRequest.Size = new System.Drawing.Size(365, 134);
-         txtLastRequest.TabIndex = 1;
          // 
          // MainForm
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(389, 173);
-         Controls.Add(txtLastRequest);
-         Controls.Add(lblStatus);
          Name = "MainForm";
          StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
          Text = "Двусторонний обмен WinForms и консоли";
          ResumeLayout(false);
-         PerformLayout();
       }
 
       #endregion
-
-      private System.Windows.Forms.Label lblStatus;
-      private System.Windows.Forms.TextBox txtLastRequest;
    }
 }
