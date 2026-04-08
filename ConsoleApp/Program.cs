@@ -10,7 +10,7 @@ namespace ConsoleApp
          Console.WriteLine("Запуск Windows Forms приложения...");
 
          Process formsApp = new Process();
-         formsApp.StartInfo.FileName = "WindowsFormsApp.exe"; // Путь к Windows Forms приложению
+         formsApp.StartInfo.FileName = "WinFormsApp.exe"; // Путь к Windows Forms приложению
 
          // Основные настройки для запуска GUI‑приложения
          formsApp.StartInfo.UseShellExecute = true; // Для GUI обычно true

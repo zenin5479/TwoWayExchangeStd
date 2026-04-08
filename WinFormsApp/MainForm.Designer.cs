@@ -1,4 +1,7 @@
-﻿namespace WinFormsApp
+﻿using System.Windows.Forms;
+using System;
+
+namespace WinFormsApp
 {
    partial class MainForm
    {
@@ -39,6 +42,27 @@
          StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
          Text = "Двусторонний обмен WinForms и консоли";
          ResumeLayout(false);
+
+         this.lblParent = new Label();
+         this.btnClose = new Button();
+
+         // lblParent
+         this.lblParent.Location = new System.Drawing.Point(12, 12);
+         this.lblParent.Size = new System.Drawing.Size(350, 20);
+         this.lblParent.Text = "Родительский процесс не определён";
+
+         // btnClose
+         this.btnClose.Location = new System.Drawing.Point(12, 40);
+         this.btnClose.Size = new System.Drawing.Size(100, 30);
+         this.btnClose.Text = "Закрыть";
+         this.btnClose.Click += new EventHandler(this.btnClose_Click);
+
+         // Form1
+         this.ClientSize = new System.Drawing.Size(400, 80);
+         this.Controls.Add(this.lblParent);
+         this.Controls.Add(this.btnClose);
+         this.FormClosing += new FormClosingEventHandler(this.Form1_FormClosing);
+
       }
 
       #endregion
