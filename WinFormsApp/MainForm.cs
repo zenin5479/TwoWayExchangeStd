@@ -5,8 +5,7 @@ namespace WinFormsApp
 {
    public partial class MainForm : Form
    {
-      private Label lblParent;
-      private Button btnClose;
+      private Label lblStatus;
 
       public MainForm()
       {
@@ -22,8 +21,7 @@ namespace WinFormsApp
       private void Form1_FormClosing(object sender, FormClosingEventArgs e)
       {
          DialogResult result = MessageBox.Show(
-            ("Вы уверены, что хотите закрыть приложение?\n" +
-             "Это также уведомит консольное приложение о завершении."),
+            ("Вы уверены, что хотите закрыть приложение?"),
             "Подтверждение закрытия",
             MessageBoxButtons.YesNo,
             MessageBoxIcon.Question);

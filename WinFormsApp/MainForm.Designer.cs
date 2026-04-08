@@ -43,24 +43,16 @@ namespace WinFormsApp
          Text = "Двусторонний обмен WinForms и консоли";
          ResumeLayout(false);
 
-         this.lblParent = new Label();
-         this.btnClose = new Button();
+         this.lblStatus = new Label();
 
-         // lblParent
-         this.lblParent.Location = new System.Drawing.Point(12, 12);
-         this.lblParent.Size = new System.Drawing.Size(350, 20);
-         this.lblParent.Text = "Родительский процесс не определён";
-
-         // btnClose
-         this.btnClose.Location = new System.Drawing.Point(12, 40);
-         this.btnClose.Size = new System.Drawing.Size(100, 30);
-         this.btnClose.Text = "Закрыть";
-         this.btnClose.Click += new EventHandler(this.btnClose_Click);
+         // lblStatus
+         this.lblStatus.Location = new System.Drawing.Point(12, 12);
+         this.lblStatus.Size = new System.Drawing.Size(350, 20);
+         this.lblStatus.Text = "Инициализация...";
 
          // Form1
-         this.ClientSize = new System.Drawing.Size(400, 80);
-         this.Controls.Add(this.lblParent);
-         this.Controls.Add(this.btnClose);
+         this.ClientSize = new System.Drawing.Size(400, 100);
+         this.Controls.Add(this.lblStatus);
          this.FormClosing += new FormClosingEventHandler(this.Form1_FormClosing);
 
       }
