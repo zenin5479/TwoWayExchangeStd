@@ -1,7 +1,4 @@
-﻿using System.Windows.Forms;
-using System;
-
-namespace WinFormsApp
+﻿namespace WinFormsApp
 {
    partial class MainForm
    {
@@ -29,6 +26,20 @@ namespace WinFormsApp
       ///  Required method for Designer support - do not modify
       ///  the contents of this method with the code editor.
       /// </summary>
+      private void InitializeComponent()
+      {
+         SuspendLayout();
+         // 
+         // MainForm
+         // 
+         AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+         ClientSize = new System.Drawing.Size(800, 450);
+         Name = "MainForm";
+         StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+         Text = "Двусторонний обмен WinForms и консоли";
+         ResumeLayout(false);
+      }
 
       #endregion
    }

@@ -11,28 +11,10 @@ namespace WinFormsApp
       [STAThread]
       static void Main()
       {
+         Application.SetHighDpiMode(HighDpiMode.SystemAware);
          Application.EnableVisualStyles();
          Application.SetCompatibleTextRenderingDefault(false);
-
-         // 1. Синхронно читаем команду из stdin (переданную от консольного приложения)
-         string command = Console.ReadLine();
-         string response = string.Empty;
-
-         // 2. Обрабатываем команду
-         if (command == "show")
-         {
-            response = "OK, showing form";
-            // Показываем форму (главное окно)
-            Application.Run(new MainForm());
-         }
-         else
-         {
-            response = $"Unknown command: {command}";
-         }
-
-         // 3. Отправляем ответ обратно в консоль (родитель прочитает его через stdout)
-         Console.WriteLine(response);
-         Console.Out.Flush();
+         Application.Run(new MainForm());
       }
    }
 }

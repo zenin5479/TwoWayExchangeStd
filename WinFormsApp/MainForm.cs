@@ -6,9 +6,7 @@ namespace WinFormsApp
    {
       public MainForm()
       {
-         Text = "Windows Forms from Console";
-         Label label = new Label { Text = "Form opened by console app", AutoSize = true };
-         Controls.Add(label);
+         InitializeComponent();
       }
    }
 }
