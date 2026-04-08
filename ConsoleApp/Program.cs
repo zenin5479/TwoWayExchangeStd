@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 using System.IO;
+using System.Threading;
 
 namespace ConsoleApp
 {
@@ -30,6 +31,7 @@ namespace ConsoleApp
          // Отправляем команду в дочерний процесс
          formProcess.StandardInput.WriteLine("show");
          formProcess.StandardInput.Flush();
+         Thread.Sleep(2000);
 
          // Синхронно читаем ответ от дочернего процесса
          string response = formProcess.StandardOutput.ReadLine();
