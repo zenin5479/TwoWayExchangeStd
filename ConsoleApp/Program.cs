@@ -9,42 +9,37 @@ namespace ConsoleApp
       static void Main()
       {
          Console.WriteLine("Запуск Windows Forms приложения...");
+         
+         // Путь к exe Windows Forms приложения (скомпилируйте его первым)
+         string formExePath = "WinFormsApp.exe";
 
-         string formsAppPath = "WinFormsApp.exe";
-
-         if (!File.Exists(formsAppPath))
+         Process formProcess = new Process
          {
-            Console.WriteLine($"Ошибка: Файл '{formsAppPath}' не найден!");
-            Console.WriteLine($"Текущая директория: {Directory.GetCurrentDirectory()}");
-            Console.ReadLine();
-            return;
-         }
-
-         Process formsApp = new Process();
-         formsApp.StartInfo.FileName = formsAppPath;
-         formsApp.StartInfo.UseShellExecute = true;
-         formsApp.StartInfo.WindowStyle = ProcessWindowStyle.Normal;
-         formsApp.StartInfo.CreateNoWindow = false;
-
-         try
-         {
-            if (formsApp.Start())
+            StartInfo = new ProcessStartInfo
             {
-               Console.WriteLine($"Windows Forms приложение запущено. PID: {formsApp.Id}");
+               FileName = formExePath,
+               UseShellExecute = false,
+               RedirectStandardInput = true,
+               RedirectStandardOutput = true,
+               CreateNoWindow = true   // не показываем окно консоли дочернего процесса
+            }
+         };
 
-               // Ждём завершения процесса
-               formsApp.WaitForExit();
-               Console.WriteLine("Windows Forms приложение завершено.");
-            }
-            else
-            {
-               Console.WriteLine("Не удалось запустить Windows Forms приложение");
-            }
-         }
-         catch (Exception ex)
-         {
-            Console.WriteLine($"Ошибка при запуске: {ex.Message}");
-         }
+         formProcess.Start();
+
+         // Отправляем команду в дочерний процесс
+         formProcess.StandardInput.WriteLine("show");
+         formProcess.StandardInput.Flush();
+
+         // Синхронно читаем ответ от дочернего процесса
+         string response = formProcess.StandardOutput.ReadLine();
+
+         Console.WriteLine($"Response from WinForms: {response}");
+
+         // Дожидаемся закрытия формы (пользователь закроет её вручную)
+         formProcess.WaitForExit();
+         Console.WriteLine("Form closed. Press any key to exit...");
+         Console.ReadKey();
       }
    }
 }
