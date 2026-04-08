@@ -42,13 +42,6 @@ namespace WinFormsApp
          StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
          Text = "Двусторонний обмен WinForms и консоли";
          ResumeLayout(false);
-
-         this.lblStatus = new Label();
-
-         // lblStatus
-         this.lblStatus.Location = new System.Drawing.Point(12, 12);
-         this.lblStatus.Size = new System.Drawing.Size(350, 20);
-         this.lblStatus.Text = "Инициализация...";
       }
 
       #endregion
