@@ -14,20 +14,31 @@ namespace WinFormsApp
          {
             InitializeComponent();
             Text = "Windows Forms приложение (запущено консолью)";
-            lblStatus.Text = "Приложение успешно запущено!";
+            Size = new Size(400, 300);
+            StartPosition = FormStartPosition.CenterScreen;
+            Visible = true; // Явное указание видимости
+            BringToFront(); // Выводим на передний план
+            Focus(); // Устанавливаем фокус
 
-            // Добавляем тестовую кнопку
-            Button testButton = new Button
+            Label lblStatus = new Label
             {
-               Text = "Тест",
-               Location = new Point(12, 40),
-               Size = new Size(100, 30)
+               Text = "Приложение успешно запущено!",
+               Location = new Point(20, 20),
+               AutoSize = true
             };
-            testButton.Click += (s, e) =>
+            Controls.Add(lblStatus);
+
+            Button btnTest = new Button
             {
-               MessageBox.Show("Кнопка работает!");
+               Text = "Тест видимости",
+               Location = new Point(20, 50),
+               Size = new Size(120, 30)
             };
-            Controls.Add(testButton);
+            btnTest.Click += (s, e) =>
+            {
+               MessageBox.Show("Форма видна и работает!");
+            };
+            Controls.Add(btnTest);
          }
          catch (Exception ex)
          {
