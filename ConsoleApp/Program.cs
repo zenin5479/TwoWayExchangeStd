@@ -1,13 +1,10 @@
-﻿using System;
-using System.Diagnostics;
-
-namespace ConsoleApp
+﻿namespace ConsoleApp
 {
    internal class Program
    {
       static void Main()
       {
-         
+
       }
    }
 }
