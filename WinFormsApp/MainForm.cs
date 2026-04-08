@@ -15,7 +15,7 @@ namespace WinFormsApp
 
       private void btnClose_Click(object sender, EventArgs e)
       {
-         this.Close();
+         Close();
       }
 
       private void Form1_FormClosing(object sender, FormClosingEventArgs e)
