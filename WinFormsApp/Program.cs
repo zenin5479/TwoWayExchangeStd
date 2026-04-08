@@ -19,7 +19,7 @@ namespace WinFormsApp
          }
          catch (Exception ex)
          {
-            MessageBox.Show($"Критическая ошибка приложения: {ex.Message}",
+            MessageBox.Show(string.Format("Критическая ошибка приложения: {0}", ex.Message),
                "Ошибка запуска", MessageBoxButtons.OK, MessageBoxIcon.Error);
          }
       }
