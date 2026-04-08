@@ -10,7 +10,7 @@ namespace ConsoleApp
       {
          Console.WriteLine("Запуск Windows Forms приложения...");
 
-         string formsAppPath = "WindowsFormsApp.exe";
+         string formsAppPath = "WinFormsApp.exe";
 
          // Проверка существования файла
          if (!File.Exists(formsAppPath))
