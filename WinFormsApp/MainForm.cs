@@ -1,10 +1,14 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Windows.Forms;
 
 namespace WinFormsApp
 {
    public partial class MainForm : Form
    {
+      private Label lblParent;
+      private Button btnClose;
+
       public MainForm()
       {
          InitializeComponent();
@@ -58,6 +62,28 @@ namespace WinFormsApp
          {
             e.Cancel = true;
          }
+      }
+
+      // Метод для получения родительского процесса
+      private Process GetParentProcess()
+      {
+         try
+         {
+            string query = "SELECT ParentProcessId FROM Win32_Process WHERE ProcessId = " + Process.GetCurrentProcess().Id;
+            var search = new System.Management.ManagementObjectSearcher(query);
+            var results = search.Get();
+
+            foreach (var item in results)
+            {
+               int parentId = Convert.ToInt32(item["ParentProcessId"]);
+               return Process.GetProcessById(parentId);
+            }
+         }
+         catch
+         {
+            // Игнорируем ошибки получения родителя
+         }
+         return null;
       }
    }
 }
