@@ -34,13 +34,21 @@ namespace WinFormsApp
 
             string response;
             if (command.ToUpperInvariant() == "PING")
+            {
                response = "PONG";
+            }
             else if (command.ToUpperInvariant() == "TIME")
+            {
                response = DateTime.Now.ToString("HH:mm:ss");
+            }
             else if (command.ToUpperInvariant() == "EXIT")
+            {
                response = "BYE";
+            }
             else
+            {
                response = $"UNKNOWN: {command}";
+            }
 
             Console.WriteLine(response);
             Log($"<< Sent: {response}");
