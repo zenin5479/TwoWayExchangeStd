@@ -8,11 +8,11 @@ namespace WinFormsApp
       public MainForm()
       {
          InitializeComponent();
-         Load += Form1_Load;
+         Load += MainForm_Load;
          FormClosing += Form1_FormClosing;
       }
 
-      private void Form1_Load(object sender, EventArgs e)
+      private void MainForm_Load(object sender, EventArgs e)
       {
          // Выводим окно на передний план
          TopMost = true;
@@ -61,5 +61,7 @@ namespace WinFormsApp
       {
          Log("Form closing...");
       }
+
+
    }
 }

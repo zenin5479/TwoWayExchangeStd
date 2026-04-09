@@ -50,7 +50,6 @@
          btnReadCommand.TabIndex = 1;
          btnReadCommand.Text = "Чтение команд";
          btnReadCommand.UseVisualStyleBackColor = true;
-         btnReadCommand.Click += btnReadCommand_Click_1;
          // 
          // rtbLog
          // 
@@ -81,6 +80,7 @@
          Name = "MainForm";
          StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
          Text = "Двусторонний обмен WinForms и консоли";
+         Load += MainForm_Load;
          ResumeLayout(false);
          PerformLayout();
       }
