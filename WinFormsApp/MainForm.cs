@@ -77,7 +77,7 @@ namespace WinFormsApp
 
       private void Log(string message)
       {
-         rtbLog.AppendText($"{message}{Environment.NewLine}");
+         rtbLog.AppendText(string.Format("{0}{1}", message, Environment.NewLine));
       }
 
       private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
