@@ -1,107 +1,63 @@
 ﻿using System;
-using System.Diagnostics;
-using System.IO;
 using System.Windows.Forms;
 
 namespace WinFormsApp
 {
    public partial class MainForm : Form
    {
-      private Process _childProcess;
-      private StreamWriter _childInput;
-      private StreamReader _childOutput;
-
       public MainForm()
       {
          InitializeComponent();
-         FormClosing += MainForm_FormClosing;
-         StartChildProcess();
+         FormClosing += Form1_FormClosing;
+         Log("Windows Forms started. Waiting for commands on stdin...");
       }
 
-      private void StartChildProcess()
+      // Синхронное чтение команды из stdin (блокирует UI)
+      private void btnReadCommand_Click(object sender, EventArgs e)
       {
-         var startInfo = new ProcessStartInfo
+         Log("Waiting for command from console...");
+
+         // ReadLine блокирует поток до появления строки в stdin
+         string command = Console.ReadLine();
+
+         if (command == null)
          {
-            // Путь к консольному приложению
-            FileName = "ConsoleApp.exe",
-            UseShellExecute = false,
-            RedirectStandardInput = true,
-            RedirectStandardOutput = true,
-            RedirectStandardError = true,
-            CreateNoWindow = true
-         };
-
-         _childProcess = new Process { StartInfo = startInfo };
-         _childProcess.Start();
-
-         // Получаем потоки
-         _childInput = _childProcess.StandardInput;
-         _childOutput = _childProcess.StandardOutput;
-
-         // Читаем приветственное сообщение от консоли (первая строка)
-         string welcome = _childOutput.ReadLine();
-         Log(string.Format("[CONSOLE] {0}", welcome));
-      }
-
-      private void btnSend_Click_1(object sender, EventArgs e)
-      {
-         string command = txtCommand.Text.Trim();
-         if (string.IsNullOrEmpty(command))
-         {
+            Log("stdin closed (EOF). Parent process terminated.");
+            btnReadCommand.Enabled = false;
             return;
          }
 
-         Log(string.Format(">> {0}", command));
+         Log($">> Received: {command}");
 
-         // Отправляем команду в stdin дочернего процесса
-         _childInput.WriteLine(command);
-         // Гарантируем отправку
-         _childInput.Flush();
+         // Обработка команды
+         string response = command.ToUpperInvariant() switch
+         {
+            "PING" => "PONG",
+            "TIME" => DateTime.Now.ToString("HH:mm:ss"),
+            "EXIT" => "BYE",
+            _ => $"UNKNOWN: {command}"
+         };
 
-         // Синхронно читаем ответ из stdout (блокирует UI!)
-         string response = _childOutput.ReadLine();
+         // Отправляем ответ в stdout
+         Console.WriteLine(response);
+         Log($"<< Sent: {response}");
 
-         Log(string.Format("<< {0}", response));
-
-         // Если это была команда EXIT, закрываем процесс
          if (command.Equals("EXIT", StringComparison.OrdinalIgnoreCase))
          {
-            _childProcess.WaitForExit(1000);
-            if (!_childProcess.HasExited)
-            {
-               _childProcess.Kill();
-            }
-
-            Log("Дочерний процесс завершен");
-            btnReadCommand.Enabled = false;
+            Log("Exit command received. Closing form...");
+            Close();
          }
       }
 
       private void Log(string message)
       {
-         rtbLog.AppendText(string.Format("{0}{1}", message, Environment.NewLine));
+         // Вывод в RichTextBox (вызов из любого потока не требуется, всё в UI)
+         rtbLog.AppendText($"{message}{Environment.NewLine}");
       }
 
-      private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+      private void Form1_FormClosing(object sender, FormClosingEventArgs e)
       {
-         if (_childProcess != null && !_childProcess.HasExited)
-         {
-            try
-            {
-               _childInput.WriteLine("EXIT");
-               _childInput.Flush();
-               _childProcess.WaitForExit(500);
-            }
-            catch
-            {
-               /* уже завершился */
-            }
-            finally
-            {
-               _childProcess.Kill();
-               _childProcess.Dispose();
-            }
-         }
+         Log("Form closing...");
       }
    }
 }
