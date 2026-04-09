@@ -54,7 +54,7 @@
          // 
          rtbLog.Location = new System.Drawing.Point(12, 70);
          rtbLog.Name = "rtbLog";
-         rtbLog.Size = new System.Drawing.Size(404, 179);
+         rtbLog.Size = new System.Drawing.Size(404, 123);
          rtbLog.TabIndex = 2;
          rtbLog.Text = "";
          // 
@@ -62,7 +62,7 @@
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         ClientSize = new System.Drawing.Size(428, 261);
+         ClientSize = new System.Drawing.Size(428, 205);
          Controls.Add(rtbLog);
          Controls.Add(btnSend);
          Controls.Add(txtCommand);
