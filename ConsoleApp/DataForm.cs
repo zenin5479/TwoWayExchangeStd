@@ -72,11 +72,7 @@ namespace ConsoleApp
          // Добавляем элементы на форму
          Controls.AddRange(new Control[] 
          {
-                greetingLabel,
-                agreeCheckBox,
-                commentLabel,
-                commentTextBox,
-                _closeButton
+            greetingLabel, agreeCheckBox, commentLabel, commentTextBox, _closeButton
          });
       }
    }
