@@ -14,7 +14,7 @@ namespace WinFormsApp
       public MainForm()
       {
          InitializeComponent();
-         this.FormClosing += MainForm_FormClosing;
+         FormClosing += MainForm_FormClosing;
          StartChildProcess();
       }
 
@@ -22,7 +22,7 @@ namespace WinFormsApp
       {
          var startInfo = new ProcessStartInfo
          {
-            FileName = "ChildConsoleApp.exe",      // путь к консольному приложению
+            FileName = "ConsoleApp.exe",      // путь к консольному приложению
             UseShellExecute = false,
             RedirectStandardInput = true,
             RedirectStandardOutput = true,
@@ -46,7 +46,9 @@ namespace WinFormsApp
       {
          string command = txtCommand.Text.Trim();
          if (string.IsNullOrEmpty(command))
+         {
             return;
+         }
 
          Log($">> {command}");
 
@@ -69,7 +71,6 @@ namespace WinFormsApp
             btnSend.Enabled = false;
          }
       }
-
 
       private void Log(string message)
       {
@@ -94,7 +95,5 @@ namespace WinFormsApp
             }
          }
       }
-
-
    }
 }
