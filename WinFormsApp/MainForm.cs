@@ -25,17 +25,22 @@ namespace WinFormsApp
          while (true)
          {
             string command = Console.ReadLine();
-            if (command == null) break; // родитель закрыл stdin
+            if (command == null)
+            {
+               break; // родитель закрыл stdin
+            }
 
             Log($">> Received: {command}");
 
-            string response = command.ToUpperInvariant() switch
-            {
-               "PING" => "PONG",
-               "TIME" => DateTime.Now.ToString("HH:mm:ss"),
-               "EXIT" => "BYE",
-               _ => $"UNKNOWN: {command}"
-            };
+            string response;
+            if (command.ToUpperInvariant() == "PING")
+               response = "PONG";
+            else if (command.ToUpperInvariant() == "TIME")
+               response = DateTime.Now.ToString("HH:mm:ss");
+            else if (command.ToUpperInvariant() == "EXIT")
+               response = "BYE";
+            else
+               response = $"UNKNOWN: {command}";
 
             Console.WriteLine(response);
             Log($"<< Sent: {response}");
