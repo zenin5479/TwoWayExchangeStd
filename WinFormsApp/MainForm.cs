@@ -65,9 +65,13 @@ namespace WinFormsApp
       {
          // Вывод в RichTextBox (если он есть) или в заголовок окна
          if (rtbLog != null)
+         {
             rtbLog.AppendText($"{message}{Environment.NewLine}");
+         }
          else
+         {
             Text = message;
+         }
       }
 
       private void Form1_FormClosing(object sender, FormClosingEventArgs e)
