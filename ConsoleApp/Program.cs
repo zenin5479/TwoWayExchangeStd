@@ -22,14 +22,14 @@ namespace ConsoleApp
          Console.WriteLine("Открываем форму... Введите данные в окне и закройте его.");
          Application.Run(myForm); // Здесь выполнение консоли останавливается
 
-         // --- Часть 3: Форма закрыта, читаем результаты ---
+         // Часть 3: Форма закрыта, читаем результаты
          // Получаем данные из публичных свойств формы
          bool userChoice = myForm.UserAgreed;
          string userComment = myForm.UserComment;
 
          Console.WriteLine("\nФорма закрыта. Получены данные:");
-         Console.WriteLine($"Пользователь согласился: {userChoice}");
-         Console.WriteLine($"Комментарий: {userComment}");
+         Console.WriteLine("Пользователь согласился: {0}", userChoice);
+         Console.WriteLine("Комментарий: {0}", userComment);
 
          Console.WriteLine("\nНажмите любую клавишу для выхода...");
          Console.ReadKey();
