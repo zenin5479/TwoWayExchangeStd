@@ -70,7 +70,7 @@ namespace ConsoleApp
          _closeButton.Click += OnCloseButtonOnClick;
 
          // Добавляем элементы на форму
-         Controls.AddRange(new Control[] 
+         Controls.AddRange(new Control[]
          {
             greetingLabel, agreeCheckBox, commentLabel, commentTextBox, _closeButton
          });
