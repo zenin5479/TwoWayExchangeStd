@@ -28,19 +28,31 @@
       /// </summary>
       private void InitializeComponent()
       {
+         txtCommand = new System.Windows.Forms.TextBox();
          SuspendLayout();
+         // 
+         // txtCommand
+         // 
+         txtCommand.Location = new System.Drawing.Point(63, 38);
+         txtCommand.Name = "txtCommand";
+         txtCommand.Size = new System.Drawing.Size(100, 23);
+         txtCommand.TabIndex = 0;
          // 
          // MainForm
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(384, 261);
+         Controls.Add(txtCommand);
          Name = "MainForm";
          StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
          Text = "Двусторонний обмен WinForms и консоли";
          ResumeLayout(false);
+         PerformLayout();
       }
 
       #endregion
+
+      private System.Windows.Forms.TextBox txtCommand;
    }
 }
