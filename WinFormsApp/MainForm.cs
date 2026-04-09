@@ -59,7 +59,7 @@ namespace WinFormsApp
          // Синхронно читаем ответ из stdout (блокирует UI!)
          string response = childOutput.ReadLine();
 
-         Log($"<< {response}");
+         Log(string.Format("<< {0}", response));
 
          // Если это была команда EXIT, закрываем процесс
          if (command.Equals("EXIT", StringComparison.OrdinalIgnoreCase))
