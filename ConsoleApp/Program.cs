@@ -7,7 +7,7 @@ namespace ConsoleApp
    {
       static void Main()
       {
-         // --- Часть 1: Консоль передаёт данные в форму ---
+         // Часть 1: Консоль передаёт данные в форму
          Console.Write("Введите ваше имя: ");
          string userName = Console.ReadLine();
 
