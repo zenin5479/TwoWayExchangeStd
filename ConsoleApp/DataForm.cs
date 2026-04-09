@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace ConsoleApp
@@ -58,13 +59,15 @@ namespace ConsoleApp
             Width = 200
          };
 
-         _closeButton.Click += (sender, e) =>
+         void OnCloseButtonOnClick(object sender, EventArgs e)
          {
             // Перед закрытием сохраняем данные в свойства
             UserAgreed = agreeCheckBox.Checked;
             UserComment = commentTextBox.Text;
             Close();
-         };
+         }
+
+         _closeButton.Click += OnCloseButtonOnClick;
 
          // Добавляем элементы на форму
          Controls.AddRange(new Control[] 
