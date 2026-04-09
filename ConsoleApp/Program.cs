@@ -4,16 +4,17 @@ namespace ConsoleApp
 {
    internal class Program
    {
-      static void Main(string[] args)
+      static void Main()
       {
-         Console.WriteLine("Console ready. Waiting for commands...");
+         Console.WriteLine("Консоль готова. Ждем команд...");
 
          while (true)
          {
             string input = Console.ReadLine();
             if (input == null)
             {
-               break; // EOF – родитель закрыл stdin
+               // EOF – родитель закрыл stdin
+               break; 
             }
 
             string output;
@@ -23,7 +24,7 @@ namespace ConsoleApp
             }
             else if (input.ToUpperInvariant() == "TIME")
             {
-               output = DateTime.Now.ToString("HH:mm:ss");
+               output = DateTime.Now.ToString("HH:mm:ss:fff");
             }
             else if (input.ToUpperInvariant() == "EXIT")
             {
