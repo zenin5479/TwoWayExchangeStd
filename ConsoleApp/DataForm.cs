@@ -6,9 +6,7 @@ namespace ConsoleApp
    // Простая форма с элементами ввода
    public class DataForm : Form
    {
-      private CheckBox agreeCheckBox;
-      private TextBox commentTextBox;
-      private Button closeButton;
+      private Button _closeButton;
 
       // Свойства для чтения результатов после закрытия
       public bool UserAgreed { get; private set; }
@@ -31,7 +29,7 @@ namespace ConsoleApp
          };
 
          // Чекбокс для выбора
-         agreeCheckBox = new CheckBox
+         CheckBox agreeCheckBox = new CheckBox
          {
             Text = "Я согласен с условиями",
             Location = new Point(20, 60),
@@ -46,21 +44,21 @@ namespace ConsoleApp
             AutoSize = true
          };
 
-         commentTextBox = new TextBox
+         TextBox commentTextBox = new TextBox
          {
             Location = new Point(20, 110),
             Width = 300
          };
 
          // Кнопка закрытия
-         closeButton = new Button
+         _closeButton = new Button
          {
             Text = "Закрыть и передать данные",
             Location = new Point(20, 150),
             Width = 200
          };
 
-         closeButton.Click += (sender, e) =>
+         _closeButton.Click += (sender, e) =>
          {
             // Перед закрытием сохраняем данные в свойства
             UserAgreed = agreeCheckBox.Checked;
@@ -75,7 +73,7 @@ namespace ConsoleApp
                 agreeCheckBox,
                 commentLabel,
                 commentTextBox,
-                closeButton
+                _closeButton
          });
       }
    }
