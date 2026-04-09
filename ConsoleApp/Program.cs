@@ -14,7 +14,7 @@ namespace ConsoleApp
             if (input == null)
             {
                // EOF – родитель закрыл stdin
-               break; 
+               break;
             }
 
             string output;

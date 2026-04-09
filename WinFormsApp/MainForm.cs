@@ -13,7 +13,7 @@ namespace WinFormsApp
       }
 
       // Синхронное чтение команды из stdin (блокирует UI)
-      private void btnReadCommand_Click(object sender, EventArgs e)
+      private void btnReadCommand_Click_1(object sender, EventArgs e)
       {
          Log("Waiting for command from console...");
 

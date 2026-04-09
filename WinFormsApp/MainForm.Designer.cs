@@ -50,7 +50,7 @@
          btnReadCommand.TabIndex = 1;
          btnReadCommand.Text = "Чтение команд";
          btnReadCommand.UseVisualStyleBackColor = true;
-         btnReadCommand.Click += btnSend_Click_1;
+         btnReadCommand.Click += btnReadCommand_Click_1;
          // 
          // rtbLog
          // 
