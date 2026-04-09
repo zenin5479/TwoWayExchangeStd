@@ -45,16 +45,16 @@
          // 
          btnSend.Location = new System.Drawing.Point(12, 41);
          btnSend.Name = "btnSend";
-         btnSend.Size = new System.Drawing.Size(134, 30);
+         btnSend.Size = new System.Drawing.Size(75, 23);
          btnSend.TabIndex = 1;
          btnSend.Text = "button1";
          btnSend.UseVisualStyleBackColor = true;
          // 
          // rtbLog
          // 
-         rtbLog.Location = new System.Drawing.Point(12, 77);
+         rtbLog.Location = new System.Drawing.Point(12, 70);
          rtbLog.Name = "rtbLog";
-         rtbLog.Size = new System.Drawing.Size(404, 172);
+         rtbLog.Size = new System.Drawing.Size(404, 179);
          rtbLog.TabIndex = 2;
          rtbLog.Text = "";
          // 
