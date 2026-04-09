@@ -56,7 +56,7 @@ namespace ConsoleApp
 
       static void StartChildProcess()
       {
-         var startInfo = new ProcessStartInfo
+         ProcessStartInfo startInfo = new ProcessStartInfo
          {
             FileName = "WinFormsApp.exe",   // Укажите полный путь, если нужно
             UseShellExecute = false,
