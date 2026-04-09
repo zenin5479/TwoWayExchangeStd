@@ -16,13 +16,23 @@ namespace ConsoleApp
                break; // EOF – родитель закрыл stdin
             }
 
-            string output = input.ToUpperInvariant() switch
+            string output;
+            if (input.ToUpperInvariant() == "PING")
             {
-               "PING" => "PONG",
-               "TIME" => DateTime.Now.ToString("HH:mm:ss"),
-               "EXIT" => "BYE",
-               _ => string.Format("UNKNOWN COMMAND: {0}", input)
-            };
+               output = "PONG";
+            }
+            else if (input.ToUpperInvariant() == "TIME")
+            {
+               output = DateTime.Now.ToString("HH:mm:ss");
+            }
+            else if (input.ToUpperInvariant() == "EXIT")
+            {
+               output = "BYE";
+            }
+            else
+            {
+               output = string.Format("UNKNOWN COMMAND: {0}", input);
+            }
 
             Console.WriteLine(output);
 
