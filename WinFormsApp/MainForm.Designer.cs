@@ -30,6 +30,7 @@
       {
          txtCommand = new System.Windows.Forms.TextBox();
          btnSend = new System.Windows.Forms.Button();
+         rtbLog = new System.Windows.Forms.RichTextBox();
          SuspendLayout();
          // 
          // txtCommand
@@ -48,11 +49,20 @@
          btnSend.Text = "button1";
          btnSend.UseVisualStyleBackColor = true;
          // 
+         // rtbLog
+         // 
+         rtbLog.Location = new System.Drawing.Point(63, 153);
+         rtbLog.Name = "rtbLog";
+         rtbLog.Size = new System.Drawing.Size(100, 96);
+         rtbLog.TabIndex = 2;
+         rtbLog.Text = "";
+         // 
          // MainForm
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(384, 261);
+         Controls.Add(rtbLog);
          Controls.Add(btnSend);
          Controls.Add(txtCommand);
          Name = "MainForm";
@@ -66,5 +76,6 @@
 
       private System.Windows.Forms.TextBox txtCommand;
       private System.Windows.Forms.Button btnSend;
+      private System.Windows.Forms.RichTextBox rtbLog;
    }
 }
