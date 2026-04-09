@@ -49,6 +49,7 @@
          btnSend.TabIndex = 1;
          btnSend.Text = "button1";
          btnSend.UseVisualStyleBackColor = true;
+         btnSend.Click += btnSend_Click_1;
          // 
          // rtbLog
          // 
