@@ -7,9 +7,9 @@ namespace WinFormsApp
 {
    public partial class MainForm : Form
    {
-      private Process childProcess;
-      private StreamWriter childInput;
-      private StreamReader childOutput;
+      private Process _childProcess;
+      private StreamWriter _childInput;
+      private StreamReader _childOutput;
 
       public MainForm()
       {
@@ -31,15 +31,15 @@ namespace WinFormsApp
             CreateNoWindow = true
          };
 
-         childProcess = new Process { StartInfo = startInfo };
-         childProcess.Start();
+         _childProcess = new Process { StartInfo = startInfo };
+         _childProcess.Start();
 
          // Получаем потоки
-         childInput = childProcess.StandardInput;
-         childOutput = childProcess.StandardOutput;
+         _childInput = _childProcess.StandardInput;
+         _childOutput = _childProcess.StandardOutput;
 
          // Читаем приветственное сообщение от консоли (первая строка)
-         string welcome = childOutput.ReadLine();
+         string welcome = _childOutput.ReadLine();
          Log(string.Format("[CONSOLE] {0}", welcome));
       }
 
@@ -54,21 +54,21 @@ namespace WinFormsApp
          Log(string.Format(">> {0}", command));
 
          // Отправляем команду в stdin дочернего процесса
-         childInput.WriteLine(command);
-         childInput.Flush();  // гарантируем отправку
+         _childInput.WriteLine(command);
+         _childInput.Flush();  // гарантируем отправку
 
          // Синхронно читаем ответ из stdout (блокирует UI!)
-         string response = childOutput.ReadLine();
+         string response = _childOutput.ReadLine();
 
          Log(string.Format("<< {0}", response));
 
          // Если это была команда EXIT, закрываем процесс
          if (command.Equals("EXIT", StringComparison.OrdinalIgnoreCase))
          {
-            childProcess.WaitForExit(1000);
-            if (!childProcess.HasExited)
+            _childProcess.WaitForExit(1000);
+            if (!_childProcess.HasExited)
             {
-               childProcess.Kill();
+               _childProcess.Kill();
             }
 
             Log("Дочерний процесс завершен");
@@ -83,13 +83,13 @@ namespace WinFormsApp
 
       private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
       {
-         if (childProcess != null && !childProcess.HasExited)
+         if (_childProcess != null && !_childProcess.HasExited)
          {
             try
             {
-               childInput.WriteLine("EXIT");
-               childInput.Flush();
-               childProcess.WaitForExit(500);
+               _childInput.WriteLine("EXIT");
+               _childInput.Flush();
+               _childProcess.WaitForExit(500);
             }
             catch
             {
@@ -97,8 +97,8 @@ namespace WinFormsApp
             }
             finally
             {
-               childProcess.Kill();
-               childProcess.Dispose();
+               _childProcess.Kill();
+               _childProcess.Dispose();
             }
          }
       }
