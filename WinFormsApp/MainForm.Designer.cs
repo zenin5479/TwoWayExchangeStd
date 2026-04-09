@@ -54,9 +54,9 @@
          // 
          // rtbLog
          // 
-         rtbLog.Location = new System.Drawing.Point(12, 140);
+         rtbLog.Location = new System.Drawing.Point(12, 70);
          rtbLog.Name = "rtbLog";
-         rtbLog.Size = new System.Drawing.Size(404, 119);
+         rtbLog.Size = new System.Drawing.Size(404, 126);
          rtbLog.TabIndex = 2;
          rtbLog.Text = "";
          // 
@@ -73,7 +73,7 @@
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         ClientSize = new System.Drawing.Size(428, 271);
+         ClientSize = new System.Drawing.Size(428, 208);
          Controls.Add(button1);
          Controls.Add(rtbLog);
          Controls.Add(btnReadCommand);
