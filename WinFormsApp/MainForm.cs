@@ -39,7 +39,7 @@ namespace WinFormsApp
 
          // Читаем приветственное сообщение от консоли (первая строка)
          string welcome = childOutput.ReadLine();
-         Log($"[CONSOLE] {welcome}");
+         Log(string.Format("[CONSOLE] {0}", welcome));
       }
 
       private void btnSend_Click_1(object sender, EventArgs e)
