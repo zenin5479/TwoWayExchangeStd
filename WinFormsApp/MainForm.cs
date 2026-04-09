@@ -50,7 +50,7 @@ namespace WinFormsApp
             return;
          }
 
-         Log($">> {command}");
+         Log(string.Format(">> {0}", command));
 
          // Отправляем команду в stdin дочернего процесса
          childInput.WriteLine(command);
