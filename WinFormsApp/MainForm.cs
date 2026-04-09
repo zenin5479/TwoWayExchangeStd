@@ -66,7 +66,10 @@ namespace WinFormsApp
          {
             childProcess.WaitForExit(1000);
             if (!childProcess.HasExited)
+            {
                childProcess.Kill();
+            }
+
             Log("Child process terminated.");
             btnSend.Enabled = false;
          }
@@ -83,15 +86,18 @@ namespace WinFormsApp
          {
             try
             {
-               childInput?.WriteLine("EXIT");
-               childInput?.Flush();
-               childProcess?.WaitForExit(500);
+               childInput.WriteLine("EXIT");
+               childInput.Flush();
+               childProcess.WaitForExit(500);
             }
-            catch { /* уже завершился */ }
+            catch
+            {
+                /* уже завершился */
+            }
             finally
             {
-               childProcess?.Kill();
-               childProcess?.Dispose();
+               childProcess.Kill();
+               childProcess.Dispose();
             }
          }
       }
