@@ -7,47 +7,25 @@ namespace ConsoleApp
    {
       static void Main()
       {
-         Process process = new Process
+         Console.WriteLine("Console ready. Waiting for commands...");
+
+         while (true)
          {
-            StartInfo = new ProcessStartInfo
-            {
-               FileName = "WinFormsApp.exe",
-               UseShellExecute = false,
-               RedirectStandardInput = true,
-               RedirectStandardOutput = true
-            }
-         };
-         process.Start();
+            string input = Console.ReadLine();
+            if (input == null) break; // EOF – родитель закрыл stdin
 
-         string input;
-         do
-         {
-            Console.Write("Введите сообщение (или 'exit'): ");
-            input = Console.ReadLine();
-            if (string.IsNullOrEmpty(input))
+            string output = input.ToUpperInvariant() switch
             {
-               continue;
-            }
+               "PING" => "PONG",
+               "TIME" => DateTime.Now.ToString("HH:mm:ss"),
+               "EXIT" => "BYE",
+               _ => $"UNKNOWN COMMAND: {input}"
+            };
 
-            // Отправляем запрос
-            process.StandardInput.WriteLine(input);
-            process.StandardInput.Flush();
+            Console.WriteLine(output);
 
-            if (input.ToLower() == "exit")
-            {
+            if (input.Equals("EXIT", StringComparison.OrdinalIgnoreCase))
                break;
-            }
-
-            // Ждём ответ (блокирует консоль)
-            string response = process.StandardOutput.ReadLine();
-            Console.WriteLine($"Ответ WinForms: {response}");
-
-         } while (true);
-
-         process.WaitForExit(1000);
-         if (!process.HasExited)
-         {
-            process.Kill();
          }
       }
    }
