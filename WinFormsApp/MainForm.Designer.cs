@@ -38,7 +38,7 @@
          txtCommand.Location = new System.Drawing.Point(12, 12);
          txtCommand.Multiline = true;
          txtCommand.Name = "txtCommand";
-         txtCommand.Size = new System.Drawing.Size(204, 23);
+         txtCommand.Size = new System.Drawing.Size(404, 23);
          txtCommand.TabIndex = 0;
          // 
          // btnSend
