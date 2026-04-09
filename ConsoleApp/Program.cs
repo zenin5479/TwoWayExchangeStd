@@ -12,7 +12,7 @@ namespace ConsoleApp
          string userName = Console.ReadLine();
 
          // Создаём форму, передавая начальные данные через конструктор
-         var myForm = new DataForm(userName);
+         DataForm myForm = new DataForm(userName);
 
          // Включаем визуальные стили (опционально)
          Application.EnableVisualStyles();
