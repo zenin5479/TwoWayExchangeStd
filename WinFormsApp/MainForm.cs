@@ -61,7 +61,5 @@ namespace WinFormsApp
       {
          Log("Form closing...");
       }
-
-
    }
 }
