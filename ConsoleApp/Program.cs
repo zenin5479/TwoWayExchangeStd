@@ -16,12 +16,12 @@ namespace ConsoleApp
          // Создаем экземпляр формы
          MyForm form = new MyForm();
 
-         Console.WriteLine("Показываем форму. Закройте форму, чтобы завершить работу.");
+         Console.WriteLine("Показываем форму. Закройте форму, чтобы завершить работу");
 
          // Запускаем стандартный цикл обработки сообщений Windows
          Application.Run(form);
 
-         Console.WriteLine("Форма закрыта. Программа завершена.");
+         Console.WriteLine("Форма закрыта. Программа завершена");
       }
    }
 }
