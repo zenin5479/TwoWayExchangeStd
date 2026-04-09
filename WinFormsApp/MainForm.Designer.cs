@@ -35,14 +35,15 @@
          // 
          // txtCommand
          // 
-         txtCommand.Location = new System.Drawing.Point(63, 38);
+         txtCommand.Location = new System.Drawing.Point(12, 12);
+         txtCommand.Multiline = true;
          txtCommand.Name = "txtCommand";
-         txtCommand.Size = new System.Drawing.Size(100, 23);
+         txtCommand.Size = new System.Drawing.Size(204, 23);
          txtCommand.TabIndex = 0;
          // 
          // btnSend
          // 
-         btnSend.Location = new System.Drawing.Point(71, 108);
+         btnSend.Location = new System.Drawing.Point(12, 41);
          btnSend.Name = "btnSend";
          btnSend.Size = new System.Drawing.Size(75, 23);
          btnSend.TabIndex = 1;
@@ -51,9 +52,9 @@
          // 
          // rtbLog
          // 
-         rtbLog.Location = new System.Drawing.Point(63, 153);
+         rtbLog.Location = new System.Drawing.Point(12, 70);
          rtbLog.Name = "rtbLog";
-         rtbLog.Size = new System.Drawing.Size(100, 96);
+         rtbLog.Size = new System.Drawing.Size(204, 179);
          rtbLog.TabIndex = 2;
          rtbLog.Text = "";
          // 
@@ -61,7 +62,7 @@
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         ClientSize = new System.Drawing.Size(384, 261);
+         ClientSize = new System.Drawing.Size(422, 261);
          Controls.Add(rtbLog);
          Controls.Add(btnSend);
          Controls.Add(txtCommand);
