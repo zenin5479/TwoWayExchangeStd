@@ -8,51 +8,53 @@ namespace WinFormsApp
       public MainForm()
       {
          InitializeComponent();
+         Load += Form1_Load;
          FormClosing += Form1_FormClosing;
-         Log("Windows Forms started. Waiting for commands on stdin...");
       }
 
-      // Синхронное чтение команды из stdin (блокирует UI)
-      private void btnReadCommand_Click_1(object sender, EventArgs e)
+      private void Form1_Load(object sender, EventArgs e)
       {
-         Log("Waiting for command from console...");
+         // Выводим окно на передний план
+         TopMost = true;
+         Activate();
+         BringToFront();
 
-         // ReadLine блокирует поток до появления строки в stdin
-         string command = Console.ReadLine();
+         Log("Form loaded. Waiting for commands from console...");
 
-         if (command == null)
+         // Синхронный цикл обработки stdin (БЛОКИРУЕТ UI)
+         while (true)
          {
-            Log("stdin closed (EOF). Parent process terminated.");
-            btnReadCommand.Enabled = false;
-            return;
-         }
+            string command = Console.ReadLine();
+            if (command == null) break; // родитель закрыл stdin
 
-         Log($">> Received: {command}");
+            Log($">> Received: {command}");
 
-         // Обработка команды
-         string response = command.ToUpperInvariant() switch
-         {
-            "PING" => "PONG",
-            "TIME" => DateTime.Now.ToString("HH:mm:ss"),
-            "EXIT" => "BYE",
-            _ => $"UNKNOWN: {command}"
-         };
+            string response = command.ToUpperInvariant() switch
+            {
+               "PING" => "PONG",
+               "TIME" => DateTime.Now.ToString("HH:mm:ss"),
+               "EXIT" => "BYE",
+               _ => $"UNKNOWN: {command}"
+            };
 
-         // Отправляем ответ в stdout
-         Console.WriteLine(response);
-         Log($"<< Sent: {response}");
+            Console.WriteLine(response);
+            Log($"<< Sent: {response}");
 
-         if (command.Equals("EXIT", StringComparison.OrdinalIgnoreCase))
-         {
-            Log("Exit command received. Closing form...");
-            Close();
+            if (command.Equals("EXIT", StringComparison.OrdinalIgnoreCase))
+            {
+               Close();
+               break;
+            }
          }
       }
 
       private void Log(string message)
       {
-         // Вывод в RichTextBox (вызов из любого потока не требуется, всё в UI)
-         rtbLog.AppendText($"{message}{Environment.NewLine}");
+         // Вывод в RichTextBox (если он есть) или в заголовок окна
+         if (rtbLog != null)
+            rtbLog.AppendText($"{message}{Environment.NewLine}");
+         else
+            Text = message;
       }
 
       private void Form1_FormClosing(object sender, FormClosingEventArgs e)
