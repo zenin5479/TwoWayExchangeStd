@@ -6,9 +6,9 @@ namespace ConsoleApp
 {
    internal class Program
    {
-      static Process childProcess;
-      static StreamWriter childInput;
-      static StreamReader childOutput;
+      static Process _childProcess;
+      static StreamWriter _childInput;
+      static StreamReader _childOutput;
 
       static void Main()
       {
@@ -22,29 +22,33 @@ namespace ConsoleApp
             string command = Console.ReadLine();
 
             if (string.IsNullOrEmpty(command))
+            {
                continue;
+            }
 
             // Отправляем команду в stdin дочернего процесса
-            childInput.WriteLine(command);
-            childInput.Flush();
+            _childInput.WriteLine(command);
+            _childInput.Flush();
 
             if (command.Equals("EXIT", StringComparison.OrdinalIgnoreCase))
             {
                // Ждём ответа "BYE" от формы
-               string farewell = childOutput.ReadLine();
+               string farewell = _childOutput.ReadLine();
                Console.WriteLine($"[FORM] {farewell}");
                break;
             }
 
             // Синхронно читаем ответ из stdout формы
-            string response = childOutput.ReadLine();
+            string response = _childOutput.ReadLine();
             Console.WriteLine($"[FORM] Response: {response}");
          }
 
          // Корректное завершение
-         childProcess.WaitForExit(2000);
-         if (!childProcess.HasExited)
-            childProcess.Kill();
+         _childProcess.WaitForExit(2000);
+         if (!_childProcess.HasExited)
+         {
+            _childProcess.Kill();
+         }
 
          Console.WriteLine("Press any key to exit...");
          Console.ReadKey();
@@ -62,11 +66,11 @@ namespace ConsoleApp
             CreateNoWindow = false           // false — чтобы видеть окно формы
          };
 
-         childProcess = new Process { StartInfo = startInfo };
-         childProcess.Start();
+         _childProcess = new Process { StartInfo = startInfo };
+         _childProcess.Start();
 
-         childInput = childProcess.StandardInput;
-         childOutput = childProcess.StandardOutput;
+         _childInput = _childProcess.StandardInput;
+         _childOutput = _childProcess.StandardOutput;
 
          Console.WriteLine("Child process (Windows Forms) started.");
       }
