@@ -1,13 +1,11 @@
 ﻿using System;
 using System.Windows.Forms;
 
-
 namespace ConsoleApp
 {
    internal class Program
    {
-      [STAThread] // Обязательный атрибут для работы Windows Forms
-      static void Main(string[] args)
+      static void Main()
       {
          Console.WriteLine("Запуск Windows Forms из консольного приложения...");
 
@@ -16,7 +14,7 @@ namespace ConsoleApp
          Application.SetCompatibleTextRenderingDefault(false);
 
          // Создаем экземпляр формы
-         var form = new MyForm();
+         MyForm form = new MyForm();
 
          Console.WriteLine("Показываем форму. Закройте форму, чтобы завершить работу.");
 
@@ -26,6 +24,4 @@ namespace ConsoleApp
          Console.WriteLine("Форма закрыта. Программа завершена.");
       }
    }
-
-   // Определение простой формы
 }
