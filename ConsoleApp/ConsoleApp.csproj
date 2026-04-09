@@ -3,6 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
 <UseWindowsForms>true</UseWindowsForms>
+<DisableWinExeOutputInference>true</DisableWinExeOutputInference>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
