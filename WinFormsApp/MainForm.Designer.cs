@@ -29,7 +29,7 @@
       private void InitializeComponent()
       {
          txtCommand = new System.Windows.Forms.TextBox();
-         btnSend = new System.Windows.Forms.Button();
+         btnReadCommand = new System.Windows.Forms.Button();
          rtbLog = new System.Windows.Forms.RichTextBox();
          SuspendLayout();
          // 
@@ -41,15 +41,15 @@
          txtCommand.Size = new System.Drawing.Size(404, 23);
          txtCommand.TabIndex = 0;
          // 
-         // btnSend
+         // btnReadCommand
          // 
-         btnSend.Location = new System.Drawing.Point(12, 41);
-         btnSend.Name = "btnSend";
-         btnSend.Size = new System.Drawing.Size(75, 23);
-         btnSend.TabIndex = 1;
-         btnSend.Text = "button1";
-         btnSend.UseVisualStyleBackColor = true;
-         btnSend.Click += btnSend_Click_1;
+         btnReadCommand.Location = new System.Drawing.Point(12, 41);
+         btnReadCommand.Name = "btnReadCommand";
+         btnReadCommand.Size = new System.Drawing.Size(75, 23);
+         btnReadCommand.TabIndex = 1;
+         btnReadCommand.Text = "button1";
+         btnReadCommand.UseVisualStyleBackColor = true;
+         btnReadCommand.Click += btnSend_Click_1;
          // 
          // rtbLog
          // 
@@ -65,7 +65,7 @@
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(428, 201);
          Controls.Add(rtbLog);
-         Controls.Add(btnSend);
+         Controls.Add(btnReadCommand);
          Controls.Add(txtCommand);
          Name = "MainForm";
          StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -77,7 +77,7 @@
       #endregion
 
       private System.Windows.Forms.TextBox txtCommand;
-      private System.Windows.Forms.Button btnSend;
+      private System.Windows.Forms.Button btnReadCommand;
       private System.Windows.Forms.RichTextBox rtbLog;
    }
 }

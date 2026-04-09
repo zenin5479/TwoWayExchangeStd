@@ -23,7 +23,7 @@ namespace WinFormsApp
          var startInfo = new ProcessStartInfo
          {
             // Путь к консольному приложению
-            FileName = "ConsoleApp.exe",      
+            FileName = "ConsoleApp.exe",
             UseShellExecute = false,
             RedirectStandardInput = true,
             RedirectStandardOutput = true,
@@ -55,7 +55,8 @@ namespace WinFormsApp
 
          // Отправляем команду в stdin дочернего процесса
          _childInput.WriteLine(command);
-         _childInput.Flush();  // гарантируем отправку
+         // Гарантируем отправку
+         _childInput.Flush();
 
          // Синхронно читаем ответ из stdout (блокирует UI!)
          string response = _childOutput.ReadLine();
@@ -72,7 +73,7 @@ namespace WinFormsApp
             }
 
             Log("Дочерний процесс завершен");
-            btnSend.Enabled = false;
+            btnReadCommand.Enabled = false;
          }
       }
 
@@ -93,7 +94,7 @@ namespace WinFormsApp
             }
             catch
             {
-                /* уже завершился */
+               /* уже завершился */
             }
             finally
             {
