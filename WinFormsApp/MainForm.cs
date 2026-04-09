@@ -22,7 +22,8 @@ namespace WinFormsApp
       {
          var startInfo = new ProcessStartInfo
          {
-            FileName = "ConsoleApp.exe",      // путь к консольному приложению
+            // Путь к консольному приложению
+            FileName = "ConsoleApp.exe",      
             UseShellExecute = false,
             RedirectStandardInput = true,
             RedirectStandardOutput = true,
@@ -70,7 +71,7 @@ namespace WinFormsApp
                childProcess.Kill();
             }
 
-            Log("Child process terminated.");
+            Log("Дочерний процесс завершен");
             btnSend.Enabled = false;
          }
       }
