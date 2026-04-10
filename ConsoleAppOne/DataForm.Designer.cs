@@ -85,7 +85,7 @@
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         ClientSize = new System.Drawing.Size(384, 212);
+         ClientSize = new System.Drawing.Size(346, 212);
          Controls.Add(closeButton);
          Controls.Add(commentTextBox);
          Controls.Add(commentLabel);
