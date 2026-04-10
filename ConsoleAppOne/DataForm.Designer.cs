@@ -35,16 +35,17 @@
          // greetingLabel
          // 
          greetingLabel.AutoSize = true;
+         greetingLabel.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
          greetingLabel.Location = new System.Drawing.Point(12, 9);
          greetingLabel.Name = "greetingLabel";
-         greetingLabel.Size = new System.Drawing.Size(50, 15);
+         greetingLabel.Size = new System.Drawing.Size(65, 18);
          greetingLabel.TabIndex = 0;
          greetingLabel.Text = "Привет!";
          // 
          // agreeCheckBox
          // 
          agreeCheckBox.AutoSize = true;
-         agreeCheckBox.Location = new System.Drawing.Point(12, 43);
+         agreeCheckBox.Location = new System.Drawing.Point(12, 56);
          agreeCheckBox.Name = "agreeCheckBox";
          agreeCheckBox.Size = new System.Drawing.Size(159, 19);
          agreeCheckBox.TabIndex = 1;
