@@ -29,22 +29,34 @@
       private void InitializeComponent()
       {
          greetingLabel = new System.Windows.Forms.Label();
+         agreeCheckBox = new System.Windows.Forms.CheckBox();
          SuspendLayout();
          // 
          // greetingLabel
          // 
          greetingLabel.AutoSize = true;
-         greetingLabel.Location = new System.Drawing.Point(51, 21);
+         greetingLabel.Location = new System.Drawing.Point(12, 9);
          greetingLabel.Name = "greetingLabel";
          greetingLabel.Size = new System.Drawing.Size(50, 15);
          greetingLabel.TabIndex = 0;
          greetingLabel.Text = "Привет!";
+         // 
+         // agreeCheckBox
+         // 
+         agreeCheckBox.AutoSize = true;
+         agreeCheckBox.Location = new System.Drawing.Point(12, 43);
+         agreeCheckBox.Name = "agreeCheckBox";
+         agreeCheckBox.Size = new System.Drawing.Size(159, 19);
+         agreeCheckBox.TabIndex = 1;
+         agreeCheckBox.Text = "Я согласен с условиями";
+         agreeCheckBox.UseVisualStyleBackColor = true;
          // 
          // DataForm
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(384, 211);
+         Controls.Add(agreeCheckBox);
          Controls.Add(greetingLabel);
          Name = "DataForm";
          StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -56,5 +68,6 @@
       #endregion
 
       private System.Windows.Forms.Label greetingLabel;
+      private System.Windows.Forms.CheckBox agreeCheckBox;
    }
 }
