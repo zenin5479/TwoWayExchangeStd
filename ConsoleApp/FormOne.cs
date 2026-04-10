@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace ConsoleApp
+namespace ConsoleAppOne
 {
    public partial class FormOne : Form
    {

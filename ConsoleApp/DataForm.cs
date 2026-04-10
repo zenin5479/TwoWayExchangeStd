@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace ConsoleApp
+namespace ConsoleAppOne
 {
    // Простая форма с элементами ввода
    public class DataForm : Form

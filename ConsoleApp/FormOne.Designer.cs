@@ -1,4 +1,4 @@
-﻿namespace ConsoleApp
+﻿namespace ConsoleAppOne
 {
    partial class FormOne
    {

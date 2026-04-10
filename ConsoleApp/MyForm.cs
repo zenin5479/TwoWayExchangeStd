@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace ConsoleApp
+namespace ConsoleAppOne
 {
    // Определение простой формы
    public class MyForm : Form
