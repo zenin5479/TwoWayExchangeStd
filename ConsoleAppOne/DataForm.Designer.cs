@@ -48,7 +48,7 @@
          // agreeCheckBox
          // 
          agreeCheckBox.AutoSize = true;
-         agreeCheckBox.Location = new System.Drawing.Point(12, 56);
+         agreeCheckBox.Location = new System.Drawing.Point(12, 30);
          agreeCheckBox.Name = "agreeCheckBox";
          agreeCheckBox.Size = new System.Drawing.Size(159, 19);
          agreeCheckBox.TabIndex = 1;
@@ -58,7 +58,7 @@
          // commentLabel
          // 
          commentLabel.AutoSize = true;
-         commentLabel.Location = new System.Drawing.Point(12, 78);
+         commentLabel.Location = new System.Drawing.Point(12, 52);
          commentLabel.Name = "commentLabel";
          commentLabel.Size = new System.Drawing.Size(87, 15);
          commentLabel.TabIndex = 2;
@@ -66,7 +66,7 @@
          // 
          // commentTextBox
          // 
-         commentTextBox.Location = new System.Drawing.Point(12, 96);
+         commentTextBox.Location = new System.Drawing.Point(12, 70);
          commentTextBox.Multiline = true;
          commentTextBox.Name = "commentTextBox";
          commentTextBox.Size = new System.Drawing.Size(200, 100);
@@ -74,9 +74,9 @@
          // 
          // closeButton
          // 
-         closeButton.Location = new System.Drawing.Point(177, 71);
+         closeButton.Location = new System.Drawing.Point(12, 176);
          closeButton.Name = "closeButton";
-         closeButton.Size = new System.Drawing.Size(179, 23);
+         closeButton.Size = new System.Drawing.Size(200, 23);
          closeButton.TabIndex = 4;
          closeButton.Text = "Закрыть и передать данные";
          closeButton.UseVisualStyleBackColor = true;
@@ -85,7 +85,7 @@
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         ClientSize = new System.Drawing.Size(384, 211);
+         ClientSize = new System.Drawing.Size(384, 212);
          Controls.Add(closeButton);
          Controls.Add(commentTextBox);
          Controls.Add(commentLabel);
