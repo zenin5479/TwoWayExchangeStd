@@ -32,6 +32,7 @@
          agreeCheckBox = new System.Windows.Forms.CheckBox();
          commentLabel = new System.Windows.Forms.Label();
          commentTextBox = new System.Windows.Forms.TextBox();
+         closeButton = new System.Windows.Forms.Button();
          SuspendLayout();
          // 
          // greetingLabel
@@ -71,11 +72,21 @@
          commentTextBox.Size = new System.Drawing.Size(200, 100);
          commentTextBox.TabIndex = 3;
          // 
+         // closeButton
+         // 
+         closeButton.Location = new System.Drawing.Point(177, 71);
+         closeButton.Name = "closeButton";
+         closeButton.Size = new System.Drawing.Size(179, 23);
+         closeButton.TabIndex = 4;
+         closeButton.Text = "Закрыть и передать данные";
+         closeButton.UseVisualStyleBackColor = true;
+         // 
          // DataForm
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(384, 211);
+         Controls.Add(closeButton);
          Controls.Add(commentTextBox);
          Controls.Add(commentLabel);
          Controls.Add(agreeCheckBox);
@@ -93,5 +104,6 @@
       private System.Windows.Forms.CheckBox agreeCheckBox;
       private System.Windows.Forms.Label commentLabel;
       private System.Windows.Forms.TextBox commentTextBox;
+      private System.Windows.Forms.Button closeButton;
    }
 }
