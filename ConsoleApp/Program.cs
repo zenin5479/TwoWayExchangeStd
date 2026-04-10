@@ -21,7 +21,7 @@ namespace ConsoleApp
          // Часть 2: Показываем форму (консоль ждёт)
          Console.WriteLine("Открываем форму... Введите данные в окне и закройте его");
          // Здесь выполнение консоли останавливается
-         Application.Run(myForm); 
+         Application.Run(myForm);
 
          // Часть 3: Форма закрыта, читаем результаты, получаем данные из публичных свойств формы
          bool userChoice = myForm.UserAgreed;
