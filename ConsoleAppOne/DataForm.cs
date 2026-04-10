@@ -12,12 +12,11 @@ namespace ConsoleAppOne
       {
          // Приветствие с переданным из консоли именем
 
-         greetingLabel
+         //greetingLabel
 
          Label greetingLabel = new Label
          {
-            Text = string.Format("Привет, {0}!", initialName),
-
+            Text = string.Format("Привет, {0}!", initialName)
          };
       }
 
