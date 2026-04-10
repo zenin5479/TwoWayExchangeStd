@@ -31,6 +31,7 @@
          greetingLabel = new System.Windows.Forms.Label();
          agreeCheckBox = new System.Windows.Forms.CheckBox();
          commentLabel = new System.Windows.Forms.Label();
+         commentTextBox = new System.Windows.Forms.TextBox();
          SuspendLayout();
          // 
          // greetingLabel
@@ -56,17 +57,26 @@
          // commentLabel
          // 
          commentLabel.AutoSize = true;
-         commentLabel.Location = new System.Drawing.Point(12, 136);
+         commentLabel.Location = new System.Drawing.Point(12, 78);
          commentLabel.Name = "commentLabel";
          commentLabel.Size = new System.Drawing.Size(87, 15);
          commentLabel.TabIndex = 2;
          commentLabel.Text = "Комментарий:";
+         // 
+         // commentTextBox
+         // 
+         commentTextBox.Location = new System.Drawing.Point(12, 96);
+         commentTextBox.Multiline = true;
+         commentTextBox.Name = "commentTextBox";
+         commentTextBox.Size = new System.Drawing.Size(200, 100);
+         commentTextBox.TabIndex = 3;
          // 
          // DataForm
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(384, 211);
+         Controls.Add(commentTextBox);
          Controls.Add(commentLabel);
          Controls.Add(agreeCheckBox);
          Controls.Add(greetingLabel);
@@ -82,5 +92,6 @@
       private System.Windows.Forms.Label greetingLabel;
       private System.Windows.Forms.CheckBox agreeCheckBox;
       private System.Windows.Forms.Label commentLabel;
+      private System.Windows.Forms.TextBox commentTextBox;
    }
 }
