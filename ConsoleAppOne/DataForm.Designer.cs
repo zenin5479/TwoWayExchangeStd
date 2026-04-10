@@ -28,19 +28,33 @@
       /// </summary>
       private void InitializeComponent()
       {
+         greetingLabel = new System.Windows.Forms.Label();
          SuspendLayout();
+         // 
+         // greetingLabel
+         // 
+         greetingLabel.AutoSize = true;
+         greetingLabel.Location = new System.Drawing.Point(51, 21);
+         greetingLabel.Name = "greetingLabel";
+         greetingLabel.Size = new System.Drawing.Size(50, 15);
+         greetingLabel.TabIndex = 0;
+         greetingLabel.Text = "Привет!";
          // 
          // DataForm
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(384, 211);
+         Controls.Add(greetingLabel);
          Name = "DataForm";
          StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
          Text = "Форма для передачи данных";
          ResumeLayout(false);
+         PerformLayout();
       }
 
       #endregion
+
+      private System.Windows.Forms.Label greetingLabel;
    }
 }
