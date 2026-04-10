@@ -30,6 +30,7 @@
       {
          greetingLabel = new System.Windows.Forms.Label();
          agreeCheckBox = new System.Windows.Forms.CheckBox();
+         commentLabel = new System.Windows.Forms.Label();
          SuspendLayout();
          // 
          // greetingLabel
@@ -52,11 +53,21 @@
          agreeCheckBox.Text = "Я согласен с условиями";
          agreeCheckBox.UseVisualStyleBackColor = true;
          // 
+         // commentLabel
+         // 
+         commentLabel.AutoSize = true;
+         commentLabel.Location = new System.Drawing.Point(54, 100);
+         commentLabel.Name = "commentLabel";
+         commentLabel.Size = new System.Drawing.Size(38, 15);
+         commentLabel.TabIndex = 2;
+         commentLabel.Text = "label1";
+         // 
          // DataForm
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(384, 211);
+         Controls.Add(commentLabel);
          Controls.Add(agreeCheckBox);
          Controls.Add(greetingLabel);
          Name = "DataForm";
@@ -70,5 +81,6 @@
 
       private System.Windows.Forms.Label greetingLabel;
       private System.Windows.Forms.CheckBox agreeCheckBox;
+      private System.Windows.Forms.Label commentLabel;
    }
 }
