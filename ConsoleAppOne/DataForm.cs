@@ -19,8 +19,6 @@ namespace ConsoleAppOne
             Text = string.Format("Привет, {0}!", initialName),
 
          };
-
-
       }
 
       public DataForm()
