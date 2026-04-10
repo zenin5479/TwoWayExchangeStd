@@ -56,11 +56,11 @@
          // commentLabel
          // 
          commentLabel.AutoSize = true;
-         commentLabel.Location = new System.Drawing.Point(54, 100);
+         commentLabel.Location = new System.Drawing.Point(12, 136);
          commentLabel.Name = "commentLabel";
-         commentLabel.Size = new System.Drawing.Size(38, 15);
+         commentLabel.Size = new System.Drawing.Size(87, 15);
          commentLabel.TabIndex = 2;
-         commentLabel.Text = "label1";
+         commentLabel.Text = "Комментарий:";
          // 
          // DataForm
          // 
