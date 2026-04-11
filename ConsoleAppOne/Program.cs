@@ -22,8 +22,7 @@ namespace ConsoleAppOne
          Console.WriteLine("Открываем форму... Введите данные в окне и закройте его.");
          Application.Run(myForm); // Здесь выполнение консоли останавливается
 
-         // Часть 3: Форма закрыта, читаем результаты
-         // Получаем данные из публичных свойств формы
+         // Часть 3: Форма закрыта, читаем результаты, Получаем данные из публичных свойств формы
          bool userChoice = myForm.UserAgreed;
          string userComment = myForm.UserComment;
 
