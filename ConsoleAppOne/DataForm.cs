@@ -14,10 +14,10 @@ namespace ConsoleAppOne
 
          //greetingLabel
 
-         Label greetingLabel = new Label
-         {
-            Text = string.Format("Привет, {0}!", initialName)
-         };
+         //Label greetingLabel = new Label
+         //{
+         //   Text = string.Format("Привет, {0}!", initialName)
+         //};
       }
 
       public DataForm()
