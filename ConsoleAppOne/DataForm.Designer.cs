@@ -80,6 +80,7 @@
          closeButton.TabIndex = 4;
          closeButton.Text = "Закрыть и передать данные";
          closeButton.UseVisualStyleBackColor = true;
+         closeButton.Click += closeButton_Click;
          // 
          // DataForm
          // 
