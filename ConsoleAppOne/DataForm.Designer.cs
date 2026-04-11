@@ -28,29 +28,17 @@
       /// </summary>
       private void InitializeComponent()
       {
-         greetingLabel = new System.Windows.Forms.Label();
          agreeCheckBox = new System.Windows.Forms.CheckBox();
          commentLabel = new System.Windows.Forms.Label();
          commentTextBox = new System.Windows.Forms.TextBox();
          closeButton = new System.Windows.Forms.Button();
+         greetingLabel = new System.Windows.Forms.Label();
          SuspendLayout();
-         // 
-         // greetingLabel
-         // 
-         greetingLabel.AutoSize = true;
-         greetingLabel.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-         greetingLabel.Location = new System.Drawing.Point(12, 9);
-         greetingLabel.Name = "greetingLabel";
-         greetingLabel.Size = new System.Drawing.Size(65, 18);
-         greetingLabel.TabIndex = 0;
-         greetingLabel.Text = "";
-         //greetingLabel.Text = string.Format("Привет, {0}!", _initialName);
-
          // 
          // agreeCheckBox
          // 
          agreeCheckBox.AutoSize = true;
-         agreeCheckBox.Location = new System.Drawing.Point(12, 30);
+         agreeCheckBox.Location = new System.Drawing.Point(12, 27);
          agreeCheckBox.Name = "agreeCheckBox";
          agreeCheckBox.Size = new System.Drawing.Size(159, 19);
          agreeCheckBox.TabIndex = 1;
@@ -60,7 +48,7 @@
          // commentLabel
          // 
          commentLabel.AutoSize = true;
-         commentLabel.Location = new System.Drawing.Point(12, 52);
+         commentLabel.Location = new System.Drawing.Point(12, 49);
          commentLabel.Name = "commentLabel";
          commentLabel.Size = new System.Drawing.Size(87, 15);
          commentLabel.TabIndex = 2;
@@ -68,32 +56,41 @@
          // 
          // commentTextBox
          // 
-         commentTextBox.Location = new System.Drawing.Point(12, 70);
+         commentTextBox.Location = new System.Drawing.Point(12, 67);
          commentTextBox.Multiline = true;
          commentTextBox.Name = "commentTextBox";
-         commentTextBox.Size = new System.Drawing.Size(200, 100);
+         commentTextBox.Size = new System.Drawing.Size(315, 113);
          commentTextBox.TabIndex = 3;
          // 
          // closeButton
          // 
-         closeButton.Location = new System.Drawing.Point(12, 176);
+         closeButton.Location = new System.Drawing.Point(12, 186);
          closeButton.Name = "closeButton";
-         closeButton.Size = new System.Drawing.Size(200, 23);
+         closeButton.Size = new System.Drawing.Size(174, 23);
          closeButton.TabIndex = 4;
          closeButton.Text = "Закрыть и передать данные";
          closeButton.UseVisualStyleBackColor = true;
          closeButton.Click += closeButton_Click;
          // 
+         // greetingLabel
+         // 
+         greetingLabel.AutoSize = true;
+         greetingLabel.Location = new System.Drawing.Point(12, 9);
+         greetingLabel.Name = "greetingLabel";
+         greetingLabel.Size = new System.Drawing.Size(115, 15);
+         greetingLabel.TabIndex = 5;
+         greetingLabel.Text = "Данные из консоли";
+         // 
          // DataForm
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         ClientSize = new System.Drawing.Size(225, 212);
+         ClientSize = new System.Drawing.Size(339, 323);
+         Controls.Add(greetingLabel);
          Controls.Add(closeButton);
          Controls.Add(commentTextBox);
          Controls.Add(commentLabel);
          Controls.Add(agreeCheckBox);
-         Controls.Add(greetingLabel);
          Name = "DataForm";
          StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
          Text = "Форма для передачи данных";
@@ -102,11 +99,10 @@
       }
 
       #endregion
-
-      private System.Windows.Forms.Label greetingLabel;
       private System.Windows.Forms.CheckBox agreeCheckBox;
       private System.Windows.Forms.Label commentLabel;
       private System.Windows.Forms.TextBox commentTextBox;
       private System.Windows.Forms.Button closeButton;
+      private System.Windows.Forms.Label greetingLabel;
    }
 }
