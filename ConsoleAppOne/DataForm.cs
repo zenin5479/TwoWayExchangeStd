@@ -25,11 +25,6 @@ namespace ConsoleAppOne
          InitializeComponent();
       }
 
-      public DataForm(string userName)
-      {
-         //throw new System.NotImplementedException();
-      }
-
       private void closeButton_Click(object sender, System.EventArgs e)
       {
          // Перед закрытием сохраняем данные в свойства

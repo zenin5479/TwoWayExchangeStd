@@ -16,7 +16,7 @@ namespace ConsoleAppOne
          Application.SetCompatibleTextRenderingDefault(false);
 
          // Создаём форму, передавая начальные данные через конструктор
-         DataForm myForm = new DataForm(userName);
+         DataForm myForm = new DataForm(userName, greetingLabel);
 
          // Часть 2: Показываем форму (консоль ждёт)
          Console.WriteLine("Открываем форму... Введите данные в окне и закройте его");
