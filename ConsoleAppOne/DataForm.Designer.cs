@@ -43,7 +43,9 @@
          greetingLabel.Name = "greetingLabel";
          greetingLabel.Size = new System.Drawing.Size(65, 18);
          greetingLabel.TabIndex = 0;
-         greetingLabel.Text = "Привет!";
+         greetingLabel.Text = "";
+         //greetingLabel.Text = string.Format("Привет, {0}!", _initialName);
+
          // 
          // agreeCheckBox
          // 
