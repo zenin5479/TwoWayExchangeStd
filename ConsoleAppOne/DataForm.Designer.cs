@@ -59,12 +59,12 @@
          commentTextBox.Location = new System.Drawing.Point(12, 67);
          commentTextBox.Multiline = true;
          commentTextBox.Name = "commentTextBox";
-         commentTextBox.Size = new System.Drawing.Size(315, 113);
+         commentTextBox.Size = new System.Drawing.Size(315, 73);
          commentTextBox.TabIndex = 3;
          // 
          // closeButton
          // 
-         closeButton.Location = new System.Drawing.Point(12, 186);
+         closeButton.Location = new System.Drawing.Point(12, 146);
          closeButton.Name = "closeButton";
          closeButton.Size = new System.Drawing.Size(174, 23);
          closeButton.TabIndex = 4;
@@ -85,7 +85,7 @@
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         ClientSize = new System.Drawing.Size(339, 323);
+         ClientSize = new System.Drawing.Size(339, 181);
          Controls.Add(greetingLabel);
          Controls.Add(closeButton);
          Controls.Add(commentTextBox);
