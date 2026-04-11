@@ -4,8 +4,6 @@ namespace ConsoleAppOne
 {
    public partial class DataForm : Form
    {
-      private readonly string _initialName;
-
       // Свойства для чтения результатов после закрытия
       public bool UserAgreed { get; private set; }
       public string UserComment { get; private set; }
@@ -13,9 +11,8 @@ namespace ConsoleAppOne
       public DataForm(string initialName)
       {
          InitializeComponent();
-         
-         _initialName = initialName;
-         greetingLabel.Text = string.Format("Привет, {0}!", _initialName);
+
+         greetingLabel.Text = string.Format("Привет, {0}!", initialName);
 
          //// Приветствие с переданным из консоли именем
 
