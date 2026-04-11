@@ -13,21 +13,7 @@ namespace ConsoleAppOne
          InitializeComponent();
 
          greetingLabel.Text = string.Format("Привет, {0}!", initialName);
-
-         //// Приветствие с переданным из консоли именем
-
-         ////greetingLabel
-
-         //Label greetingLabel = new Label
-         //{
-         //   Text = string.Format("Привет, {0}!", initialName)
-         //};
       }
-
-      //public DataForm()
-      //{
-         
-      //}
 
       private void closeButton_Click(object sender, System.EventArgs e)
       {
