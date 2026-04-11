@@ -5,7 +5,7 @@ namespace ConsoleAppOne
 {
    internal class Program
    {
-      static void Main(string[] args)
+      static void Main()
       {
          // Часть 1: Консоль передаёт данные в форму
          Console.Write("Введите ваше имя: ");
