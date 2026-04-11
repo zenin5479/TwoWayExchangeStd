@@ -27,7 +27,7 @@ namespace ConsoleAppOne
 
       public DataForm(string userName)
       {
-         throw new System.NotImplementedException();
+         //throw new System.NotImplementedException();
       }
    }
 }
