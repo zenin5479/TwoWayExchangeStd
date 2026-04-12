@@ -1,6 +1,6 @@
 ﻿namespace ConsoleAppOne
 {
-   partial class DataForm
+   partial class FormOne
    {
       /// <summary>
       /// Required designer variable.

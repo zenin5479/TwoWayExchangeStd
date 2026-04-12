@@ -2,13 +2,13 @@
 
 namespace ConsoleAppOne
 {
-   public partial class DataForm : Form
+   public partial class FormOne : Form
    {
       // Свойства для чтения результатов после закрытия
       public bool UserAgreed { get; private set; }
       public string UserComment { get; private set; }
 
-      public DataForm(string initialName)
+      public FormOne(string initialName)
       {
          InitializeComponent();
 
