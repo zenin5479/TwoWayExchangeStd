@@ -52,6 +52,7 @@
          closeButton.TabIndex = 9;
          closeButton.Text = "Закрыть и передать данные";
          closeButton.UseVisualStyleBackColor = true;
+         closeButton.Click += closeButton_Click;
          // 
          // commentTextBox
          // 

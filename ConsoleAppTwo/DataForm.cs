@@ -15,9 +15,19 @@ namespace ConsoleAppTwo
       public string UserComment { get; private set; }
 
 
-      public DataForm()
+      public DataForm(string initialName)
       {
          InitializeComponent();
+
+         greetingLabel.Text = string.Format("Привет, {0}!", initialName);
+      }
+
+      private void closeButton_Click(object sender, EventArgs e)
+      {
+         // Перед закрытием сохраняем данные в свойства
+         UserAgreed = agreeCheckBox.Checked;
+         UserComment = commentTextBox.Text;
+         Close();
       }
    }
 }
