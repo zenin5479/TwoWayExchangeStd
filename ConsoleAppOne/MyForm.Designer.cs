@@ -35,7 +35,7 @@
          // 
          closeButton.Location = new System.Drawing.Point(12, 12);
          closeButton.Name = "closeButton";
-         closeButton.Size = new System.Drawing.Size(177, 72);
+         closeButton.Size = new System.Drawing.Size(150, 70);
          closeButton.TabIndex = 4;
          closeButton.Text = "Закрыть форму";
          closeButton.UseVisualStyleBackColor = true;
@@ -45,7 +45,7 @@
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         ClientSize = new System.Drawing.Size(339, 181);
+         ClientSize = new System.Drawing.Size(324, 181);
          Controls.Add(closeButton);
          Name = "MyForm";
          StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
