@@ -91,7 +91,7 @@
          Controls.Add(commentLabel);
          Controls.Add(agreeCheckBox);
          Name = "DataForm";
-         Text = "Form1";
+         Text = "Форма для передачи данных";
          ResumeLayout(false);
          PerformLayout();
       }
