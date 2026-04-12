@@ -92,6 +92,7 @@
          Controls.Add(commentLabel);
          Controls.Add(agreeCheckBox);
          Name = "DataForm";
+         StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
          Text = "Форма для передачи данных";
          ResumeLayout(false);
          PerformLayout();
