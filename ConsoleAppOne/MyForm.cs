@@ -8,18 +8,14 @@ namespace ConsoleAppOne
       public bool UserAgreed { get; private set; }
       public string UserComment { get; private set; }
 
-      public MyForm(string initialName)
+      public MyForm()
       {
          InitializeComponent();
-
-         greetingLabel.Text = string.Format("Привет, {0}!", initialName);
       }
 
       private void closeButton_Click(object sender, System.EventArgs e)
       {
-         // Перед закрытием сохраняем данные в свойства
-         UserAgreed = agreeCheckBox.Checked;
-         UserComment = commentTextBox.Text;
+        
          Close();
       }
    }
