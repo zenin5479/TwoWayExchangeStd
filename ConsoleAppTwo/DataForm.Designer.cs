@@ -38,7 +38,7 @@
          // greetingLabel
          // 
          greetingLabel.AutoSize = true;
-         greetingLabel.Location = new System.Drawing.Point(33, 29);
+         greetingLabel.Location = new System.Drawing.Point(12, 9);
          greetingLabel.Name = "greetingLabel";
          greetingLabel.Size = new System.Drawing.Size(115, 15);
          greetingLabel.TabIndex = 10;
@@ -46,7 +46,7 @@
          // 
          // closeButton
          // 
-         closeButton.Location = new System.Drawing.Point(33, 166);
+         closeButton.Location = new System.Drawing.Point(173, 261);
          closeButton.Name = "closeButton";
          closeButton.Size = new System.Drawing.Size(174, 23);
          closeButton.TabIndex = 9;
@@ -56,7 +56,7 @@
          // 
          // commentTextBox
          // 
-         commentTextBox.Location = new System.Drawing.Point(33, 87);
+         commentTextBox.Location = new System.Drawing.Point(173, 182);
          commentTextBox.Multiline = true;
          commentTextBox.Name = "commentTextBox";
          commentTextBox.Size = new System.Drawing.Size(315, 73);
@@ -65,7 +65,7 @@
          // commentLabel
          // 
          commentLabel.AutoSize = true;
-         commentLabel.Location = new System.Drawing.Point(33, 69);
+         commentLabel.Location = new System.Drawing.Point(173, 164);
          commentLabel.Name = "commentLabel";
          commentLabel.Size = new System.Drawing.Size(87, 15);
          commentLabel.TabIndex = 7;
@@ -74,7 +74,7 @@
          // agreeCheckBox
          // 
          agreeCheckBox.AutoSize = true;
-         agreeCheckBox.Location = new System.Drawing.Point(33, 47);
+         agreeCheckBox.Location = new System.Drawing.Point(173, 142);
          agreeCheckBox.Name = "agreeCheckBox";
          agreeCheckBox.Size = new System.Drawing.Size(159, 19);
          agreeCheckBox.TabIndex = 6;
