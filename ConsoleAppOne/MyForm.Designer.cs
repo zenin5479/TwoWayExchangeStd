@@ -35,7 +35,7 @@
          // 
          closeButton.Location = new System.Drawing.Point(12, 12);
          closeButton.Name = "closeButton";
-         closeButton.Size = new System.Drawing.Size(150, 70);
+         closeButton.Size = new System.Drawing.Size(300, 42);
          closeButton.TabIndex = 4;
          closeButton.Text = "Закрыть форму";
          closeButton.UseVisualStyleBackColor = true;
