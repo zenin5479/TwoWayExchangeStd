@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace ConsoleAppTwo
 {
-   public partial class Form1 : Form
+   public partial class DataForm : Form
    {
-      public Form1()
+      public DataForm()
       {
          InitializeComponent();
       }
