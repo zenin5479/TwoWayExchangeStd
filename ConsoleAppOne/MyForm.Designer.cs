@@ -33,7 +33,7 @@
          // 
          // closeButton
          // 
-         closeButton.Location = new System.Drawing.Point(12, 146);
+         closeButton.Location = new System.Drawing.Point(12, 12);
          closeButton.Name = "closeButton";
          closeButton.Size = new System.Drawing.Size(174, 23);
          closeButton.TabIndex = 4;

@@ -11,7 +11,7 @@ namespace ConsoleAppOne
 
       private void closeButton_Click(object sender, System.EventArgs e)
       {
-        
+
          Close();
       }
    }
