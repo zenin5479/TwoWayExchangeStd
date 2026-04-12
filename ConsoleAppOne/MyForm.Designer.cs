@@ -81,7 +81,7 @@
          greetingLabel.TabIndex = 5;
          greetingLabel.Text = "Данные из консоли";
          // 
-         // DataForm
+         // MyForm
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -91,9 +91,9 @@
          Controls.Add(commentTextBox);
          Controls.Add(commentLabel);
          Controls.Add(agreeCheckBox);
-         Name = "DataForm";
+         Name = "MyForm";
          StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-         Text = "Форма для передачи данных";
+         Text = "Моя форма из консоли";
          ResumeLayout(false);
          PerformLayout();
       }
