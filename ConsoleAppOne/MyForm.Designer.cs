@@ -28,39 +28,8 @@
       /// </summary>
       private void InitializeComponent()
       {
-         agreeCheckBox = new System.Windows.Forms.CheckBox();
-         commentLabel = new System.Windows.Forms.Label();
-         commentTextBox = new System.Windows.Forms.TextBox();
          closeButton = new System.Windows.Forms.Button();
-         greetingLabel = new System.Windows.Forms.Label();
          SuspendLayout();
-         // 
-         // agreeCheckBox
-         // 
-         agreeCheckBox.AutoSize = true;
-         agreeCheckBox.Location = new System.Drawing.Point(12, 27);
-         agreeCheckBox.Name = "agreeCheckBox";
-         agreeCheckBox.Size = new System.Drawing.Size(159, 19);
-         agreeCheckBox.TabIndex = 1;
-         agreeCheckBox.Text = "Я согласен с условиями";
-         agreeCheckBox.UseVisualStyleBackColor = true;
-         // 
-         // commentLabel
-         // 
-         commentLabel.AutoSize = true;
-         commentLabel.Location = new System.Drawing.Point(12, 49);
-         commentLabel.Name = "commentLabel";
-         commentLabel.Size = new System.Drawing.Size(87, 15);
-         commentLabel.TabIndex = 2;
-         commentLabel.Text = "Комментарий:";
-         // 
-         // commentTextBox
-         // 
-         commentTextBox.Location = new System.Drawing.Point(12, 67);
-         commentTextBox.Multiline = true;
-         commentTextBox.Name = "commentTextBox";
-         commentTextBox.Size = new System.Drawing.Size(315, 73);
-         commentTextBox.TabIndex = 3;
          // 
          // closeButton
          // 
@@ -68,41 +37,23 @@
          closeButton.Name = "closeButton";
          closeButton.Size = new System.Drawing.Size(174, 23);
          closeButton.TabIndex = 4;
-         closeButton.Text = "Закрыть и передать данные";
+         closeButton.Text = "Закрыть";
          closeButton.UseVisualStyleBackColor = true;
          closeButton.Click += closeButton_Click;
-         // 
-         // greetingLabel
-         // 
-         greetingLabel.AutoSize = true;
-         greetingLabel.Location = new System.Drawing.Point(12, 9);
-         greetingLabel.Name = "greetingLabel";
-         greetingLabel.Size = new System.Drawing.Size(115, 15);
-         greetingLabel.TabIndex = 5;
-         greetingLabel.Text = "Данные из консоли";
          // 
          // MyForm
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(339, 181);
-         Controls.Add(greetingLabel);
          Controls.Add(closeButton);
-         Controls.Add(commentTextBox);
-         Controls.Add(commentLabel);
-         Controls.Add(agreeCheckBox);
          Name = "MyForm";
          StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
          Text = "Моя форма из консоли";
          ResumeLayout(false);
-         PerformLayout();
       }
 
       #endregion
-      private System.Windows.Forms.CheckBox agreeCheckBox;
-      private System.Windows.Forms.Label commentLabel;
-      private System.Windows.Forms.TextBox commentTextBox;
       private System.Windows.Forms.Button closeButton;
-      private System.Windows.Forms.Label greetingLabel;
    }
 }
