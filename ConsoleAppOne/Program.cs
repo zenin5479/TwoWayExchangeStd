@@ -16,7 +16,7 @@ namespace ConsoleAppOne
          Application.SetCompatibleTextRenderingDefault(false);
 
          // Создаём форму, передавая начальные данные через конструктор
-         FormOne myForm = new FormOne(userName);
+         MyForm myForm = new MyForm(userName);
 
          // Часть 2: Показываем форму (консоль ждёт)
          Console.WriteLine("Открываем форму... Введите данные в окне и закройте его");
