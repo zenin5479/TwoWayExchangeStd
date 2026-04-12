@@ -7,32 +7,21 @@ namespace ConsoleAppOne
    {
       static void Main()
       {
-         // Часть 1: Консоль передаёт данные в форму
-         Console.Write("Введите ваше имя: ");
-         string userName = Console.ReadLine();
+         Console.WriteLine("Запуск Windows Forms из консольного приложения...");
 
-         // Включаем визуальные стили (опционально)
+         // Включаем визуальные стили для современного вида элементов управления
          Application.EnableVisualStyles();
          Application.SetCompatibleTextRenderingDefault(false);
 
-         // Создаём форму, передавая начальные данные через конструктор
-         MyForm myForm = new MyForm(userName);
+         // Создаем экземпляр формы
+         MyForm form = new MyForm();
 
-         // Часть 2: Показываем форму (консоль ждёт)
-         Console.WriteLine("Открываем форму... Введите данные в окне и закройте его");
-         // Здесь выполнение консоли останавливается
-         Application.Run(myForm);
+         Console.WriteLine("Показываем форму. Закройте форму, чтобы завершить работу");
 
-         // Часть 3: Форма закрыта, читаем результаты, получаем данные из публичных свойств формы
-         bool userChoice = myForm.UserAgreed;
-         string userComment = myForm.UserComment;
+         // Запускаем стандартный цикл обработки сообщений Windows
+         Application.Run(form);
 
-         Console.WriteLine("\nФорма закрыта. Получены данные:");
-         Console.WriteLine("Пользователь согласился: {0}", userChoice);
-         Console.WriteLine("Комментарий: {0}", userComment);
-
-         Console.WriteLine("\nНажмите любую клавишу для выхода...");
-         Console.ReadKey();
+         Console.WriteLine("Форма закрыта. Программа завершена");
       }
    }
 }
