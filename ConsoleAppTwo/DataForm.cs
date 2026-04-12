@@ -14,7 +14,6 @@ namespace ConsoleAppTwo
       public bool UserAgreed { get; private set; }
       public string UserComment { get; private set; }
 
-
       public DataForm(string initialName)
       {
          InitializeComponent();
