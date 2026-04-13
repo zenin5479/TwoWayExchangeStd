@@ -29,7 +29,7 @@
       private void InitializeComponent()
       {
          helloButton = new System.Windows.Forms.Button();
-         label1 = new System.Windows.Forms.Label();
+         messageLabel = new System.Windows.Forms.Label();
          SuspendLayout();
          // 
          // helloButton
@@ -41,21 +41,21 @@
          helloButton.Text = "button1";
          helloButton.UseVisualStyleBackColor = true;
          // 
-         // label1
+         // messageLabel
          // 
-         label1.AutoSize = true;
-         label1.Location = new System.Drawing.Point(29, 95);
-         label1.Name = "label1";
-         label1.Size = new System.Drawing.Size(38, 15);
-         label1.TabIndex = 1;
-         label1.Text = "label1";
+         messageLabel.AutoSize = true;
+         messageLabel.Location = new System.Drawing.Point(19, 76);
+         messageLabel.Name = "messageLabel";
+         messageLabel.Size = new System.Drawing.Size(35, 15);
+         messageLabel.TabIndex = 1;
+         messageLabel.Text = "Label";
          // 
          // MainForm
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(384, 261);
-         Controls.Add(label1);
+         Controls.Add(messageLabel);
          Controls.Add(helloButton);
          Name = "MainForm";
          StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -67,6 +67,6 @@
       #endregion
 
       private System.Windows.Forms.Button helloButton;
-      private System.Windows.Forms.Label label1;
+      private System.Windows.Forms.Label messageLabel;
    }
 }
