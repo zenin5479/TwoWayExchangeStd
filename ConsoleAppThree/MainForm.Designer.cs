@@ -38,7 +38,7 @@
          helloButton.Name = "helloButton";
          helloButton.Size = new System.Drawing.Size(75, 23);
          helloButton.TabIndex = 0;
-         helloButton.Text = "button1";
+         helloButton.Text = "Нажми меня!";
          helloButton.UseVisualStyleBackColor = true;
          // 
          // messageLabel
