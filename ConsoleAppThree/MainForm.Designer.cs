@@ -28,13 +28,24 @@
       /// </summary>
       private void InitializeComponent()
       {
+         helloButton = new System.Windows.Forms.Button();
          SuspendLayout();
+         // 
+         // helloButton
+         // 
+         helloButton.Location = new System.Drawing.Point(19, 19);
+         helloButton.Name = "helloButton";
+         helloButton.Size = new System.Drawing.Size(75, 23);
+         helloButton.TabIndex = 0;
+         helloButton.Text = "button1";
+         helloButton.UseVisualStyleBackColor = true;
          // 
          // MainForm
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(384, 261);
+         Controls.Add(helloButton);
          Name = "MainForm";
          StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
          Text = "MainForm";
@@ -42,5 +53,7 @@
       }
 
       #endregion
+
+      private System.Windows.Forms.Button helloButton;
    }
 }
