@@ -40,6 +40,7 @@
          helloButton.TabIndex = 0;
          helloButton.Text = "Нажми меня!";
          helloButton.UseVisualStyleBackColor = true;
+         helloButton.Click += helloButton_Click;
          // 
          // messageLabel
          // 
