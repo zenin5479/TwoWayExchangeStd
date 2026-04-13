@@ -34,7 +34,7 @@
          // 
          // helloButton
          // 
-         helloButton.Location = new System.Drawing.Point(19, 19);
+         helloButton.Location = new System.Drawing.Point(12, 27);
          helloButton.Name = "helloButton";
          helloButton.Size = new System.Drawing.Size(155, 23);
          helloButton.TabIndex = 0;
@@ -44,7 +44,7 @@
          // messageLabel
          // 
          messageLabel.AutoSize = true;
-         messageLabel.Location = new System.Drawing.Point(19, 76);
+         messageLabel.Location = new System.Drawing.Point(12, 9);
          messageLabel.Name = "messageLabel";
          messageLabel.Size = new System.Drawing.Size(132, 15);
          messageLabel.TabIndex = 1;
