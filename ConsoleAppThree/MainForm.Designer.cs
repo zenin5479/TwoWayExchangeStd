@@ -46,9 +46,9 @@
          messageLabel.AutoSize = true;
          messageLabel.Location = new System.Drawing.Point(19, 76);
          messageLabel.Name = "messageLabel";
-         messageLabel.Size = new System.Drawing.Size(35, 15);
+         messageLabel.Size = new System.Drawing.Size(132, 15);
          messageLabel.TabIndex = 1;
-         messageLabel.Text = "Label";
+         messageLabel.Text = "Нажмите кнопку ниже";
          // 
          // MainForm
          // 
