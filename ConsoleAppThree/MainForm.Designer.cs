@@ -36,7 +36,7 @@
          // 
          helloButton.Location = new System.Drawing.Point(19, 19);
          helloButton.Name = "helloButton";
-         helloButton.Size = new System.Drawing.Size(75, 23);
+         helloButton.Size = new System.Drawing.Size(155, 23);
          helloButton.TabIndex = 0;
          helloButton.Text = "Нажми меня!";
          helloButton.UseVisualStyleBackColor = true;
