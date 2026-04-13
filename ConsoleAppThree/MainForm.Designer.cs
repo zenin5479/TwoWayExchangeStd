@@ -29,6 +29,7 @@
       private void InitializeComponent()
       {
          helloButton = new System.Windows.Forms.Button();
+         label1 = new System.Windows.Forms.Label();
          SuspendLayout();
          // 
          // helloButton
@@ -40,20 +41,32 @@
          helloButton.Text = "button1";
          helloButton.UseVisualStyleBackColor = true;
          // 
+         // label1
+         // 
+         label1.AutoSize = true;
+         label1.Location = new System.Drawing.Point(29, 95);
+         label1.Name = "label1";
+         label1.Size = new System.Drawing.Size(38, 15);
+         label1.TabIndex = 1;
+         label1.Text = "label1";
+         // 
          // MainForm
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(384, 261);
+         Controls.Add(label1);
          Controls.Add(helloButton);
          Name = "MainForm";
          StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
          Text = "MainForm";
          ResumeLayout(false);
+         PerformLayout();
       }
 
       #endregion
 
       private System.Windows.Forms.Button helloButton;
+      private System.Windows.Forms.Label label1;
    }
 }
