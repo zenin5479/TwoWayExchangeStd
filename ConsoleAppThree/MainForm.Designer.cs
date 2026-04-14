@@ -36,7 +36,7 @@
          // 
          helloButton.Location = new System.Drawing.Point(12, 27);
          helloButton.Name = "helloButton";
-         helloButton.Size = new System.Drawing.Size(132, 50);
+         helloButton.Size = new System.Drawing.Size(260, 50);
          helloButton.TabIndex = 0;
          helloButton.Text = "Нажми меня!";
          helloButton.UseVisualStyleBackColor = true;
@@ -55,7 +55,7 @@
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         ClientSize = new System.Drawing.Size(284, 111);
+         ClientSize = new System.Drawing.Size(284, 89);
          Controls.Add(messageLabel);
          Controls.Add(helloButton);
          Name = "MainForm";
