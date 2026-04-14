@@ -13,7 +13,7 @@ namespace ConsoleAppTwo
       {
          InitializeComponent();
 
-         greetingLabel.Text = string.Format("Привет, {0}!", initialName);
+         greetingLabel.Text = string.Format(@"Привет, {0}!", initialName);
       }
 
       private void closeButton_Click(object sender, EventArgs e)
