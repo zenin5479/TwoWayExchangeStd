@@ -55,7 +55,7 @@
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         ClientSize = new System.Drawing.Size(198, 198);
+         ClientSize = new System.Drawing.Size(284, 111);
          Controls.Add(messageLabel);
          Controls.Add(helloButton);
          Name = "MainForm";
