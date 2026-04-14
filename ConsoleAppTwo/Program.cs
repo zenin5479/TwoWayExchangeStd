@@ -8,7 +8,7 @@ namespace ConsoleAppTwo
       static void Main()
       {
          // Часть 1: Консоль передаёт данные в форму
-         Console.Write("Введите ваше имя: ");
+         Console.Write(@"Введите ваше имя: ");
          string userName = Console.ReadLine();
 
          // Включаем визуальные стили (опционально)
@@ -19,7 +19,7 @@ namespace ConsoleAppTwo
          DataForm myForm = new DataForm(userName);
 
          // Часть 2: Показываем форму (консоль ждёт)
-         Console.WriteLine("Открываем форму... Введите данные в окне и закройте его");
+         Console.WriteLine(@"Открываем форму... Введите данные в окне и закройте его");
          // Здесь выполнение консоли останавливается
          Application.Run(myForm);
 
