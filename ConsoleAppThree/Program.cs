@@ -12,7 +12,7 @@ namespace ConsoleAppThree
          Console.WriteLine(@"Нажмите любую клавишу для запуска Windows Forms формы");
          Console.ReadKey();
 
-         Console.WriteLine("Запуск Windows Forms...");
+         Console.WriteLine(@"Запуск Windows Forms...");
 
          // Включаем визуальные стили
          Application.EnableVisualStyles();
