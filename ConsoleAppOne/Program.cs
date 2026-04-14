@@ -7,7 +7,7 @@ namespace ConsoleAppOne
    {
       static void Main()
       {
-         Console.WriteLine("Запуск Windows Forms из консольного приложения...");
+         Console.WriteLine(@"Запуск Windows Forms из консольного приложения...");
 
          // Включаем визуальные стили для современного вида элементов управления
          Application.EnableVisualStyles();
@@ -16,7 +16,7 @@ namespace ConsoleAppOne
          // Создаем экземпляр формы
          MyForm form = new MyForm();
 
-         Console.WriteLine("Показываем форму. Закройте форму, чтобы завершить работу");
+         Console.WriteLine(@"Показываем форму. Закройте форму, чтобы завершить работу");
 
          // Запускаем стандартный цикл обработки сообщений Windows
          Application.Run(form);
