@@ -22,7 +22,7 @@ namespace ConsoleAppThree
          Application.Run(new MainForm());
 
          // Этот код выполнится только после закрытия формы
-         Console.WriteLine("Форма закрыта. Консоль снова активна!");
+         Console.WriteLine(@"Форма закрыта. Консоль снова активна!");
          Console.WriteLine("Нажмите любую клавишу для выхода...");
          Console.ReadKey();
       }
