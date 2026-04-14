@@ -21,7 +21,7 @@ namespace ConsoleAppOne
          // Запускаем стандартный цикл обработки сообщений Windows
          Application.Run(form);
 
-         Console.WriteLine("Форма закрыта. Программа завершена");
+         Console.WriteLine(@"Форма закрыта. Программа завершена");
       }
    }
 }
