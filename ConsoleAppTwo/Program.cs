@@ -28,7 +28,7 @@ namespace ConsoleAppTwo
          string userComment = myForm.UserComment;
 
          Console.WriteLine(@"Форма закрыта. Получены данные:");
-         Console.WriteLine("Пользователь согласился: {0}", userChoice);
+         Console.WriteLine(@"Пользователь согласился: {0}", userChoice);
          Console.WriteLine("Комментарий: {0}", userComment);
 
          Console.WriteLine("\nНажмите любую клавишу для выхода...");
