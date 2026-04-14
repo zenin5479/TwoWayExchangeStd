@@ -27,8 +27,7 @@ namespace ConsoleAppTwo
          bool userChoice = myForm.UserAgreed;
          string userComment = myForm.UserComment;
 
-         Console.WriteLine(@"
-Форма закрыта. Получены данные:");
+         Console.WriteLine(@"Форма закрыта. Получены данные:");
          Console.WriteLine("Пользователь согласился: {0}", userChoice);
          Console.WriteLine("Комментарий: {0}", userComment);
 
