@@ -8,7 +8,7 @@ namespace ConsoleAppThree
       [STAThread]
       static void Main()
       {
-         Console.WriteLine("Консольное приложение запущено...");
+         Console.WriteLine(@"Консольное приложение запущено...");
          Console.WriteLine("Нажмите любую клавишу для запуска Windows Forms формы");
          Console.ReadKey();
 
