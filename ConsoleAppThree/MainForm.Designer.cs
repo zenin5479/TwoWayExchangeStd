@@ -55,12 +55,12 @@
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         ClientSize = new System.Drawing.Size(156, 198);
+         ClientSize = new System.Drawing.Size(198, 198);
          Controls.Add(messageLabel);
          Controls.Add(helloButton);
          Name = "MainForm";
          StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-         Text = "MainForm";
+         Text = "Моя Windows Forms";
          ResumeLayout(false);
          PerformLayout();
       }
