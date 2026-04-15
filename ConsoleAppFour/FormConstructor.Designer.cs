@@ -29,7 +29,6 @@
       private void InitializeComponent()
       {
          messageLabel = new System.Windows.Forms.Label();
-         returnButton = new System.Windows.Forms.Button();
          SuspendLayout();
          // 
          // messageLabel
@@ -41,22 +40,11 @@
          messageLabel.TabIndex = 0;
          messageLabel.Text = "Получение данных из консоли";
          // 
-         // returnButton
-         // 
-         returnButton.Location = new System.Drawing.Point(12, 56);
-         returnButton.Name = "returnButton";
-         returnButton.Size = new System.Drawing.Size(177, 120);
-         returnButton.TabIndex = 2;
-         returnButton.Text = "Вернуть в консоль";
-         returnButton.UseVisualStyleBackColor = true;
-         returnButton.Click += returnButton_Click;
-         // 
          // FormConstructor
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(377, 190);
-         Controls.Add(returnButton);
          Controls.Add(messageLabel);
          Name = "FormConstructor";
          StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -68,6 +56,5 @@
       #endregion
 
       private System.Windows.Forms.Label messageLabel;
-      private System.Windows.Forms.Button returnButton;
    }
 }
