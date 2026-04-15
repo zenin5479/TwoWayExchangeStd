@@ -44,7 +44,7 @@
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         ClientSize = new System.Drawing.Size(364, 41);
+         ClientSize = new System.Drawing.Size(369, 41);
          Controls.Add(messageLabel);
          Name = "FormConstructor";
          StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
