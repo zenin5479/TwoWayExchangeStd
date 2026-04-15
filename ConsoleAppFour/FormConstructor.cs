@@ -1,5 +1,4 @@
-﻿using System;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 using System.Drawing;
 
 namespace ConsoleAppFour
@@ -11,13 +10,6 @@ namespace ConsoleAppFour
       {
          InitializeComponent();
          messageLabel.Text = $"Получено из консоли: {initialMessage}";
-      }
-
-      private void returnButton_Click(object sender, EventArgs e)
-      {
-         // Сохраняем данные для последующего использования
-         //Program.ReturnedData = inputBox.Text;
-         Close();
       }
    }
 }
