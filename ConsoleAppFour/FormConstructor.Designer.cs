@@ -70,7 +70,7 @@
          Controls.Add(messageLabel);
          Name = "FormConstructor";
          StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-         Text = "Обмен данными";
+         Text = "Передача данных через конструктор";
          ResumeLayout(false);
          PerformLayout();
       }
