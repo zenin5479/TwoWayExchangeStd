@@ -10,7 +10,7 @@ namespace ConsoleAppFour
       [STAThread]
       static void Main(string[] args)
       {
-         Console.WriteLine("Введите сообщение для формы:");
+         Console.WriteLine(@"Введите сообщение для формы:");
          string consoleData = Console.ReadLine();
 
          Application.EnableVisualStyles();
