@@ -15,7 +15,7 @@ namespace ConsoleAppFour
       private void returnButton_Click(object sender, EventArgs e)
       {
          // Сохраняем данные для последующего использования
-         Program.ReturnedData = inputBox.Text;
+         //Program.ReturnedData = inputBox.Text;
          Close();
       }
    }
