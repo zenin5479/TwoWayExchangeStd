@@ -47,7 +47,7 @@
          inputBox.Location = new System.Drawing.Point(12, 27);
          inputBox.Multiline = true;
          inputBox.Name = "inputBox";
-         inputBox.Size = new System.Drawing.Size(100, 23);
+         inputBox.Size = new System.Drawing.Size(177, 23);
          inputBox.TabIndex = 1;
          // 
          // returnButton
