@@ -30,6 +30,7 @@
       {
          messageLabel = new System.Windows.Forms.Label();
          inputBox = new System.Windows.Forms.TextBox();
+         returnButton = new System.Windows.Forms.Button();
          SuspendLayout();
          // 
          // messageLabel
@@ -48,11 +49,21 @@
          inputBox.Size = new System.Drawing.Size(100, 23);
          inputBox.TabIndex = 1;
          // 
+         // returnButton
+         // 
+         returnButton.Location = new System.Drawing.Point(66, 176);
+         returnButton.Name = "returnButton";
+         returnButton.Size = new System.Drawing.Size(75, 23);
+         returnButton.TabIndex = 2;
+         returnButton.Text = "button1";
+         returnButton.UseVisualStyleBackColor = true;
+         // 
          // FormConstructor
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(384, 261);
+         Controls.Add(returnButton);
          Controls.Add(inputBox);
          Controls.Add(messageLabel);
          Name = "FormConstructor";
@@ -66,5 +77,6 @@
 
       private System.Windows.Forms.Label messageLabel;
       private System.Windows.Forms.TextBox inputBox;
+      private System.Windows.Forms.Button returnButton;
    }
 }
