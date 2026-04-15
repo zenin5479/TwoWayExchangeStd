@@ -52,9 +52,9 @@
          // 
          // returnButton
          // 
-         returnButton.Location = new System.Drawing.Point(66, 176);
+         returnButton.Location = new System.Drawing.Point(158, 129);
          returnButton.Name = "returnButton";
-         returnButton.Size = new System.Drawing.Size(141, 23);
+         returnButton.Size = new System.Drawing.Size(150, 120);
          returnButton.TabIndex = 2;
          returnButton.Text = "Вернуть в консоль";
          returnButton.UseVisualStyleBackColor = true;
