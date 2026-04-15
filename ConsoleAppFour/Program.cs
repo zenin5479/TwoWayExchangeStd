@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Windows.Forms;
 
+// Передача данных из консоли в форму через конструктор формы 
+
 namespace ConsoleAppFour
 {
    internal class Program
