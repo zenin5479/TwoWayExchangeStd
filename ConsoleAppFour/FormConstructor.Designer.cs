@@ -52,7 +52,7 @@
          // 
          // returnButton
          // 
-         returnButton.Location = new System.Drawing.Point(158, 129);
+         returnButton.Location = new System.Drawing.Point(12, 56);
          returnButton.Name = "returnButton";
          returnButton.Size = new System.Drawing.Size(150, 120);
          returnButton.TabIndex = 2;
