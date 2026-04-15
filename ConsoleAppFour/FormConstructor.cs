@@ -1,5 +1,4 @@
 ﻿using System.Windows.Forms;
-using System.Drawing;
 
 namespace ConsoleAppFour
 {
@@ -9,7 +8,7 @@ namespace ConsoleAppFour
       public FormConstructor(string initialMessage)
       {
          InitializeComponent();
-         messageLabel.Text = $"Получено из консоли: {initialMessage}";
+         messageLabel.Text = string.Format(@"Получено из консоли: {0}", initialMessage);
       }
    }
 }
