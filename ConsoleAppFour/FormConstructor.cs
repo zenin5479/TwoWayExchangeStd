@@ -10,7 +10,7 @@ namespace ConsoleAppFour
 {
    public partial class FormConstructor : Form
    {
-      public FormConstructor()
+      public FormConstructor(string initialMessage)
       {
          InitializeComponent();
       }
