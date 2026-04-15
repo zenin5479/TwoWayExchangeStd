@@ -15,7 +15,7 @@ namespace ConsoleAppFour
 
          Application.EnableVisualStyles();
          Application.SetCompatibleTextRenderingDefault(false);
-         Application.Run(new MainForm(userInput));
+         Application.Run(new FormConstructor(userInput));
 
          Console.WriteLine("Работа завершена. Нажмите любую клавишу...");
          Console.ReadKey();
