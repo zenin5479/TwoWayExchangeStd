@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
+using System.Drawing;
 
 namespace ConsoleAppFour
 {
@@ -13,7 +9,14 @@ namespace ConsoleAppFour
       public FormConstructor(string initialMessage)
       {
          InitializeComponent();
-         //messageLabel.Text = $"Получено из консоли: {initialMessage}";
+         messageLabel.Text = $"Получено из консоли: {initialMessage}";
+      }
+
+      private void returnButton_Click(object sender, EventArgs e)
+      {
+         // Сохраняем данные для последующего использования
+         Program.ReturnedData = inputBox.Text;
+         Close();
       }
    }
 }

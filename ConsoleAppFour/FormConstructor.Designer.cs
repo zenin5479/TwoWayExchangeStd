@@ -58,12 +58,13 @@
          returnButton.TabIndex = 2;
          returnButton.Text = "Вернуть в консоль";
          returnButton.UseVisualStyleBackColor = true;
+         returnButton.Click += returnButton_Click;
          // 
          // FormConstructor
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         ClientSize = new System.Drawing.Size(257, 190);
+         ClientSize = new System.Drawing.Size(265, 190);
          Controls.Add(returnButton);
          Controls.Add(inputBox);
          Controls.Add(messageLabel);
