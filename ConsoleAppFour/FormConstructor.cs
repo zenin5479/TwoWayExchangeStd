@@ -13,6 +13,7 @@ namespace ConsoleAppFour
       public FormConstructor(string initialMessage)
       {
          InitializeComponent();
+         messageLabel.Text = $"Получено из консоли: {initialMessage}";
       }
    }
 }
