@@ -36,7 +36,7 @@
          // messageLabel
          // 
          messageLabel.AutoSize = true;
-         messageLabel.Location = new System.Drawing.Point(53, 42);
+         messageLabel.Location = new System.Drawing.Point(12, 9);
          messageLabel.Name = "messageLabel";
          messageLabel.Size = new System.Drawing.Size(38, 15);
          messageLabel.TabIndex = 0;
@@ -44,7 +44,7 @@
          // 
          // inputBox
          // 
-         inputBox.Location = new System.Drawing.Point(63, 100);
+         inputBox.Location = new System.Drawing.Point(12, 27);
          inputBox.Multiline = true;
          inputBox.Name = "inputBox";
          inputBox.Size = new System.Drawing.Size(100, 23);
