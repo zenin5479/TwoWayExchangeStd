@@ -54,7 +54,7 @@
          // 
          returnButton.Location = new System.Drawing.Point(12, 56);
          returnButton.Name = "returnButton";
-         returnButton.Size = new System.Drawing.Size(150, 120);
+         returnButton.Size = new System.Drawing.Size(177, 120);
          returnButton.TabIndex = 2;
          returnButton.Text = "Вернуть в консоль";
          returnButton.UseVisualStyleBackColor = true;
@@ -63,7 +63,7 @@
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         ClientSize = new System.Drawing.Size(384, 261);
+         ClientSize = new System.Drawing.Size(201, 261);
          Controls.Add(returnButton);
          Controls.Add(inputBox);
          Controls.Add(messageLabel);
