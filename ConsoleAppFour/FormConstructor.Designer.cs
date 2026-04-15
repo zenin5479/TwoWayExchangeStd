@@ -63,7 +63,7 @@
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         ClientSize = new System.Drawing.Size(201, 261);
+         ClientSize = new System.Drawing.Size(257, 190);
          Controls.Add(returnButton);
          Controls.Add(inputBox);
          Controls.Add(messageLabel);
