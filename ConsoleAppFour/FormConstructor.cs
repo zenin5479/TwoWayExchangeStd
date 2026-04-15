@@ -6,6 +6,7 @@ namespace ConsoleAppFour
 {
    public partial class FormConstructor : Form
    {
+      // Конструктор с параметром для приёма данных из консоли
       public FormConstructor(string initialMessage)
       {
          InitializeComponent();
