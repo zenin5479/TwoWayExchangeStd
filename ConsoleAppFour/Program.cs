@@ -8,7 +8,7 @@ namespace ConsoleAppFour
    internal class Program
    {
       [STAThread]
-      static void Main(string[] args)
+      static void Main()
       {
          Console.WriteLine(@"Введите сообщение для формы:");
          string consoleData = Console.ReadLine();
