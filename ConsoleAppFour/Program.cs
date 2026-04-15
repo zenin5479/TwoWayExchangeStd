@@ -10,14 +10,14 @@ namespace ConsoleAppFour
       [STAThread]
       static void Main()
       {
-         Console.WriteLine("Введите текст для отображения в форме:");
+         Console.WriteLine(@"Введите текст для отображения в форме:");
          string userInput = Console.ReadLine();
 
          Application.EnableVisualStyles();
          Application.SetCompatibleTextRenderingDefault(false);
          Application.Run(new FormConstructor(userInput));
 
-         Console.WriteLine("Работа завершена. Нажмите любую клавишу...");
+         Console.WriteLine(@"Работа завершена. Нажмите любую клавишу...");
          Console.ReadKey();
       }
    }
