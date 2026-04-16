@@ -28,18 +28,44 @@
       /// </summary>
       private void InitializeComponent()
       {
+         messageLabel = new System.Windows.Forms.Label();
+         returnButton = new System.Windows.Forms.Button();
          SuspendLayout();
+         // 
+         // messageLabel
+         // 
+         messageLabel.AutoSize = true;
+         messageLabel.Location = new System.Drawing.Point(12, 9);
+         messageLabel.Name = "messageLabel";
+         messageLabel.Size = new System.Drawing.Size(178, 15);
+         messageLabel.TabIndex = 1;
+         messageLabel.Text = "Получение данных из консоли";
+         // 
+         // returnButton
+         // 
+         returnButton.Location = new System.Drawing.Point(12, 27);
+         returnButton.Name = "returnButton";
+         returnButton.Size = new System.Drawing.Size(172, 23);
+         returnButton.TabIndex = 2;
+         returnButton.Text = "Вернуть в консоль";
+         returnButton.UseVisualStyleBackColor = true;
          // 
          // FormStaticField
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(414, 326);
+         Controls.Add(returnButton);
+         Controls.Add(messageLabel);
          Name = "FormStaticField";
          Text = "Двусторонний обмен через статическое поле";
          ResumeLayout(false);
+         PerformLayout();
       }
 
       #endregion
+
+      private System.Windows.Forms.Label messageLabel;
+      private System.Windows.Forms.Button returnButton;
    }
 }
