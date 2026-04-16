@@ -54,7 +54,7 @@
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         ClientSize = new System.Drawing.Size(414, 326);
+         ClientSize = new System.Drawing.Size(416, 73);
          Controls.Add(returnButton);
          Controls.Add(messageLabel);
          Name = "FormStaticField";
