@@ -28,10 +28,16 @@
       /// </summary>
       private void InitializeComponent()
       {
-         this.components = new System.ComponentModel.Container();
-         this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         this.ClientSize = new System.Drawing.Size(800, 450);
-         this.Text = "FormStaticField";
+         SuspendLayout();
+         // 
+         // FormStaticField
+         // 
+         AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+         ClientSize = new System.Drawing.Size(800, 450);
+         Name = "FormStaticField";
+         Text = "Двусторонний обмен через статическое поле";
+         ResumeLayout(false);
       }
 
       #endregion
