@@ -1,5 +1,9 @@
 ﻿using System;
 
+// Способ 2. Через статическое поле (двусторонний обмен)
+
+
+
 namespace ConsoleAppFive
 {
    internal class Program
