@@ -30,7 +30,7 @@
       {
          messageLabel = new System.Windows.Forms.Label();
          returnButton = new System.Windows.Forms.Button();
-         textBox1 = new System.Windows.Forms.TextBox();
+         inputBox = new System.Windows.Forms.TextBox();
          SuspendLayout();
          // 
          // messageLabel
@@ -52,20 +52,20 @@
          returnButton.UseVisualStyleBackColor = true;
          returnButton.Click += returnButton_Click;
          // 
-         // textBox1
+         // inputBox
          // 
-         textBox1.Location = new System.Drawing.Point(42, 83);
-         textBox1.Multiline = true;
-         textBox1.Name = "textBox1";
-         textBox1.Size = new System.Drawing.Size(100, 23);
-         textBox1.TabIndex = 3;
+         inputBox.Location = new System.Drawing.Point(42, 83);
+         inputBox.Multiline = true;
+         inputBox.Name = "inputBox";
+         inputBox.Size = new System.Drawing.Size(100, 23);
+         inputBox.TabIndex = 3;
          // 
          // FormStaticField
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(416, 190);
-         Controls.Add(textBox1);
+         Controls.Add(inputBox);
          Controls.Add(returnButton);
          Controls.Add(messageLabel);
          Name = "FormStaticField";
@@ -78,6 +78,6 @@
 
       private System.Windows.Forms.Label messageLabel;
       private System.Windows.Forms.Button returnButton;
-      private System.Windows.Forms.TextBox textBox1;
+      private System.Windows.Forms.TextBox inputBox;
    }
 }
