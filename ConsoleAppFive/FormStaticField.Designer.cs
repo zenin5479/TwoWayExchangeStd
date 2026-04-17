@@ -44,7 +44,7 @@
          // 
          // returnButton
          // 
-         returnButton.Location = new System.Drawing.Point(12, 74);
+         returnButton.Location = new System.Drawing.Point(12, 79);
          returnButton.Name = "returnButton";
          returnButton.Size = new System.Drawing.Size(170, 25);
          returnButton.TabIndex = 2;
@@ -57,14 +57,14 @@
          inputBox.Location = new System.Drawing.Point(12, 27);
          inputBox.Multiline = true;
          inputBox.Name = "inputBox";
-         inputBox.Size = new System.Drawing.Size(420, 41);
+         inputBox.Size = new System.Drawing.Size(420, 46);
          inputBox.TabIndex = 3;
          // 
          // FormStaticField
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         ClientSize = new System.Drawing.Size(444, 116);
+         ClientSize = new System.Drawing.Size(444, 111);
          Controls.Add(inputBox);
          Controls.Add(returnButton);
          Controls.Add(messageLabel);
