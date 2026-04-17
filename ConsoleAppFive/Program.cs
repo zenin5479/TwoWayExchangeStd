@@ -14,7 +14,7 @@ namespace ConsoleAppFive
       [STAThread]
       static void Main()
       {
-         Console.WriteLine("Консоль: введите данные для формы:");
+         Console.WriteLine(@"Консоль: введите данные для формы:");
          string consoleInput = Console.ReadLine();
 
          Application.EnableVisualStyles();
