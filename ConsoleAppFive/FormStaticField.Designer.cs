@@ -57,7 +57,7 @@
          inputBox.Location = new System.Drawing.Point(12, 27);
          inputBox.Multiline = true;
          inputBox.Name = "inputBox";
-         inputBox.Size = new System.Drawing.Size(100, 23);
+         inputBox.Size = new System.Drawing.Size(180, 49);
          inputBox.TabIndex = 3;
          // 
          // FormStaticField
