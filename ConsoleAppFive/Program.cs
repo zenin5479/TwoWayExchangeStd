@@ -22,7 +22,7 @@ namespace ConsoleAppFive
          Application.Run(new FormStaticField(consoleInput));
 
          // После закрытия формы читаем данные
-         Console.WriteLine($"Консоль: получено из формы: {ReturnedData}");
+         Console.WriteLine(string.Format("Консоль: получено из формы: {0}", ReturnedData));
          Console.ReadKey();
       }
    }
