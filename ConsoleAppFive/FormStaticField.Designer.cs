@@ -44,7 +44,7 @@
          // 
          // returnButton
          // 
-         returnButton.Location = new System.Drawing.Point(12, 27);
+         returnButton.Location = new System.Drawing.Point(12, 82);
          returnButton.Name = "returnButton";
          returnButton.Size = new System.Drawing.Size(180, 30);
          returnButton.TabIndex = 2;
@@ -54,7 +54,7 @@
          // 
          // inputBox
          // 
-         inputBox.Location = new System.Drawing.Point(38, 164);
+         inputBox.Location = new System.Drawing.Point(12, 27);
          inputBox.Multiline = true;
          inputBox.Name = "inputBox";
          inputBox.Size = new System.Drawing.Size(100, 23);
