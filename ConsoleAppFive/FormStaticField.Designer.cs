@@ -38,13 +38,13 @@
          messageLabel.AutoSize = true;
          messageLabel.Location = new System.Drawing.Point(12, 9);
          messageLabel.Name = "messageLabel";
-         messageLabel.Size = new System.Drawing.Size(178, 15);
+         messageLabel.Size = new System.Drawing.Size(177, 15);
          messageLabel.TabIndex = 1;
          messageLabel.Text = "Получение данных из консоли";
          // 
          // returnButton
          // 
-         returnButton.Location = new System.Drawing.Point(12, 27);
+         returnButton.Location = new System.Drawing.Point(102, 111);
          returnButton.Name = "returnButton";
          returnButton.Size = new System.Drawing.Size(172, 23);
          returnButton.TabIndex = 2;
@@ -54,7 +54,7 @@
          // 
          // inputBox
          // 
-         inputBox.Location = new System.Drawing.Point(42, 83);
+         inputBox.Location = new System.Drawing.Point(38, 164);
          inputBox.Multiline = true;
          inputBox.Name = "inputBox";
          inputBox.Size = new System.Drawing.Size(100, 23);
@@ -64,7 +64,7 @@
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         ClientSize = new System.Drawing.Size(416, 190);
+         ClientSize = new System.Drawing.Size(416, 258);
          Controls.Add(inputBox);
          Controls.Add(returnButton);
          Controls.Add(messageLabel);
