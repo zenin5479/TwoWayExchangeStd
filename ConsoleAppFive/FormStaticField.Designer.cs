@@ -49,6 +49,7 @@
          returnButton.TabIndex = 2;
          returnButton.Text = "Вернуть в консоль";
          returnButton.UseVisualStyleBackColor = true;
+         returnButton.Click += returnButton_Click;
          // 
          // FormStaticField
          // 
