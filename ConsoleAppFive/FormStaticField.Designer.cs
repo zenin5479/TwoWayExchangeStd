@@ -44,7 +44,7 @@
          // 
          // returnButton
          // 
-         returnButton.Location = new System.Drawing.Point(12, 79);
+         returnButton.Location = new System.Drawing.Point(12, 74);
          returnButton.Name = "returnButton";
          returnButton.Size = new System.Drawing.Size(170, 25);
          returnButton.TabIndex = 2;
@@ -57,7 +57,7 @@
          inputBox.Location = new System.Drawing.Point(12, 27);
          inputBox.Multiline = true;
          inputBox.Name = "inputBox";
-         inputBox.Size = new System.Drawing.Size(420, 46);
+         inputBox.Size = new System.Drawing.Size(420, 41);
          inputBox.TabIndex = 3;
          // 
          // FormStaticField
