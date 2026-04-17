@@ -38,15 +38,15 @@
          messageLabel.AutoSize = true;
          messageLabel.Location = new System.Drawing.Point(12, 9);
          messageLabel.Name = "messageLabel";
-         messageLabel.Size = new System.Drawing.Size(177, 15);
+         messageLabel.Size = new System.Drawing.Size(180, 15);
          messageLabel.TabIndex = 1;
-         messageLabel.Text = "Получение данных из консоли";
+         messageLabel.Text = "Получение данных из консоли:";
          // 
          // returnButton
          // 
          returnButton.Location = new System.Drawing.Point(12, 27);
          returnButton.Name = "returnButton";
-         returnButton.Size = new System.Drawing.Size(177, 50);
+         returnButton.Size = new System.Drawing.Size(180, 30);
          returnButton.TabIndex = 2;
          returnButton.Text = "Вернуть в консоль данные";
          returnButton.UseVisualStyleBackColor = true;
