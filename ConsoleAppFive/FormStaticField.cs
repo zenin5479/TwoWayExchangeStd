@@ -4,7 +4,7 @@ namespace ConsoleAppFive
 {
    public partial class FormStaticField : Form
    {
-      public FormStaticField()
+      public FormStaticField(string initialMessage)
       {
          InitializeComponent();
       }
