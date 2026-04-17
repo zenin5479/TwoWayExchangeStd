@@ -14,7 +14,7 @@ namespace ConsoleAppFive
       {
          // Сохраняем данные для последующего использования
          Program.ReturnedData = inputBox.Text;
-         this.Close();
+         Close();
       }
    }
 }
