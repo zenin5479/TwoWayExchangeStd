@@ -11,7 +11,9 @@ namespace ConsoleAppFive
 
       private void returnButton_Click(object sender, System.EventArgs e)
       {
-
+         // Сохраняем данные для последующего использования
+         Program.ReturnedData = inputBox.Text;
+         this.Close();
       }
    }
 }
