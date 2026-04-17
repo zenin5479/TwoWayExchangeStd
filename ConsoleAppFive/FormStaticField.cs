@@ -7,7 +7,7 @@ namespace ConsoleAppFive
       public FormStaticField(string initialMessage)
       {
          InitializeComponent();
-         messageLabel.Text = $"Получено из консоли: {initialMessage}";
+         messageLabel.Text = string.Format(@"Получено из консоли: {0}", initialMessage);
       }
 
       private void returnButton_Click(object sender, System.EventArgs e)
