@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-// Двусторонний обмен через публичным свойствам
+// Двусторонний обмен через публичные свойства
 // Мы можем обратиться к его публичным свойствам (UserAgreed, UserComment) и получить то, что пользователь ввёл.
 
 namespace ConsoleAppTwo
