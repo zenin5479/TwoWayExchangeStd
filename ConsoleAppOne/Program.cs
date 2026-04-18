@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Windows.Forms;
 
+// Демонстрация запуска Windows Forms из консольного приложения
+
 namespace ConsoleAppOne
 {
    internal class Program
