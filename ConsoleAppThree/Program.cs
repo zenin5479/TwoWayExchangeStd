@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-// Двусторонний обмен через публичные свойства
+// Односторонний обмен через публичные свойства
 
 namespace ConsoleAppThree
 {
