@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Windows.Forms;
 
+// Свойства для чтения результатов после закрытия
+// Двусторонний обмен через статическое поле
+
 namespace ConsoleAppTwo
 {
    internal class Program
