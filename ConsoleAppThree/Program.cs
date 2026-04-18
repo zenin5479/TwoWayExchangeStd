@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Windows.Forms;
 
-// Односторонний обмен через публичные свойства
+// Демонстрация запуска Windows Forms из консольного приложения
+// Переписать в ConsoleAppOne
 
 namespace ConsoleAppThree
 {
