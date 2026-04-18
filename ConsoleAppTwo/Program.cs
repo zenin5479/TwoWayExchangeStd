@@ -25,7 +25,7 @@ namespace ConsoleAppTwo
          // Здесь выполнение консоли останавливается
          Application.Run(myForm);
 
-         // Часть 3: Форма закрыта, читаем результаты, получаем данные из публичных свойств формы
+         // Форма закрыта, читаем результаты, получаем данные из публичных свойств формы
          bool userChoice = myForm.UserAgreed;
          string userComment = myForm.UserComment;
 
