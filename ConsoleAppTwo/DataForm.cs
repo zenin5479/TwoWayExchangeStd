@@ -5,7 +5,7 @@ namespace ConsoleAppTwo
 {
    public partial class DataForm : Form
    {
-      // публичным свойствам Свойства для чтения результатов после закрытия
+      // Публичные свойствам Свойства для чтения результатов после закрытия
       public bool UserAgreed { get; private set; }
       public string UserComment { get; private set; }
 
