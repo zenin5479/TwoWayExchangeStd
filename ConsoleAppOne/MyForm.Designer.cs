@@ -35,7 +35,7 @@
          // 
          // closeButton
          // 
-         closeButton.Location = new System.Drawing.Point(21, 99);
+         closeButton.Location = new System.Drawing.Point(12, 194);
          closeButton.Name = "closeButton";
          closeButton.Size = new System.Drawing.Size(300, 45);
          closeButton.TabIndex = 4;
@@ -54,7 +54,7 @@
          // 
          // helloButton
          // 
-         helloButton.Location = new System.Drawing.Point(21, 220);
+         helloButton.Location = new System.Drawing.Point(12, 27);
          helloButton.Name = "helloButton";
          helloButton.Size = new System.Drawing.Size(260, 50);
          helloButton.TabIndex = 5;
