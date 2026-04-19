@@ -27,15 +27,15 @@ namespace ConsoleAppOne
 
          //
 
-         Console.WriteLine(@"Нажмите любую клавишу для запуска Windows Forms формы");
-         Console.ReadKey();
+         //Console.WriteLine(@"Нажмите любую клавишу для запуска Windows Forms формы");
+         //Console.ReadKey();
 
-         Console.WriteLine(@"Запуск Windows Forms...");
+         //Console.WriteLine(@"Запуск Windows Forms...");
 
-         // Этот код выполнится только после закрытия формы
-         Console.WriteLine(@"Форма закрыта. Консоль снова активна!");
-         Console.WriteLine(@"Нажмите любую клавишу для выхода...");
-         Console.ReadKey();
+         //// Этот код выполнится только после закрытия формы
+         //Console.WriteLine(@"Форма закрыта. Консоль снова активна!");
+         //Console.WriteLine(@"Нажмите любую клавишу для выхода...");
+         //Console.ReadKey();
 
       }
    }
