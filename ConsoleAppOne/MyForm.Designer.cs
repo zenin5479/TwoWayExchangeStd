@@ -35,7 +35,7 @@
          // 
          // closeButton
          // 
-         closeButton.Location = new System.Drawing.Point(12, 12);
+         closeButton.Location = new System.Drawing.Point(21, 99);
          closeButton.Name = "closeButton";
          closeButton.Size = new System.Drawing.Size(300, 45);
          closeButton.TabIndex = 4;
@@ -46,7 +46,7 @@
          // messageLabel
          // 
          messageLabel.AutoSize = true;
-         messageLabel.Location = new System.Drawing.Point(32, 75);
+         messageLabel.Location = new System.Drawing.Point(12, 9);
          messageLabel.Name = "messageLabel";
          messageLabel.Size = new System.Drawing.Size(132, 15);
          messageLabel.TabIndex = 6;
@@ -54,7 +54,7 @@
          // 
          // helloButton
          // 
-         helloButton.Location = new System.Drawing.Point(32, 93);
+         helloButton.Location = new System.Drawing.Point(21, 220);
          helloButton.Name = "helloButton";
          helloButton.Size = new System.Drawing.Size(260, 50);
          helloButton.TabIndex = 5;
@@ -66,7 +66,7 @@
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         ClientSize = new System.Drawing.Size(324, 219);
+         ClientSize = new System.Drawing.Size(324, 313);
          Controls.Add(messageLabel);
          Controls.Add(helloButton);
          Controls.Add(closeButton);
