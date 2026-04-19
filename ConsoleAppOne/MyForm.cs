@@ -12,7 +12,7 @@ namespace ConsoleAppOne
 
       private void helloButton_Click(object sender, EventArgs e)
       {
-         messageLabel.Text = string.Format(@"Время: {0:HH:mm:ss:fff}", DateTime.Now);
+         messageLabel.Text = string.Format(@"Московское время: {0:HH:mm:ss:fff}", DateTime.Now);
          Console.WriteLine(@"Время: {0:HH:mm:ss:fff}", DateTime.Now);
       }
 
