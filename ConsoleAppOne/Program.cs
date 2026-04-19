@@ -25,7 +25,7 @@ namespace ConsoleAppOne
          Application.Run(form);
 
          // Этот код выполнится только после закрытия формы
-         Console.WriteLine(@"Нажмите любую клавишу для выхода...");
+         Console.WriteLine(@"Нажмите любую клавишу для выхода");
          Console.ReadKey();
 
       }
