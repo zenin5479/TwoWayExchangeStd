@@ -3,10 +3,6 @@ using System.Windows.Forms;
 
 // Демонстрация запуска Windows Forms из консольного приложения
 
-
-// Демонстрация запуска Windows Forms из консольного приложения
-// Переписать в ConsoleAppOne
-
 namespace ConsoleAppOne
 {
    internal class Program
