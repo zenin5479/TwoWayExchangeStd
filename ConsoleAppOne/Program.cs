@@ -32,10 +32,10 @@ namespace ConsoleAppOne
 
          Console.WriteLine(@"Запуск Windows Forms...");
 
-
          // Этот код выполнится только после закрытия формы
          Console.WriteLine(@"Форма закрыта. Консоль снова активна!");
          Console.WriteLine(@"Нажмите любую клавишу для выхода...");
+         Console.ReadKey();
 
       }
    }
