@@ -29,6 +29,8 @@
       private void InitializeComponent()
       {
          closeButton = new System.Windows.Forms.Button();
+         messageLabel = new System.Windows.Forms.Label();
+         helloButton = new System.Windows.Forms.Button();
          SuspendLayout();
          // 
          // closeButton
@@ -41,19 +43,42 @@
          closeButton.UseVisualStyleBackColor = true;
          closeButton.Click += closeButton_Click;
          // 
+         // messageLabel
+         // 
+         messageLabel.AutoSize = true;
+         messageLabel.Location = new System.Drawing.Point(32, 75);
+         messageLabel.Name = "messageLabel";
+         messageLabel.Size = new System.Drawing.Size(132, 15);
+         messageLabel.TabIndex = 6;
+         messageLabel.Text = "Нажмите кнопку ниже";
+         // 
+         // helloButton
+         // 
+         helloButton.Location = new System.Drawing.Point(32, 93);
+         helloButton.Name = "helloButton";
+         helloButton.Size = new System.Drawing.Size(260, 50);
+         helloButton.TabIndex = 5;
+         helloButton.Text = "Нажми меня!";
+         helloButton.UseVisualStyleBackColor = true;
+         // 
          // MyForm
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         ClientSize = new System.Drawing.Size(324, 71);
+         ClientSize = new System.Drawing.Size(324, 219);
+         Controls.Add(messageLabel);
+         Controls.Add(helloButton);
          Controls.Add(closeButton);
          Name = "MyForm";
          StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
          Text = "Моя форма из консоли";
          ResumeLayout(false);
+         PerformLayout();
       }
 
       #endregion
       private System.Windows.Forms.Button closeButton;
+      private System.Windows.Forms.Label messageLabel;
+      private System.Windows.Forms.Button helloButton;
    }
 }
