@@ -58,7 +58,7 @@
          helloButton.Name = "helloButton";
          helloButton.Size = new System.Drawing.Size(132, 25);
          helloButton.TabIndex = 5;
-         helloButton.Text = "Нажми меня!";
+         helloButton.Text = "Московское время";
          helloButton.UseVisualStyleBackColor = true;
          helloButton.Click += helloButton_Click;
          // 
