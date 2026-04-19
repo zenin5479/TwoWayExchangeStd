@@ -11,7 +11,6 @@ namespace ConsoleAppOne
       {
          Console.WriteLine(@"Нажмите любую клавишу для запуска Windows Forms формы");
          Console.ReadKey();
-
          Console.WriteLine(@"Запуск Windows Forms из консольного приложения");
 
          // Включаем визуальные стили для современного вида элементов управления
@@ -27,7 +26,6 @@ namespace ConsoleAppOne
          // Этот код выполнится только после закрытия формы
          Console.WriteLine(@"Нажмите любую клавишу для выхода");
          Console.ReadKey();
-
       }
    }
 }
