@@ -35,7 +35,7 @@
          // 
          // closeButton
          // 
-         closeButton.Location = new System.Drawing.Point(12, 58);
+         closeButton.Location = new System.Drawing.Point(150, 27);
          closeButton.Name = "closeButton";
          closeButton.Size = new System.Drawing.Size(132, 25);
          closeButton.TabIndex = 4;
@@ -66,7 +66,7 @@
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         ClientSize = new System.Drawing.Size(324, 313);
+         ClientSize = new System.Drawing.Size(324, 98);
          Controls.Add(messageLabel);
          Controls.Add(helloButton);
          Controls.Add(closeButton);
