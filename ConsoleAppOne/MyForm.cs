@@ -12,8 +12,8 @@ namespace ConsoleAppOne
 
       private void helloButton_Click(object sender, EventArgs e)
       {
-         messageLabel.Text = string.Format(@"Время: {0:HH:mm:ss}", DateTime.Now);
-         Console.WriteLine(@"Время: {0:HH:mm:ss}", DateTime.Now);
+         messageLabel.Text = string.Format(@"Время: {0:HH:mm:ss:fff}", DateTime.Now);
+         Console.WriteLine(@"Время: {0:HH:mm:ss:fff}", DateTime.Now);
       }
 
       private void closeButton_Click(object sender, EventArgs e)
