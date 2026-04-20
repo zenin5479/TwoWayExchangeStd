@@ -20,7 +20,7 @@ namespace ConsoleAppThree
          {
             if (form.ShowDialog() == DialogResult.OK)
             {
-               Console.WriteLine($"Консоль: из формы: {form.FormData}");
+               Console.WriteLine(string.Format("Консоль: из формы: {0}", form.FormData));
             }
          }
          Console.ReadKey();
