@@ -44,7 +44,7 @@
          // 
          // returnButton
          // 
-         returnButton.Location = new System.Drawing.Point(12, 153);
+         returnButton.Location = new System.Drawing.Point(12, 83);
          returnButton.Name = "returnButton";
          returnButton.Size = new System.Drawing.Size(126, 23);
          returnButton.TabIndex = 1;
@@ -57,14 +57,14 @@
          inputBox.Location = new System.Drawing.Point(12, 27);
          inputBox.Multiline = true;
          inputBox.Name = "inputBox";
-         inputBox.Size = new System.Drawing.Size(390, 120);
+         inputBox.Size = new System.Drawing.Size(390, 50);
          inputBox.TabIndex = 2;
          // 
          // MainForm
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         ClientSize = new System.Drawing.Size(414, 188);
+         ClientSize = new System.Drawing.Size(414, 117);
          Controls.Add(inputBox);
          Controls.Add(returnButton);
          Controls.Add(messageLabel);
