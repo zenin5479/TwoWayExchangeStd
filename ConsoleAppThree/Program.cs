@@ -16,13 +16,12 @@ namespace ConsoleAppThree
          Application.EnableVisualStyles();
          Application.SetCompatibleTextRenderingDefault(false);
 
-         using (MainForm form = new MainForm(string.Format("Из консоли: {0}", consoleData)))
+         MainForm form = new MainForm(string.Format("Из консоли: {0}", consoleData));
+         if (form.ShowDialog() == DialogResult.OK)
          {
-            if (form.ShowDialog() == DialogResult.OK)
-            {
-               Console.WriteLine(@"Консоль: из формы: {0}", form.FormData);
-            }
+            Console.WriteLine(@"Консоль: из формы: {0}", form.FormData);
          }
+
          Console.ReadKey();
       }
    }
