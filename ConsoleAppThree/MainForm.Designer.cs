@@ -49,6 +49,7 @@
          returnButton.TabIndex = 1;
          returnButton.Text = "button1";
          returnButton.UseVisualStyleBackColor = true;
+         returnButton.Click += returnButton_Click;
          // 
          // MainForm
          // 
