@@ -28,19 +28,33 @@
       /// </summary>
       private void InitializeComponent()
       {
+         messageLabel = new System.Windows.Forms.Label();
          SuspendLayout();
+         // 
+         // messageLabel
+         // 
+         messageLabel.AutoSize = true;
+         messageLabel.Location = new System.Drawing.Point(48, 21);
+         messageLabel.Name = "messageLabel";
+         messageLabel.Size = new System.Drawing.Size(38, 15);
+         messageLabel.TabIndex = 0;
+         messageLabel.Text = "label1";
          // 
          // MainForm
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(284, 89);
+         Controls.Add(messageLabel);
          Name = "MainForm";
          StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
          Text = "Моя Windows Forms";
          ResumeLayout(false);
+         PerformLayout();
       }
 
       #endregion
+
+      private System.Windows.Forms.Label messageLabel;
    }
 }
