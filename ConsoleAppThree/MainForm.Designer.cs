@@ -64,13 +64,13 @@
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         ClientSize = new System.Drawing.Size(293, 234);
+         ClientSize = new System.Drawing.Size(412, 234);
          Controls.Add(inputBox);
          Controls.Add(returnButton);
          Controls.Add(messageLabel);
          Name = "MainForm";
          StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-         Text = "Моя Windows Forms";
+         Text = "Обмен через ShowDialog() с DialogResult";
          ResumeLayout(false);
          PerformLayout();
       }
