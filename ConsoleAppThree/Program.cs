@@ -16,7 +16,7 @@ namespace ConsoleAppThree
          Application.EnableVisualStyles();
          Application.SetCompatibleTextRenderingDefault(false);
 
-         MainForm form = new MainForm(string.Format("Из консоли: {0}", consoleData));
+         using MainForm form = new MainForm(string.Format("Из консоли: {0}", consoleData));
          if (form.ShowDialog() == DialogResult.OK)
          {
             Console.WriteLine(@"Консоль: из формы: {0}", form.FormData);
