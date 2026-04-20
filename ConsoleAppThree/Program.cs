@@ -2,11 +2,6 @@
 using System.Windows.Forms;
 
 // Обмен между Windows Forms из консольным приложением через Через ShowDialog() с DialogResult (рекомендуемый для простых случаев)
-// 
-// Форма → Консоль
-// Демонстрация запуска Windows Forms из консольного приложения
-// Способ 3. Через ShowDialog() с DialogResult (рекомендуемый для простых случаев)
-// 
 
 namespace ConsoleAppThree
 {
