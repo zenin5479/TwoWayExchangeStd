@@ -11,10 +11,5 @@ namespace ConsoleAppThree
       {
          InitializeComponent();
       }
-
-      private void helloButton_Click(object sender, EventArgs e)
-      {
-         
-      }
    }
 }
