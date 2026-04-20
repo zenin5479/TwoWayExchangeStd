@@ -12,7 +12,6 @@ namespace ConsoleAppThree
 
          InitializeComponent();
          messageLabel.Text = initialData;
-
       }
 
       private void returnButton_Click(object sender, EventArgs e)
