@@ -17,7 +17,8 @@ namespace ConsoleAppThree
 
       private void returnButton_Click(object sender, EventArgs e)
       {
-         FormData = inputBox.Text; // Сохраняем в свойство
+         // Сохраняем в свойство
+         FormData = inputBox.Text; 
          this.DialogResult = DialogResult.OK;
          this.Close();
       }
