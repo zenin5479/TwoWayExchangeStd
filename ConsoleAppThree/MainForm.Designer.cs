@@ -48,7 +48,7 @@
          returnButton.Name = "returnButton";
          returnButton.Size = new System.Drawing.Size(75, 23);
          returnButton.TabIndex = 1;
-         returnButton.Text = "button1";
+         returnButton.Text = "Вернуть в консоль";
          returnButton.UseVisualStyleBackColor = true;
          returnButton.Click += returnButton_Click;
          // 
