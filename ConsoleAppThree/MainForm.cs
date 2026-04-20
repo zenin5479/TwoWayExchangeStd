@@ -9,7 +9,7 @@ namespace ConsoleAppThree
 
       public MainForm(string initialData)
       {
-         
+
          InitializeComponent();
          messageLabel.Text = initialData;
 
