@@ -2,6 +2,7 @@
 using System.Windows.Forms;
 
 // Демонстрация запуска Windows Forms из консольного приложения
+// Способ 3. Через ShowDialog() с DialogResult (рекомендуемый для простых случаев)
 
 namespace ConsoleAppThree
 {
