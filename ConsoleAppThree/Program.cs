@@ -2,7 +2,6 @@
 using System.Windows.Forms;
 
 // Обмен между Windows Forms из консольным приложением через ShowDialog() с DialogResult
-// Обмен через ShowDialog() с DialogResult
 
 namespace ConsoleAppThree
 {
