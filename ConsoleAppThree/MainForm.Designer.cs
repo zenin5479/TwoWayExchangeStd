@@ -38,9 +38,9 @@
          messageLabel.AutoSize = true;
          messageLabel.Location = new System.Drawing.Point(12, 9);
          messageLabel.Name = "messageLabel";
-         messageLabel.Size = new System.Drawing.Size(38, 15);
+         messageLabel.Size = new System.Drawing.Size(99, 15);
          messageLabel.TabIndex = 0;
-         messageLabel.Text = "label1";
+         messageLabel.Text = "Обмен данными";
          // 
          // returnButton
          // 
