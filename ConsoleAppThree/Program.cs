@@ -10,22 +10,19 @@ namespace ConsoleAppThree
       [STAThread]
       static void Main()
       {
-         Console.WriteLine(@"Консольное приложение запущено...");
-         Console.WriteLine(@"Нажмите любую клавишу для запуска Windows Forms формы");
-         Console.ReadKey();
+         Console.WriteLine("Консоль: введите данные:");
+         string consoleData = Console.ReadLine();
 
-         Console.WriteLine(@"Запуск Windows Forms...");
-
-         // Включаем визуальные стили
          Application.EnableVisualStyles();
          Application.SetCompatibleTextRenderingDefault(false);
 
-         // Создаём и запускаем форму
-         Application.Run(new MainForm());
-
-         // Этот код выполнится только после закрытия формы
-         Console.WriteLine(@"Форма закрыта. Консоль снова активна!");
-         Console.WriteLine(@"Нажмите любую клавишу для выхода...");
+         using (var form = new MainForm($"Из консоли: {consoleData}"))
+         {
+            if (form.ShowDialog() == DialogResult.OK)
+            {
+               Console.WriteLine($"Консоль: из формы: {form.FormData}");
+            }
+         }
          Console.ReadKey();
       }
    }
