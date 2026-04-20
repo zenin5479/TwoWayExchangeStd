@@ -10,7 +10,7 @@ namespace ConsoleAppThree
       [STAThread]
       static void Main()
       {
-         Console.WriteLine("Консоль: введите данные:");
+         Console.WriteLine(@"Консоль: введите данные:");
          string consoleData = Console.ReadLine();
 
          Application.EnableVisualStyles();
