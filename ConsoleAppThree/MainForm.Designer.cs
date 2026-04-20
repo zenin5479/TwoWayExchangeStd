@@ -28,46 +28,19 @@
       /// </summary>
       private void InitializeComponent()
       {
-         helloButton = new System.Windows.Forms.Button();
-         messageLabel = new System.Windows.Forms.Label();
          SuspendLayout();
-         // 
-         // helloButton
-         // 
-         helloButton.Location = new System.Drawing.Point(12, 27);
-         helloButton.Name = "helloButton";
-         helloButton.Size = new System.Drawing.Size(260, 50);
-         helloButton.TabIndex = 0;
-         helloButton.Text = "Нажми меня!";
-         helloButton.UseVisualStyleBackColor = true;
-         helloButton.Click += helloButton_Click;
-         // 
-         // messageLabel
-         // 
-         messageLabel.AutoSize = true;
-         messageLabel.Location = new System.Drawing.Point(12, 9);
-         messageLabel.Name = "messageLabel";
-         messageLabel.Size = new System.Drawing.Size(132, 15);
-         messageLabel.TabIndex = 1;
-         messageLabel.Text = "Нажмите кнопку ниже";
          // 
          // MainForm
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(284, 89);
-         Controls.Add(messageLabel);
-         Controls.Add(helloButton);
          Name = "MainForm";
          StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
          Text = "Моя Windows Forms";
          ResumeLayout(false);
-         PerformLayout();
       }
 
       #endregion
-
-      private System.Windows.Forms.Button helloButton;
-      private System.Windows.Forms.Label messageLabel;
    }
 }
