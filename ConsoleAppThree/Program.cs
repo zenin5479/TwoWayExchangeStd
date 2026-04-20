@@ -2,7 +2,6 @@
 using System.Windows.Forms;
 
 // Демонстрация запуска Windows Forms из консольного приложения
-// Переписать в ConsoleAppOne
 
 namespace ConsoleAppThree
 {
