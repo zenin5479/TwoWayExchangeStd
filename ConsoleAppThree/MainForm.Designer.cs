@@ -29,8 +29,9 @@
       private void InitializeComponent()
       {
          messageLabel = new System.Windows.Forms.Label();
-         returnButton = new System.Windows.Forms.Button();
+         cancelButton = new System.Windows.Forms.Button();
          inputBox = new System.Windows.Forms.TextBox();
+         okButton = new System.Windows.Forms.Button();
          SuspendLayout();
          // 
          // messageLabel
@@ -42,15 +43,15 @@
          messageLabel.TabIndex = 0;
          messageLabel.Text = "Обмен данными";
          // 
-         // returnButton
+         // cancelButton
          // 
-         returnButton.Location = new System.Drawing.Point(12, 83);
-         returnButton.Name = "returnButton";
-         returnButton.Size = new System.Drawing.Size(126, 23);
-         returnButton.TabIndex = 1;
-         returnButton.Text = "Вернуть в консоль";
-         returnButton.UseVisualStyleBackColor = true;
-         returnButton.Click += returnButton_Click;
+         cancelButton.Location = new System.Drawing.Point(12, 83);
+         cancelButton.Name = "cancelButton";
+         cancelButton.Size = new System.Drawing.Size(126, 23);
+         cancelButton.TabIndex = 1;
+         cancelButton.Text = "Вернуть в консоль";
+         cancelButton.UseVisualStyleBackColor = true;
+         cancelButton.Click += returnButton_Click;
          // 
          // inputBox
          // 
@@ -60,13 +61,23 @@
          inputBox.Size = new System.Drawing.Size(390, 50);
          inputBox.TabIndex = 2;
          // 
+         // okButton
+         // 
+         okButton.Location = new System.Drawing.Point(64, 143);
+         okButton.Name = "okButton";
+         okButton.Size = new System.Drawing.Size(75, 23);
+         okButton.TabIndex = 3;
+         okButton.Text = "ОК";
+         okButton.UseVisualStyleBackColor = true;
+         // 
          // MainForm
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         ClientSize = new System.Drawing.Size(414, 121);
+         ClientSize = new System.Drawing.Size(414, 227);
+         Controls.Add(okButton);
          Controls.Add(inputBox);
-         Controls.Add(returnButton);
+         Controls.Add(cancelButton);
          Controls.Add(messageLabel);
          Name = "MainForm";
          StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -78,7 +89,8 @@
       #endregion
 
       private System.Windows.Forms.Label messageLabel;
-      private System.Windows.Forms.Button returnButton;
+      private System.Windows.Forms.Button cancelButton;
       private System.Windows.Forms.TextBox inputBox;
+      private System.Windows.Forms.Button okButton;
    }
 }
