@@ -5,8 +5,8 @@ namespace ConsoleAppThree
 {
    public partial class MainForm : Form
    {
-      // Свойство для хранения данных, которые будут переданы в консоль
-      public string UserInput { get; private set; }
+      // Свойство для хранения данных
+      public string FormData { get; private set; }
 
       public MainForm(string initialData)
       {
@@ -14,10 +14,12 @@ namespace ConsoleAppThree
          messageLabel.Text = initialData;
       }
 
-      private void okButton_Click(object sender, EventArgs e)
+      private void returnButton_Click(object sender, EventArgs e)
       {
-         UserInput = inputBox.Text; // Сначала сохраняем
-         Close(); // Потом закрываем
+         // Сохраняем в свойство
+         FormData = inputBox.Text;
+         //DialogResult = DialogResult.OK;
+         Close();
       }
    }
 }

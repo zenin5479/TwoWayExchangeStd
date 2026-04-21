@@ -28,58 +28,46 @@
       /// </summary>
       private void InitializeComponent()
       {
-         messageLabel = new System.Windows.Forms.Label();
-         cancelButton = new System.Windows.Forms.Button();
          inputBox = new System.Windows.Forms.TextBox();
-         okButton = new System.Windows.Forms.Button();
+         returnButton = new System.Windows.Forms.Button();
+         messageLabel = new System.Windows.Forms.Label();
          SuspendLayout();
+         // 
+         // inputBox
+         // 
+         inputBox.Location = new System.Drawing.Point(12, 29);
+         inputBox.Multiline = true;
+         inputBox.Name = "inputBox";
+         inputBox.Size = new System.Drawing.Size(390, 50);
+         inputBox.TabIndex = 5;
+         // 
+         // returnButton
+         // 
+         returnButton.DialogResult = System.Windows.Forms.DialogResult.OK;
+         returnButton.Location = new System.Drawing.Point(12, 85);
+         returnButton.Name = "returnButton";
+         returnButton.Size = new System.Drawing.Size(126, 23);
+         returnButton.TabIndex = 4;
+         returnButton.Text = "Вернуть в консоль";
+         returnButton.UseVisualStyleBackColor = true;
+         returnButton.Click += returnButton_Click;
          // 
          // messageLabel
          // 
          messageLabel.AutoSize = true;
-         messageLabel.Location = new System.Drawing.Point(12, 9);
+         messageLabel.Location = new System.Drawing.Point(12, 11);
          messageLabel.Name = "messageLabel";
          messageLabel.Size = new System.Drawing.Size(99, 15);
-         messageLabel.TabIndex = 0;
+         messageLabel.TabIndex = 3;
          messageLabel.Text = "Обмен данными";
-         // 
-         // cancelButton
-         // 
-         cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-         cancelButton.Location = new System.Drawing.Point(93, 83);
-         cancelButton.Name = "cancelButton";
-         cancelButton.Size = new System.Drawing.Size(126, 23);
-         cancelButton.TabIndex = 1;
-         cancelButton.Text = "Cancel";
-         cancelButton.UseVisualStyleBackColor = true;
-         cancelButton.Click += okButton_Click;
-         // 
-         // inputBox
-         // 
-         inputBox.Location = new System.Drawing.Point(12, 27);
-         inputBox.Multiline = true;
-         inputBox.Name = "inputBox";
-         inputBox.Size = new System.Drawing.Size(390, 50);
-         inputBox.TabIndex = 2;
-         // 
-         // okButton
-         // 
-         okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
-         okButton.Location = new System.Drawing.Point(12, 83);
-         okButton.Name = "okButton";
-         okButton.Size = new System.Drawing.Size(75, 23);
-         okButton.TabIndex = 3;
-         okButton.Text = "ОК";
-         okButton.UseVisualStyleBackColor = true;
          // 
          // MainForm
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(414, 119);
-         Controls.Add(okButton);
          Controls.Add(inputBox);
-         Controls.Add(cancelButton);
+         Controls.Add(returnButton);
          Controls.Add(messageLabel);
          Name = "MainForm";
          StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -90,9 +78,8 @@
 
       #endregion
 
-      private System.Windows.Forms.Label messageLabel;
-      private System.Windows.Forms.Button cancelButton;
       private System.Windows.Forms.TextBox inputBox;
-      private System.Windows.Forms.Button okButton;
+      private System.Windows.Forms.Button returnButton;
+      private System.Windows.Forms.Label messageLabel;
    }
 }
