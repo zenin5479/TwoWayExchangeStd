@@ -25,7 +25,7 @@ namespace ConsoleAppThree
             // Код выполняется только после закрытия формы
             if (result == DialogResult.OK)
             {
-               Console.WriteLine($"Консоль: пользователь ввёл: {form.UserInput}");
+               Console.WriteLine(string.Format("Консоль: пользователь ввёл: {0}", form.UserInput));
             }
             else
             {
