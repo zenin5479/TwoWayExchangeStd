@@ -10,13 +10,12 @@ namespace ConsoleAppThree
       [STAThread]
       static void Main()
       {
-         Console.WriteLine(@"Консоль: введите начальное сообщение для формы:");
+         Console.WriteLine(@"Консоль: введите данные:");
          string consoleData = Console.ReadLine();
 
          Application.EnableVisualStyles();
          Application.SetCompatibleTextRenderingDefault(false);
 
-         // Создаём форму с начальными данными
          using (MainForm form = new MainForm(string.Format("Из консоли: {0}", consoleData)))
          {
             // Показываем форму как модальное окно
@@ -25,7 +24,7 @@ namespace ConsoleAppThree
             // Код выполняется только после закрытия формы
             if (result == DialogResult.OK)
             {
-               Console.WriteLine(@"Консоль: пользователь ввёл: {0}", form.UserInput);
+               Console.WriteLine(@"Консоль: пользователь ввёл: {0}", form.FormData);
             }
             else
             {
