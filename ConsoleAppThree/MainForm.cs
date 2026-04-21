@@ -19,6 +19,7 @@ namespace ConsoleAppThree
          // Сохраняем данные перед закрытием
          UserInput = inputBox.Text;
          // Форма закроется автоматически, так как DialogResult уже установлен
+         Close();
       }
    }
 }
