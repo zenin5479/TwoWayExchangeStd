@@ -81,7 +81,7 @@
          Controls.Add(messageLabel);
          Name = "MainForm";
          StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-         Text = "Обмен через ShowDialog() с DialogResult";
+         Text = "Модальная форма с DialogResult";
          ResumeLayout(false);
          PerformLayout();
       }
