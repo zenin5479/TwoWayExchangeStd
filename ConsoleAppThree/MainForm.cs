@@ -16,10 +16,8 @@ namespace ConsoleAppThree
 
       private void okButton_Click(object sender, EventArgs e)
       {
-         // Сохраняем данные перед закрытием
-         UserInput = inputBox.Text;
-         // Форма закроется автоматически, так как DialogResult уже установлен
-         Close();
+         UserInput = inputBox.Text; // Сначала сохраняем
+         Close(); // Потом закрываем
       }
    }
 }
