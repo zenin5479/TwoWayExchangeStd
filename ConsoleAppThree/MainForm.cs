@@ -18,7 +18,6 @@ namespace ConsoleAppThree
       {
          // Сохраняем в свойство
          FormData = inputBox.Text;
-         //DialogResult = DialogResult.OK;
          Close();
       }
    }
