@@ -63,6 +63,7 @@
          // 
          // okButton
          // 
+         okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
          okButton.Location = new System.Drawing.Point(12, 83);
          okButton.Name = "okButton";
          okButton.Size = new System.Drawing.Size(75, 23);
