@@ -5,9 +5,6 @@ namespace ConsoleAppThree
 {
    public partial class MainForm : Form
    {
-      //// Свойство для хранения данных
-      //public string FormData { get; private set; }
-
       // Свойство для хранения данных, которые будут переданы в консоль
       public string UserInput { get; private set; }
 

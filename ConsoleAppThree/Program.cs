@@ -17,7 +17,7 @@ namespace ConsoleAppThree
          Application.SetCompatibleTextRenderingDefault(false);
 
          // Создаём форму с начальными данными
-         using (var form = new MainForm(string.Format("Из консоли: {0}", consoleData)))
+         using (MainForm form = new MainForm(string.Format("Из консоли: {0}", consoleData)))
          {
             // Показываем форму как модальное окно
             DialogResult result = form.ShowDialog();
