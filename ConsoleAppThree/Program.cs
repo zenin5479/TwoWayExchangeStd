@@ -33,7 +33,7 @@ namespace ConsoleAppThree
             }
          }
 
-         Console.WriteLine("Нажмите любую клавишу для выхода...");
+         Console.WriteLine(@"Нажмите любую клавишу для выхода...");
          Console.ReadKey();
       }
    }
