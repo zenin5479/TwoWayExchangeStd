@@ -14,7 +14,7 @@ namespace ConsoleAppThree
          messageLabel.Text = initialData;
       }
 
-      private void returnButton_Click(object sender, EventArgs e)
+      private void okButton_Click(object sender, EventArgs e)
       {
          // Сохраняем данные перед закрытием
          UserInput = inputBox.Text;

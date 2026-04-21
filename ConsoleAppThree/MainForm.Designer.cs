@@ -52,7 +52,7 @@
          cancelButton.TabIndex = 1;
          cancelButton.Text = "Cancel";
          cancelButton.UseVisualStyleBackColor = true;
-         cancelButton.Click += returnButton_Click;
+         cancelButton.Click += okButton_Click;
          // 
          // inputBox
          // 
