@@ -45,11 +45,11 @@
          // 
          // cancelButton
          // 
-         cancelButton.Location = new System.Drawing.Point(12, 83);
+         cancelButton.Location = new System.Drawing.Point(141, 112);
          cancelButton.Name = "cancelButton";
          cancelButton.Size = new System.Drawing.Size(126, 23);
          cancelButton.TabIndex = 1;
-         cancelButton.Text = "Вернуть в консоль";
+         cancelButton.Text = "Cancel";
          cancelButton.UseVisualStyleBackColor = true;
          cancelButton.Click += returnButton_Click;
          // 
@@ -63,7 +63,7 @@
          // 
          // okButton
          // 
-         okButton.Location = new System.Drawing.Point(64, 143);
+         okButton.Location = new System.Drawing.Point(12, 112);
          okButton.Name = "okButton";
          okButton.Size = new System.Drawing.Size(75, 23);
          okButton.TabIndex = 3;
