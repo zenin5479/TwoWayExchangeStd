@@ -35,7 +35,7 @@
          // 
          // inputBox
          // 
-         inputBox.Location = new System.Drawing.Point(12, 64);
+         inputBox.Location = new System.Drawing.Point(12, 27);
          inputBox.Multiline = true;
          inputBox.Name = "inputBox";
          inputBox.Size = new System.Drawing.Size(390, 50);
@@ -44,7 +44,7 @@
          // returnButton
          // 
          returnButton.DialogResult = System.Windows.Forms.DialogResult.OK;
-         returnButton.Location = new System.Drawing.Point(12, 142);
+         returnButton.Location = new System.Drawing.Point(108, 147);
          returnButton.Name = "returnButton";
          returnButton.Size = new System.Drawing.Size(126, 23);
          returnButton.TabIndex = 4;
@@ -55,7 +55,7 @@
          // messageLabel
          // 
          messageLabel.AutoSize = true;
-         messageLabel.Location = new System.Drawing.Point(12, 11);
+         messageLabel.Location = new System.Drawing.Point(12, 9);
          messageLabel.Name = "messageLabel";
          messageLabel.Size = new System.Drawing.Size(99, 15);
          messageLabel.TabIndex = 3;
