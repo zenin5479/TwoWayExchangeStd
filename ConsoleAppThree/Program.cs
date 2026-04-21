@@ -10,13 +10,13 @@ namespace ConsoleAppThree
       [STAThread]
       static void Main()
       {
-         Console.Write(@"Консоль: введите данные:");
+         Console.Write(@"Консоль: введите данные: ");
          string consoleData = Console.ReadLine();
 
          Application.EnableVisualStyles();
          Application.SetCompatibleTextRenderingDefault(false);
 
-         using (MainForm form = new MainForm(string.Format("Из консоли: {0}", consoleData)))
+         using (MainForm form = new MainForm(string.Format("Из консоли в Windows Forms: {0}", consoleData)))
          {
             // Показываем форму как модальное окно
             DialogResult result = form.ShowDialog();
