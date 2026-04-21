@@ -10,13 +10,13 @@ namespace ConsoleAppThree
       [STAThread]
       static void Main()
       {
-         Console.Write(@"Консоль: введите данные: ");
+         Console.Write(@"Консоль - введите данные: ");
          string consoleData = Console.ReadLine();
 
          Application.EnableVisualStyles();
          Application.SetCompatibleTextRenderingDefault(false);
 
-         using (MainForm form = new MainForm(string.Format("Из консоли в Windows Forms: {0}", consoleData)))
+         using (MainForm form = new MainForm(string.Format("Консоль передала данные в Windows Forms: {0}", consoleData)))
          {
             // Показываем форму как модальное окно
             DialogResult result = form.ShowDialog();
@@ -24,11 +24,11 @@ namespace ConsoleAppThree
             // Код выполняется только после закрытия формы
             if (result == DialogResult.OK)
             {
-               Console.WriteLine(@"Консоль: пользователь ввёл: {0}", form.FormData);
+               Console.WriteLine(@"Консоль - пользователь ввёл в Windows Forms: {0}", form.FormData);
             }
             else
             {
-               Console.WriteLine(@"Консоль: форма закрыта без подтверждения");
+               Console.WriteLine(@"Консоль - форма закрыта без подтверждения");
             }
          }
 
