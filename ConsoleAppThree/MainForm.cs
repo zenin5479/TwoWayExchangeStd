@@ -11,7 +11,6 @@ namespace ConsoleAppThree
       // Свойство для хранения данных, которые будут переданы в консоль
       public string UserInput { get; private set; }
 
-
       public MainForm(string initialData)
       {
          InitializeComponent();
