@@ -45,7 +45,7 @@
          // 
          // cancelButton
          // 
-         cancelButton.Location = new System.Drawing.Point(141, 112);
+         cancelButton.Location = new System.Drawing.Point(93, 83);
          cancelButton.Name = "cancelButton";
          cancelButton.Size = new System.Drawing.Size(126, 23);
          cancelButton.TabIndex = 1;
@@ -63,7 +63,7 @@
          // 
          // okButton
          // 
-         okButton.Location = new System.Drawing.Point(12, 112);
+         okButton.Location = new System.Drawing.Point(12, 83);
          okButton.Name = "okButton";
          okButton.Size = new System.Drawing.Size(75, 23);
          okButton.TabIndex = 3;
@@ -74,7 +74,7 @@
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         ClientSize = new System.Drawing.Size(414, 227);
+         ClientSize = new System.Drawing.Size(414, 119);
          Controls.Add(okButton);
          Controls.Add(inputBox);
          Controls.Add(cancelButton);
