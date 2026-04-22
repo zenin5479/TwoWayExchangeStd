@@ -64,9 +64,9 @@
          // 
          showDataButton.Location = new System.Drawing.Point(12, 130);
          showDataButton.Name = "showDataButton";
-         showDataButton.Size = new System.Drawing.Size(75, 23);
+         showDataButton.Size = new System.Drawing.Size(178, 23);
          showDataButton.TabIndex = 3;
-         showDataButton.Text = "button2";
+         showDataButton.Text = "Показать все данные";
          showDataButton.UseVisualStyleBackColor = true;
          // 
          // label1
