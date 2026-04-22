@@ -57,7 +57,7 @@
          saveButton.Name = "saveButton";
          saveButton.Size = new System.Drawing.Size(75, 23);
          saveButton.TabIndex = 2;
-         saveButton.Text = "button1";
+         saveButton.Text = "Сохранить в хранилище";
          saveButton.UseVisualStyleBackColor = true;
          // 
          // showDataButton
