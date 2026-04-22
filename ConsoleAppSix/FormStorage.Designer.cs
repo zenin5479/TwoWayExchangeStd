@@ -28,19 +28,32 @@
       /// </summary>
       private void InitializeComponent()
       {
+         textBox1 = new System.Windows.Forms.TextBox();
          SuspendLayout();
+         // 
+         // textBox1
+         // 
+         textBox1.Location = new System.Drawing.Point(12, 12);
+         textBox1.Multiline = true;
+         textBox1.Name = "textBox1";
+         textBox1.Size = new System.Drawing.Size(178, 54);
+         textBox1.TabIndex = 0;
          // 
          // FormStorage
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(384, 261);
+         Controls.Add(textBox1);
          Name = "FormStorage";
          StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
          Text = "FormStorage";
          ResumeLayout(false);
+         PerformLayout();
       }
 
       #endregion
+
+      private System.Windows.Forms.TextBox textBox1;
    }
 }
