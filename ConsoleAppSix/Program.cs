@@ -8,10 +8,10 @@ namespace ConsoleAppSix
       [STAThread]
       static void Main()
       {
-         Console.WriteLine("=== Консоль с глобальным хранилищем ===");
+         Console.WriteLine(@"=== Консоль с глобальным хранилищем ===");
 
          // Записываем начальные данные в хранилище
-         Console.Write("Введите имя: ");
+         Console.Write(@"Введите имя: ");
          DataStorage.UserName = Console.ReadLine();
 
          Console.Write(@"Введите возраст: ");
@@ -23,7 +23,7 @@ namespace ConsoleAppSix
          DataStorage.Messages.Add("Данные введены из консоли");
 
          Console.WriteLine(@"Данные сохранены в хранилище. Запускаем форму...");
-         Console.WriteLine("Нажмите любую клавишу для запуска формы");
+         Console.WriteLine(@"Нажмите любую клавишу для запуска формы");
          Console.ReadKey();
 
          Application.EnableVisualStyles();
@@ -33,10 +33,10 @@ namespace ConsoleAppSix
          // После закрытия формы показываем финальные данные
          Console.WriteLine(@"=== Данные после работы формы ===");
          Console.WriteLine(@"Имя: {0}", DataStorage.UserName);
-         Console.WriteLine("Возраст: {0}", DataStorage.UserAge);
-         Console.WriteLine("Всего сообщений: {0}", DataStorage.Messages.Count);
+         Console.WriteLine(@"Возраст: {0}", DataStorage.UserAge);
+         Console.WriteLine(@"Всего сообщений: {0}", DataStorage.Messages.Count);
 
-         Console.WriteLine("\nНажмите любую клавишу для выхода...");
+         Console.WriteLine(@"Нажмите любую клавишу для выхода...");
          Console.ReadKey();
       }
    }
