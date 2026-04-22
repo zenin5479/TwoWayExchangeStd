@@ -14,7 +14,7 @@ namespace ConsoleAppSix
          Console.Write("Введите имя: ");
          DataStorage.UserName = Console.ReadLine();
 
-         Console.Write("Введите возраст: ");
+         Console.Write(@"Введите возраст: ");
          if (int.TryParse(Console.ReadLine(), out int age))
          {
             DataStorage.UserAge = age;
@@ -22,7 +22,7 @@ namespace ConsoleAppSix
 
          DataStorage.Messages.Add("Данные введены из консоли");
 
-         Console.WriteLine("\nДанные сохранены в хранилище. Запускаем форму...");
+         Console.WriteLine(@"Данные сохранены в хранилище. Запускаем форму...");
          Console.WriteLine("Нажмите любую клавишу для запуска формы");
          Console.ReadKey();
 
@@ -31,10 +31,10 @@ namespace ConsoleAppSix
          Application.Run(new FormStorage());
 
          // После закрытия формы показываем финальные данные
-         Console.WriteLine("\n=== Данные после работы формы ===");
-         Console.WriteLine($"Имя: {DataStorage.UserName}");
-         Console.WriteLine($"Возраст: {DataStorage.UserAge}");
-         Console.WriteLine($"Всего сообщений: {DataStorage.Messages.Count}");
+         Console.WriteLine(@"=== Данные после работы формы ===");
+         Console.WriteLine(@"Имя: {0}", DataStorage.UserName);
+         Console.WriteLine("Возраст: {0}", DataStorage.UserAge);
+         Console.WriteLine("Всего сообщений: {0}", DataStorage.Messages.Count);
 
          Console.WriteLine("\nНажмите любую клавишу для выхода...");
          Console.ReadKey();
