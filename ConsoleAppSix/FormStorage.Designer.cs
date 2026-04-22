@@ -59,6 +59,7 @@
          saveButton.TabIndex = 2;
          saveButton.Text = "Сохранить в хранилище";
          saveButton.UseVisualStyleBackColor = true;
+         saveButton.Click += saveButton_Click;
          // 
          // showDataButton
          // 
@@ -68,6 +69,7 @@
          showDataButton.TabIndex = 3;
          showDataButton.Text = "Показать все данные";
          showDataButton.UseVisualStyleBackColor = true;
+         showDataButton.Click += showDataButton_Click;
          // 
          // displayLabel
          // 
