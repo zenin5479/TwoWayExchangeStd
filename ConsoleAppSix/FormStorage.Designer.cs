@@ -30,7 +30,7 @@
       {
          nameBox = new System.Windows.Forms.TextBox();
          ageBox = new System.Windows.Forms.NumericUpDown();
-         button1 = new System.Windows.Forms.Button();
+         saveButton = new System.Windows.Forms.Button();
          showDataButton = new System.Windows.Forms.Button();
          label1 = new System.Windows.Forms.Label();
          ((System.ComponentModel.ISupportInitialize)ageBox).BeginInit();
@@ -51,14 +51,14 @@
          ageBox.Size = new System.Drawing.Size(178, 23);
          ageBox.TabIndex = 1;
          // 
-         // button1
+         // saveButton
          // 
-         button1.Location = new System.Drawing.Point(12, 101);
-         button1.Name = "button1";
-         button1.Size = new System.Drawing.Size(75, 23);
-         button1.TabIndex = 2;
-         button1.Text = "button1";
-         button1.UseVisualStyleBackColor = true;
+         saveButton.Location = new System.Drawing.Point(12, 101);
+         saveButton.Name = "saveButton";
+         saveButton.Size = new System.Drawing.Size(75, 23);
+         saveButton.TabIndex = 2;
+         saveButton.Text = "button1";
+         saveButton.UseVisualStyleBackColor = true;
          // 
          // showDataButton
          // 
@@ -85,7 +85,7 @@
          ClientSize = new System.Drawing.Size(384, 261);
          Controls.Add(label1);
          Controls.Add(showDataButton);
-         Controls.Add(button1);
+         Controls.Add(saveButton);
          Controls.Add(ageBox);
          Controls.Add(nameBox);
          Name = "FormStorage";
@@ -100,7 +100,7 @@
 
       private System.Windows.Forms.TextBox nameBox;
       private System.Windows.Forms.NumericUpDown ageBox;
-      private System.Windows.Forms.Button button1;
+      private System.Windows.Forms.Button saveButton;
       private System.Windows.Forms.Button showDataButton;
       private System.Windows.Forms.Label label1;
    }
