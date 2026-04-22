@@ -90,7 +90,7 @@
          Controls.Add(nameBox);
          Name = "FormStorage";
          StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-         Text = "FormStorage";
+         Text = "Форма с глобальным хранилищем";
          ((System.ComponentModel.ISupportInitialize)ageBox).EndInit();
          ResumeLayout(false);
          PerformLayout();
