@@ -28,23 +28,23 @@
       /// </summary>
       private void InitializeComponent()
       {
-         textBox1 = new System.Windows.Forms.TextBox();
+         nameBox = new System.Windows.Forms.TextBox();
          SuspendLayout();
          // 
-         // textBox1
+         // nameBox
          // 
-         textBox1.Location = new System.Drawing.Point(12, 12);
-         textBox1.Multiline = true;
-         textBox1.Name = "textBox1";
-         textBox1.Size = new System.Drawing.Size(178, 54);
-         textBox1.TabIndex = 0;
+         nameBox.Location = new System.Drawing.Point(12, 12);
+         nameBox.Multiline = true;
+         nameBox.Name = "nameBox";
+         nameBox.Size = new System.Drawing.Size(178, 54);
+         nameBox.TabIndex = 0;
          // 
          // FormStorage
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(384, 261);
-         Controls.Add(textBox1);
+         Controls.Add(nameBox);
          Name = "FormStorage";
          StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
          Text = "FormStorage";
@@ -54,6 +54,6 @@
 
       #endregion
 
-      private System.Windows.Forms.TextBox textBox1;
+      private System.Windows.Forms.TextBox nameBox;
    }
 }
