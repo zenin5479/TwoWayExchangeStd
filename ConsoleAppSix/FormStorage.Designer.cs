@@ -31,6 +31,7 @@
          nameBox = new System.Windows.Forms.TextBox();
          ageBox = new System.Windows.Forms.NumericUpDown();
          button1 = new System.Windows.Forms.Button();
+         showDataButton = new System.Windows.Forms.Button();
          ((System.ComponentModel.ISupportInitialize)ageBox).BeginInit();
          SuspendLayout();
          // 
@@ -58,11 +59,21 @@
          button1.Text = "button1";
          button1.UseVisualStyleBackColor = true;
          // 
+         // showDataButton
+         // 
+         showDataButton.Location = new System.Drawing.Point(12, 130);
+         showDataButton.Name = "showDataButton";
+         showDataButton.Size = new System.Drawing.Size(75, 23);
+         showDataButton.TabIndex = 3;
+         showDataButton.Text = "button2";
+         showDataButton.UseVisualStyleBackColor = true;
+         // 
          // FormStorage
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(384, 261);
+         Controls.Add(showDataButton);
          Controls.Add(button1);
          Controls.Add(ageBox);
          Controls.Add(nameBox);
@@ -79,5 +90,6 @@
       private System.Windows.Forms.TextBox nameBox;
       private System.Windows.Forms.NumericUpDown ageBox;
       private System.Windows.Forms.Button button1;
+      private System.Windows.Forms.Button showDataButton;
    }
 }
