@@ -29,6 +29,8 @@
       private void InitializeComponent()
       {
          nameBox = new System.Windows.Forms.TextBox();
+         numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+         ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
          SuspendLayout();
          // 
          // nameBox
@@ -39,15 +41,24 @@
          nameBox.Size = new System.Drawing.Size(178, 54);
          nameBox.TabIndex = 0;
          // 
+         // numericUpDown1
+         // 
+         numericUpDown1.Location = new System.Drawing.Point(12, 72);
+         numericUpDown1.Name = "numericUpDown1";
+         numericUpDown1.Size = new System.Drawing.Size(120, 23);
+         numericUpDown1.TabIndex = 1;
+         // 
          // FormStorage
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(384, 261);
+         Controls.Add(numericUpDown1);
          Controls.Add(nameBox);
          Name = "FormStorage";
          StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
          Text = "FormStorage";
+         ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
          ResumeLayout(false);
          PerformLayout();
       }
@@ -55,5 +66,6 @@
       #endregion
 
       private System.Windows.Forms.TextBox nameBox;
+      private System.Windows.Forms.NumericUpDown numericUpDown1;
    }
 }
