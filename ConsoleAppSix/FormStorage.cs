@@ -25,8 +25,7 @@ namespace ConsoleAppSix
          DataStorage.UserAge = (int)ageBox.Value;
 
          // Добавляем сообщение в список
-         DataStorage.Messages.Add(
-            $"Сохранено: {nameBox.Text}, возраст: {ageBox.Value}");
+         DataStorage.Messages.Add($"Сохранено: {nameBox.Text}, возраст: {ageBox.Value}");
 
          displayLabel.Text = @"Данные сохранены в глобальное хранилище!";
       }
