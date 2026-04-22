@@ -45,7 +45,7 @@
          // 
          ageBox.Location = new System.Drawing.Point(12, 72);
          ageBox.Name = "ageBox";
-         ageBox.Size = new System.Drawing.Size(120, 23);
+         ageBox.Size = new System.Drawing.Size(178, 23);
          ageBox.TabIndex = 1;
          // 
          // FormStorage
