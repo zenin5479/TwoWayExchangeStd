@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Windows.Forms;
 
+// Обмен между Windows Forms и консольным приложением через ShowDialog() с DialogResult
+
 namespace ConsoleAppSix
 {
    internal class Program
