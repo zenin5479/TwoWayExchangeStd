@@ -1,11 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-// Обмен между  ShowDialog() с DialogResult
-
-
 // Двусторонний обмен данными между консолью и Windows Forms через глобальный класс‑хранилище
-// для обмена    без многопоточности и асинхронности.
 
 namespace ConsoleAppSix
 {
