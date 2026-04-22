@@ -55,7 +55,7 @@
          // 
          saveButton.Location = new System.Drawing.Point(12, 101);
          saveButton.Name = "saveButton";
-         saveButton.Size = new System.Drawing.Size(75, 23);
+         saveButton.Size = new System.Drawing.Size(178, 23);
          saveButton.TabIndex = 2;
          saveButton.Text = "Сохранить в хранилище";
          saveButton.UseVisualStyleBackColor = true;
