@@ -28,7 +28,7 @@ namespace ConsoleAppSix
 
          Application.EnableVisualStyles();
          Application.SetCompatibleTextRenderingDefault(false);
-         Application.Run(new MainForm());
+         Application.Run(new FormStorage());
 
          // После закрытия формы показываем финальные данные
          Console.WriteLine("\n=== Данные после работы формы ===");
