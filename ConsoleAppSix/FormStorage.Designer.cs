@@ -32,7 +32,7 @@
          ageBox = new System.Windows.Forms.NumericUpDown();
          saveButton = new System.Windows.Forms.Button();
          showDataButton = new System.Windows.Forms.Button();
-         label1 = new System.Windows.Forms.Label();
+         displayLabel = new System.Windows.Forms.Label();
          ((System.ComponentModel.ISupportInitialize)ageBox).BeginInit();
          SuspendLayout();
          // 
@@ -69,21 +69,21 @@
          showDataButton.Text = "Показать все данные";
          showDataButton.UseVisualStyleBackColor = true;
          // 
-         // label1
+         // displayLabel
          // 
-         label1.AutoSize = true;
-         label1.Location = new System.Drawing.Point(12, 156);
-         label1.Name = "label1";
-         label1.Size = new System.Drawing.Size(38, 15);
-         label1.TabIndex = 4;
-         label1.Text = "label1";
+         displayLabel.AutoSize = true;
+         displayLabel.Location = new System.Drawing.Point(12, 156);
+         displayLabel.Name = "displayLabel";
+         displayLabel.Size = new System.Drawing.Size(38, 15);
+         displayLabel.TabIndex = 4;
+         displayLabel.Text = "label1";
          // 
          // FormStorage
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(384, 261);
-         Controls.Add(label1);
+         Controls.Add(displayLabel);
          Controls.Add(showDataButton);
          Controls.Add(saveButton);
          Controls.Add(ageBox);
@@ -102,6 +102,6 @@
       private System.Windows.Forms.NumericUpDown ageBox;
       private System.Windows.Forms.Button saveButton;
       private System.Windows.Forms.Button showDataButton;
-      private System.Windows.Forms.Label label1;
+      private System.Windows.Forms.Label displayLabel;
    }
 }
