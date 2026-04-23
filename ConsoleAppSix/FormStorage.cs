@@ -27,7 +27,7 @@ namespace ConsoleAppSix
          // Добавляем сообщение в список
          DataStorage.Messages.Add($"Сохранено: {nameBox.Text}, возраст: {ageBox.Value}");
 
-         displayLabel.Text = @"Данные сохранены в глобальное хранилище!";
+         displayLabel.Text = @"Данные сохранены в глобальное хранилище";
       }
 
       private void showDataButton_Click(object sender, System.EventArgs e)

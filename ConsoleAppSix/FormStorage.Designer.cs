@@ -41,7 +41,7 @@
          nameBox.Location = new System.Drawing.Point(12, 12);
          nameBox.Multiline = true;
          nameBox.Name = "nameBox";
-         nameBox.Size = new System.Drawing.Size(340, 54);
+         nameBox.Size = new System.Drawing.Size(440, 54);
          nameBox.TabIndex = 0;
          // 
          // ageBox
