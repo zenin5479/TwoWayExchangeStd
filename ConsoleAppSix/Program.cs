@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Windows.Forms;
 
+// Двусторонний обмен данными между консолью и Windows Forms через глобальный класс‑хранилище
+
 namespace ConsoleAppSix
 {
    internal class Program
