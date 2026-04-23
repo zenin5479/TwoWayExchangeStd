@@ -41,7 +41,7 @@
          nameBox.Location = new System.Drawing.Point(12, 12);
          nameBox.Multiline = true;
          nameBox.Name = "nameBox";
-         nameBox.Size = new System.Drawing.Size(178, 54);
+         nameBox.Size = new System.Drawing.Size(345, 54);
          nameBox.TabIndex = 0;
          // 
          // ageBox
@@ -84,7 +84,7 @@
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         ClientSize = new System.Drawing.Size(312, 240);
+         ClientSize = new System.Drawing.Size(369, 240);
          Controls.Add(displayLabel);
          Controls.Add(showDataButton);
          Controls.Add(saveButton);
