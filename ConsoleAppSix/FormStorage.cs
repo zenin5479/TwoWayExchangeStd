@@ -14,7 +14,7 @@ namespace ConsoleAppSix
       private void LoadDataFromStorage()
       {
          // Загружаем существующие данные из хранилища
-         nameBox.Text = DataStorage.UserName ?? "Не задано";
+         nameBox.Text = DataStorage.UserName;
          ageBox.Value = DataStorage.UserAge;
       }
 
@@ -33,9 +33,9 @@ namespace ConsoleAppSix
       private void showDataButton_Click(object sender, System.EventArgs e)
       {
          // Показываем все данные из хранилища
-         string allData = $"Имя: {DataStorage.UserName}\n" +
-                          $"Возраст: {DataStorage.UserAge}\n" +
-                          $"Сообщений: {DataStorage.Messages.Count}";
+         string allData = string.Format("Имя: {0}\n", DataStorage.UserName) +
+                          string.Format("Возраст: {0}\n", DataStorage.UserAge) +
+                          string.Format("Сообщений: {0}", DataStorage.Messages.Count);
          displayLabel.Text = allData;
       }
    }
