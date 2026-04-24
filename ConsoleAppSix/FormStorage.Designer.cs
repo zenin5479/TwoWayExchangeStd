@@ -76,9 +76,9 @@
          displayLabel.AutoSize = true;
          displayLabel.Location = new System.Drawing.Point(196, 74);
          displayLabel.Name = "displayLabel";
-         displayLabel.Size = new System.Drawing.Size(50, 15);
+         displayLabel.Size = new System.Drawing.Size(132, 15);
          displayLabel.TabIndex = 4;
-         displayLabel.Text = "Данные";
+         displayLabel.Text = "Данные из хранилища";
          // 
          // FormStorage
          // 
