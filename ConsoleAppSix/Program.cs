@@ -38,7 +38,7 @@ namespace ConsoleAppSix
          Console.WriteLine(@"Возраст: {0}", DataStorage.UserAge);
          Console.WriteLine(@"Всего сообщений: {0}", DataStorage.Messages.Count);
 
-         Console.WriteLine(@"Нажмите любую клавишу для выхода...");
+         Console.WriteLine(@"Нажмите любую клавишу для выхода");
          Console.ReadKey();
       }
    }
