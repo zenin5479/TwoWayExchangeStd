@@ -10,7 +10,7 @@ namespace ConsoleAppSix
       [STAThread]
       static void Main()
       {
-         Console.WriteLine(@"Консоль с глобальным хранилищем ===");
+         Console.WriteLine(@"Консоль с глобальным хранилищем");
 
          // Записываем начальные данные в хранилище
          Console.Write(@"Введите имя: ");
