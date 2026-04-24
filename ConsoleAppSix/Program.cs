@@ -33,7 +33,7 @@ namespace ConsoleAppSix
          Application.Run(new FormStorage());
 
          // После закрытия формы показываем финальные данные
-         Console.WriteLine(@"=== Данные после работы формы ===");
+         Console.WriteLine(@"Данные после работы формы ===");
          Console.WriteLine(@"Имя: {0}", DataStorage.UserName);
          Console.WriteLine(@"Возраст: {0}", DataStorage.UserAge);
          Console.WriteLine(@"Всего сообщений: {0}", DataStorage.Messages.Count);
