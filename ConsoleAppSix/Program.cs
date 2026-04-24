@@ -24,7 +24,7 @@ namespace ConsoleAppSix
 
          DataStorage.Messages.Add("Данные введены из консоли");
 
-         Console.WriteLine(@"Данные сохранены в хранилище. Запускаем форму...");
+         Console.WriteLine(@"Данные сохранены в хранилище. Запускаем форму");
          Console.WriteLine(@"Нажмите любую клавишу для запуска формы");
          Console.ReadKey();
 
