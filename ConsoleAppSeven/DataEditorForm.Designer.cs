@@ -81,7 +81,7 @@
          saveButton.Name = "saveButton";
          saveButton.Size = new System.Drawing.Size(75, 23);
          saveButton.TabIndex = 5;
-         saveButton.Text = "button1";
+         saveButton.Text = "Сохранить";
          saveButton.UseVisualStyleBackColor = true;
          // 
          // DataEditorForm
