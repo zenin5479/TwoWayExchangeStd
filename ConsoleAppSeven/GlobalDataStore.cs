@@ -6,9 +6,7 @@ namespace ConsoleAppSeven
 {
    public class GlobalDataStore
    {
-
       public static List<Person> People { get; } = new List<Person>();
-
    }
 
    public class Person
