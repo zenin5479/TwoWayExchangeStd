@@ -15,7 +15,7 @@ namespace ConsoleAppSeven
          while (true)
          {
             Console.Write(@"Выберите действие: ");
-            var choice = Console.ReadLine();
+            string choice = Console.ReadLine();
 
             if (choice == "1")
             {
