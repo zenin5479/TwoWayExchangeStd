@@ -33,6 +33,7 @@
          ageTextBox = new System.Windows.Forms.TextBox();
          emailTextBox = new System.Windows.Forms.TextBox();
          addButton = new System.Windows.Forms.Button();
+         saveButton = new System.Windows.Forms.Button();
          SuspendLayout();
          // 
          // dataListBox
@@ -74,11 +75,21 @@
          addButton.Text = "Добавить";
          addButton.UseVisualStyleBackColor = true;
          // 
+         // saveButton
+         // 
+         saveButton.Location = new System.Drawing.Point(93, 217);
+         saveButton.Name = "saveButton";
+         saveButton.Size = new System.Drawing.Size(75, 23);
+         saveButton.TabIndex = 5;
+         saveButton.Text = "button1";
+         saveButton.UseVisualStyleBackColor = true;
+         // 
          // DataEditorForm
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(484, 361);
+         Controls.Add(saveButton);
          Controls.Add(addButton);
          Controls.Add(emailTextBox);
          Controls.Add(ageTextBox);
@@ -98,5 +109,6 @@
       private System.Windows.Forms.TextBox ageTextBox;
       private System.Windows.Forms.TextBox emailTextBox;
       private System.Windows.Forms.Button addButton;
+      private System.Windows.Forms.Button saveButton;
    }
 }
