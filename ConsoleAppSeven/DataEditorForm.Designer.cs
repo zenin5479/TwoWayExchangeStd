@@ -61,7 +61,7 @@
          // 
          emailTextBox.Location = new System.Drawing.Point(12, 275);
          emailTextBox.Name = "emailTextBox";
-         emailTextBox.Size = new System.Drawing.Size(100, 23);
+         emailTextBox.Size = new System.Drawing.Size(150, 23);
          emailTextBox.TabIndex = 3;
          // 
          // DataEditorForm
