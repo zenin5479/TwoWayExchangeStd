@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using System;
+using System.Windows.Forms;
 
 namespace ConsoleAppSeven
 {
@@ -16,6 +17,18 @@ namespace ConsoleAppSeven
          foreach (var person in GlobalDataStore.People)
          {
             dataListBox.Items.Add(person.ToString());
+         }
+      }
+
+      private void DataListBox_SelectedIndexChanged(object sender, EventArgs e)
+      {
+         if (dataListBox.SelectedIndex >= 0)
+         {
+            var person = GlobalDataStore.People[dataListBox.SelectedIndex];
+            nameTextBox.Text = person.Name;
+            ageTextBox.Text = person.Age.ToString();
+            emailTextBox.Text = person.Email;
+            selectedIndexLabel.Text = $"Выбран элемент: {dataListBox.SelectedIndex + 1}";
          }
       }
 

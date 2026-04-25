@@ -46,6 +46,7 @@
          dataListBox.Name = "dataListBox";
          dataListBox.Size = new System.Drawing.Size(300, 199);
          dataListBox.TabIndex = 0;
+         dataListBox.SelectedIndexChanged += DataListBox_SelectedIndexChanged;
          // 
          // nameTextBox
          // 
