@@ -53,7 +53,7 @@
          // 
          ageTextBox.Location = new System.Drawing.Point(12, 246);
          ageTextBox.Name = "ageTextBox";
-         ageTextBox.Size = new System.Drawing.Size(100, 23);
+         ageTextBox.Size = new System.Drawing.Size(150, 23);
          ageTextBox.TabIndex = 2;
          // 
          // DataEditorForm
