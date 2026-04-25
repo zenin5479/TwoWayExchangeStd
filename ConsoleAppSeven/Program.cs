@@ -14,7 +14,7 @@ namespace ConsoleAppSeven
 
          while (true)
          {
-            Console.Write("\nВыберите действие: ");
+            Console.Write(@"Выберите действие: ");
             var choice = Console.ReadLine();
 
             if (choice == "1")
@@ -35,7 +35,7 @@ namespace ConsoleAppSeven
             }
             else
             {
-               Console.WriteLine("Неверный выбор!");
+               Console.WriteLine(@"Неверный выбор!");
             }
          }
       }
