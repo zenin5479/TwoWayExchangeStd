@@ -18,15 +18,25 @@ namespace ConsoleAppSeven
             var choice = Console.ReadLine();
 
             if (choice == "1")
+            {
                EnterDataInConsole();
+            }
             else if (choice == "2")
+            {
                OpenWindowsFormsEditor();
+            }
             else if (choice == "3")
+            {
                ShowAllData();
+            }
             else if (choice == "0")
+            {
                return;
+            }
             else
+            {
                Console.WriteLine("Неверный выбор!");
+            }
          }
       }
 
