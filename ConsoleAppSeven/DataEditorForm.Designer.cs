@@ -91,7 +91,7 @@
          deleteButton.Name = "deleteButton";
          deleteButton.Size = new System.Drawing.Size(75, 23);
          deleteButton.TabIndex = 6;
-         deleteButton.Text = "button1";
+         deleteButton.Text = "Удалить";
          deleteButton.UseVisualStyleBackColor = true;
          // 
          // DataEditorForm
