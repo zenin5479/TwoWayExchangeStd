@@ -76,6 +76,7 @@
          addButton.TabIndex = 4;
          addButton.Text = "Добавить";
          addButton.UseVisualStyleBackColor = true;
+         addButton.Click += addButton_Click;
          // 
          // saveButton
          // 
@@ -85,6 +86,7 @@
          saveButton.TabIndex = 5;
          saveButton.Text = "Сохранить";
          saveButton.UseVisualStyleBackColor = true;
+         saveButton.Click += saveButton_Click;
          // 
          // deleteButton
          // 
@@ -94,6 +96,7 @@
          deleteButton.TabIndex = 6;
          deleteButton.Text = "Удалить";
          deleteButton.UseVisualStyleBackColor = true;
+         deleteButton.Click += deleteButton_Click;
          // 
          // selectedIndexLabel
          // 
