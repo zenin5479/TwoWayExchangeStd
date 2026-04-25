@@ -31,6 +31,7 @@
          dataListBox = new System.Windows.Forms.ListBox();
          nameTextBox = new System.Windows.Forms.TextBox();
          ageTextBox = new System.Windows.Forms.TextBox();
+         textBox1 = new System.Windows.Forms.TextBox();
          SuspendLayout();
          // 
          // dataListBox
@@ -56,11 +57,19 @@
          ageTextBox.Size = new System.Drawing.Size(150, 23);
          ageTextBox.TabIndex = 2;
          // 
+         // textBox1
+         // 
+         textBox1.Location = new System.Drawing.Point(12, 275);
+         textBox1.Name = "textBox1";
+         textBox1.Size = new System.Drawing.Size(100, 23);
+         textBox1.TabIndex = 3;
+         // 
          // DataEditorForm
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(484, 361);
+         Controls.Add(textBox1);
          Controls.Add(ageTextBox);
          Controls.Add(nameTextBox);
          Controls.Add(dataListBox);
@@ -76,5 +85,6 @@
       private System.Windows.Forms.ListBox dataListBox;
       private System.Windows.Forms.TextBox nameTextBox;
       private System.Windows.Forms.TextBox ageTextBox;
+      private System.Windows.Forms.TextBox textBox1;
    }
 }
