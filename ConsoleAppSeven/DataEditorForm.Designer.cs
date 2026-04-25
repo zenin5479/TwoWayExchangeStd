@@ -100,9 +100,9 @@
          selectedIndexLabel.AutoSize = true;
          selectedIndexLabel.Location = new System.Drawing.Point(41, 278);
          selectedIndexLabel.Name = "selectedIndexLabel";
-         selectedIndexLabel.Size = new System.Drawing.Size(38, 15);
+         selectedIndexLabel.Size = new System.Drawing.Size(123, 15);
          selectedIndexLabel.TabIndex = 7;
-         selectedIndexLabel.Text = "label1";
+         selectedIndexLabel.Text = "Выбран элемент: нет";
          // 
          // DataEditorForm
          // 
