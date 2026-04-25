@@ -30,6 +30,7 @@
       {
          dataListBox = new System.Windows.Forms.ListBox();
          nameTextBox = new System.Windows.Forms.TextBox();
+         textBox1 = new System.Windows.Forms.TextBox();
          SuspendLayout();
          // 
          // dataListBox
@@ -48,11 +49,19 @@
          nameTextBox.Size = new System.Drawing.Size(150, 23);
          nameTextBox.TabIndex = 1;
          // 
+         // textBox1
+         // 
+         textBox1.Location = new System.Drawing.Point(12, 246);
+         textBox1.Name = "textBox1";
+         textBox1.Size = new System.Drawing.Size(100, 23);
+         textBox1.TabIndex = 2;
+         // 
          // DataEditorForm
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(484, 361);
+         Controls.Add(textBox1);
          Controls.Add(nameTextBox);
          Controls.Add(dataListBox);
          Name = "DataEditorForm";
@@ -66,5 +75,6 @@
 
       private System.Windows.Forms.ListBox dataListBox;
       private System.Windows.Forms.TextBox nameTextBox;
+      private System.Windows.Forms.TextBox textBox1;
    }
 }
