@@ -71,7 +71,7 @@
          addButton.Name = "addButton";
          addButton.Size = new System.Drawing.Size(75, 23);
          addButton.TabIndex = 4;
-         addButton.Text = "button1";
+         addButton.Text = "Добавить";
          addButton.UseVisualStyleBackColor = true;
          // 
          // DataEditorForm
