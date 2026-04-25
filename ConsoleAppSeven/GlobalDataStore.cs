@@ -13,6 +13,9 @@ namespace ConsoleAppSeven
       public int Age { get; set; }
       public string Email { get; set; }
 
-      public override string ToString() => $"{Name}, {Age} лет, {Email}";
+      public override string ToString()
+      {
+         return string.Format("{0}, {1} лет, {2}", Name, Age, Email);
+      }
    }
 }

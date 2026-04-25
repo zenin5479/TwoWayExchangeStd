@@ -78,7 +78,7 @@ namespace ConsoleAppSeven
 
       static void OpenWindowsFormsEditor()
       {
-         var form = new DataEditorForm();
+         DataEditorForm form = new DataEditorForm();
          form.ShowDialog();
       }
    }
