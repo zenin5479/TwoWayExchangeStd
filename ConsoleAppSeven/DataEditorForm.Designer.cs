@@ -35,7 +35,7 @@
          addButton = new System.Windows.Forms.Button();
          saveButton = new System.Windows.Forms.Button();
          deleteButton = new System.Windows.Forms.Button();
-         label1 = new System.Windows.Forms.Label();
+         selectedIndexLabel = new System.Windows.Forms.Label();
          SuspendLayout();
          // 
          // dataListBox
@@ -95,21 +95,21 @@
          deleteButton.Text = "Удалить";
          deleteButton.UseVisualStyleBackColor = true;
          // 
-         // label1
+         // selectedIndexLabel
          // 
-         label1.AutoSize = true;
-         label1.Location = new System.Drawing.Point(41, 278);
-         label1.Name = "label1";
-         label1.Size = new System.Drawing.Size(38, 15);
-         label1.TabIndex = 7;
-         label1.Text = "label1";
+         selectedIndexLabel.AutoSize = true;
+         selectedIndexLabel.Location = new System.Drawing.Point(41, 278);
+         selectedIndexLabel.Name = "selectedIndexLabel";
+         selectedIndexLabel.Size = new System.Drawing.Size(38, 15);
+         selectedIndexLabel.TabIndex = 7;
+         selectedIndexLabel.Text = "label1";
          // 
          // DataEditorForm
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(484, 361);
-         Controls.Add(label1);
+         Controls.Add(selectedIndexLabel);
          Controls.Add(deleteButton);
          Controls.Add(saveButton);
          Controls.Add(addButton);
@@ -133,6 +133,6 @@
       private System.Windows.Forms.Button addButton;
       private System.Windows.Forms.Button saveButton;
       private System.Windows.Forms.Button deleteButton;
-      private System.Windows.Forms.Label label1;
+      private System.Windows.Forms.Label selectedIndexLabel;
    }
 }
