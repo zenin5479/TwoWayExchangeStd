@@ -34,6 +34,7 @@
          emailTextBox = new System.Windows.Forms.TextBox();
          addButton = new System.Windows.Forms.Button();
          saveButton = new System.Windows.Forms.Button();
+         button1 = new System.Windows.Forms.Button();
          SuspendLayout();
          // 
          // dataListBox
@@ -84,11 +85,21 @@
          saveButton.Text = "Сохранить";
          saveButton.UseVisualStyleBackColor = true;
          // 
+         // button1
+         // 
+         button1.Location = new System.Drawing.Point(174, 217);
+         button1.Name = "button1";
+         button1.Size = new System.Drawing.Size(75, 23);
+         button1.TabIndex = 6;
+         button1.Text = "button1";
+         button1.UseVisualStyleBackColor = true;
+         // 
          // DataEditorForm
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(484, 361);
+         Controls.Add(button1);
          Controls.Add(saveButton);
          Controls.Add(addButton);
          Controls.Add(emailTextBox);
@@ -110,5 +121,6 @@
       private System.Windows.Forms.TextBox emailTextBox;
       private System.Windows.Forms.Button addButton;
       private System.Windows.Forms.Button saveButton;
+      private System.Windows.Forms.Button button1;
    }
 }
