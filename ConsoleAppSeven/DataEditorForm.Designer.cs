@@ -44,7 +44,7 @@
          dataListBox.ItemHeight = 15;
          dataListBox.Location = new System.Drawing.Point(12, 12);
          dataListBox.Name = "dataListBox";
-         dataListBox.Size = new System.Drawing.Size(300, 199);
+         dataListBox.Size = new System.Drawing.Size(304, 199);
          dataListBox.TabIndex = 0;
          dataListBox.SelectedIndexChanged += DataListBox_SelectedIndexChanged;
          // 

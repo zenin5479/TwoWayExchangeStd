@@ -1,5 +1,7 @@
 ﻿using System;
 
+// Двусторонний обмен данными между консолью и Windows Forms через глобальный класс‑хранилище
+
 namespace ConsoleAppSeven
 {
    internal class Program
