@@ -36,5 +36,47 @@ namespace ConsoleAppSeven
             }
          }
       }
+
+      static void EnterDataInConsole()
+      {
+         Console.Write("Имя: ");
+         var name = Console.ReadLine();
+
+         Console.Write("Возраст: ");
+         if (int.TryParse(Console.ReadLine(), out int age))
+         {
+            Console.Write("Email: ");
+            var email = Console.ReadLine();
+
+            GlobalDataStore.People.Add(new Person { Name = name, Age = age, Email = email });
+            Console.WriteLine("Данные сохранены!");
+         }
+         else
+         {
+            Console.WriteLine("Некорректный возраст!");
+         }
+      }
+
+      static void ShowAllData()
+      {
+         Console.WriteLine("\n--- Все данные ---");
+         if (GlobalDataStore.People.Count == 0)
+         {
+            Console.WriteLine("Нет данных");
+         }
+         else
+         {
+            for (int i = 0; i < GlobalDataStore.People.Count; i++)
+            {
+               Console.WriteLine($"{i + 1}. {GlobalDataStore.People[i]}");
+            }
+         }
+      }
+
+      static void OpenWindowsFormsEditor()
+      {
+         var form = new DataEditorForm();
+         form.ShowDialog();
+      }
    }
 }
