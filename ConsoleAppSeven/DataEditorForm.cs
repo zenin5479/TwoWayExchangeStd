@@ -73,5 +73,12 @@ namespace ConsoleAppSeven
             MessageBox.Show("Выберите элемент для удаления!");
          }
       }
+
+      private void ClearInputs()
+      {
+         nameTextBox.Clear();
+         ageTextBox.Clear();
+         emailTextBox.Clear();
+      }
    }
 }
