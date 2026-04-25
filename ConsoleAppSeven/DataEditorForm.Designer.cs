@@ -52,7 +52,7 @@
          // 
          // ageTextBox
          // 
-         ageTextBox.Location = new System.Drawing.Point(12, 246);
+         ageTextBox.Location = new System.Drawing.Point(322, 41);
          ageTextBox.Name = "ageTextBox";
          ageTextBox.Size = new System.Drawing.Size(150, 23);
          ageTextBox.TabIndex = 2;
