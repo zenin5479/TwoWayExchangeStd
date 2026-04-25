@@ -32,7 +32,7 @@
          nameTextBox = new System.Windows.Forms.TextBox();
          ageTextBox = new System.Windows.Forms.TextBox();
          emailTextBox = new System.Windows.Forms.TextBox();
-         button1 = new System.Windows.Forms.Button();
+         addButton = new System.Windows.Forms.Button();
          SuspendLayout();
          // 
          // dataListBox
@@ -65,21 +65,21 @@
          emailTextBox.Size = new System.Drawing.Size(150, 23);
          emailTextBox.TabIndex = 3;
          // 
-         // button1
+         // addButton
          // 
-         button1.Location = new System.Drawing.Point(12, 217);
-         button1.Name = "button1";
-         button1.Size = new System.Drawing.Size(75, 23);
-         button1.TabIndex = 4;
-         button1.Text = "button1";
-         button1.UseVisualStyleBackColor = true;
+         addButton.Location = new System.Drawing.Point(12, 217);
+         addButton.Name = "addButton";
+         addButton.Size = new System.Drawing.Size(75, 23);
+         addButton.TabIndex = 4;
+         addButton.Text = "button1";
+         addButton.UseVisualStyleBackColor = true;
          // 
          // DataEditorForm
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(484, 361);
-         Controls.Add(button1);
+         Controls.Add(addButton);
          Controls.Add(emailTextBox);
          Controls.Add(ageTextBox);
          Controls.Add(nameTextBox);
@@ -97,6 +97,6 @@
       private System.Windows.Forms.TextBox nameTextBox;
       private System.Windows.Forms.TextBox ageTextBox;
       private System.Windows.Forms.TextBox emailTextBox;
-      private System.Windows.Forms.Button button1;
+      private System.Windows.Forms.Button addButton;
    }
 }
