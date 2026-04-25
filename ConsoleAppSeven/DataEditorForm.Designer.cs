@@ -28,24 +28,24 @@
       /// </summary>
       private void InitializeComponent()
       {
-         listBox1 = new System.Windows.Forms.ListBox();
+         dataListBox = new System.Windows.Forms.ListBox();
          SuspendLayout();
          // 
-         // listBox1
+         // dataListBox
          // 
-         listBox1.FormattingEnabled = true;
-         listBox1.ItemHeight = 15;
-         listBox1.Location = new System.Drawing.Point(12, 12);
-         listBox1.Name = "listBox1";
-         listBox1.Size = new System.Drawing.Size(120, 94);
-         listBox1.TabIndex = 0;
+         dataListBox.FormattingEnabled = true;
+         dataListBox.ItemHeight = 15;
+         dataListBox.Location = new System.Drawing.Point(12, 12);
+         dataListBox.Name = "dataListBox";
+         dataListBox.Size = new System.Drawing.Size(300, 199);
+         dataListBox.TabIndex = 0;
          // 
          // DataEditorForm
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(484, 361);
-         Controls.Add(listBox1);
+         Controls.Add(dataListBox);
          Name = "DataEditorForm";
          StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
          Text = "Редактор данных";
@@ -54,6 +54,6 @@
 
       #endregion
 
-      private System.Windows.Forms.ListBox listBox1;
+      private System.Windows.Forms.ListBox dataListBox;
    }
 }
