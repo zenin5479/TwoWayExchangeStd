@@ -45,7 +45,7 @@
          // 
          nameTextBox.Location = new System.Drawing.Point(12, 217);
          nameTextBox.Name = "nameTextBox";
-         nameTextBox.Size = new System.Drawing.Size(100, 23);
+         nameTextBox.Size = new System.Drawing.Size(150, 23);
          nameTextBox.TabIndex = 1;
          // 
          // DataEditorForm
