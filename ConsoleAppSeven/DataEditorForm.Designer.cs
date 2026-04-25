@@ -36,7 +36,8 @@
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(550, 394);
          Name = "DataEditorForm";
-         Text = "DataEditorForm";
+         StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+         Text = "Редактор данных";
          ResumeLayout(false);
       }
 
