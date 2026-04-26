@@ -75,7 +75,7 @@ namespace ConsoleAppSeven
             while (i < GlobalDataStore.People.Count)
             {
 
-
+               Console.WriteLine(@"{0}. {1}", i + 1, GlobalDataStore.People[i]);
                i++;
             }
 
@@ -83,7 +83,7 @@ namespace ConsoleAppSeven
 
             for (  )
             {
-               Console.WriteLine(@"{0}. {1}", i + 1, GlobalDataStore.People[i]);
+
             }
          }
       }
