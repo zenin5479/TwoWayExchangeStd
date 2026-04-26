@@ -38,7 +38,7 @@
          selectedIndexLabel = new System.Windows.Forms.Label();
          LabelName = new System.Windows.Forms.Label();
          LabelAge = new System.Windows.Forms.Label();
-         label1 = new System.Windows.Forms.Label();
+         LabelAddress = new System.Windows.Forms.Label();
          SuspendLayout();
          // 
          // dataListBox
@@ -129,21 +129,21 @@
          LabelAge.TabIndex = 9;
          LabelAge.Text = "Возраст:";
          // 
-         // label1
+         // LabelAddress
          // 
-         label1.AutoSize = true;
-         label1.Location = new System.Drawing.Point(263, 284);
-         label1.Name = "label1";
-         label1.Size = new System.Drawing.Size(38, 15);
-         label1.TabIndex = 10;
-         label1.Text = "label1";
+         LabelAddress.AutoSize = true;
+         LabelAddress.Location = new System.Drawing.Point(263, 284);
+         LabelAddress.Name = "LabelAddress";
+         LabelAddress.Size = new System.Drawing.Size(38, 15);
+         LabelAddress.TabIndex = 10;
+         LabelAddress.Text = "label1";
          // 
          // DataEditorForm
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(484, 361);
-         Controls.Add(label1);
+         Controls.Add(LabelAddress);
          Controls.Add(LabelAge);
          Controls.Add(LabelName);
          Controls.Add(selectedIndexLabel);
@@ -173,6 +173,6 @@
       private System.Windows.Forms.Label selectedIndexLabel;
       private System.Windows.Forms.Label LabelName;
       private System.Windows.Forms.Label LabelAge;
-      private System.Windows.Forms.Label label1;
+      private System.Windows.Forms.Label LabelAddress;
    }
 }
