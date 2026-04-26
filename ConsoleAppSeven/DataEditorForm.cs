@@ -64,7 +64,7 @@ namespace ConsoleAppSeven
                Email = emailTextBox.Text
             };
             LoadData();
-            MessageBox.Show("Данные обновлены!");
+            MessageBox.Show(@"Данные обновлены!");
          }
          else
          {
