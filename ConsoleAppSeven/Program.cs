@@ -51,7 +51,7 @@ namespace ConsoleAppSeven
          if (int.TryParse(Console.ReadLine(), out int age))
          {
             Console.Write(@"Email: ");
-            var email = Console.ReadLine();
+            string email = Console.ReadLine();
 
             GlobalDataStore.People.Add(new Person { Name = name, Age = age, Email = email });
             Console.WriteLine(@"Данные сохранены!");
@@ -73,7 +73,7 @@ namespace ConsoleAppSeven
          {
             for (int i = 0; i < GlobalDataStore.People.Count; i++)
             {
-               Console.WriteLine($@"{i + 1}. {GlobalDataStore.People[i]}");
+               Console.WriteLine(@"{0}. {1}", i + 1, GlobalDataStore.People[i]);
             }
          }
       }
