@@ -124,9 +124,9 @@
          LabelAge.AutoSize = true;
          LabelAge.Location = new System.Drawing.Point(170, 286);
          LabelAge.Name = "LabelAge";
-         LabelAge.Size = new System.Drawing.Size(38, 15);
+         LabelAge.Size = new System.Drawing.Size(53, 15);
          LabelAge.TabIndex = 9;
-         LabelAge.Text = "label1";
+         LabelAge.Text = "Возраст:";
          // 
          // DataEditorForm
          // 
