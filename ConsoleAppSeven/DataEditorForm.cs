@@ -52,7 +52,7 @@ namespace ConsoleAppSeven
          }
       }
 
-      private void saveButton_Click(object sender, System.EventArgs e)
+      private void saveButton_Click(object sender, EventArgs e)
       {
          if (dataListBox.SelectedIndex >= 0 && int.TryParse(ageTextBox.Text, out int age))
          {
@@ -72,7 +72,7 @@ namespace ConsoleAppSeven
          }
       }
 
-      private void deleteButton_Click(object sender, System.EventArgs e)
+      private void deleteButton_Click(object sender, EventArgs e)
       {
          if (dataListBox.SelectedIndex >= 0)
          {
