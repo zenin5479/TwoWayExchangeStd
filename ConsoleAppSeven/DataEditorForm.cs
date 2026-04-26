@@ -32,7 +32,7 @@ namespace ConsoleAppSeven
          }
       }
 
-      private void addButton_Click(object sender, System.EventArgs e)
+      private void addButton_Click(object sender, EventArgs e)
       {
          if (int.TryParse(ageTextBox.Text, out int age))
          {
