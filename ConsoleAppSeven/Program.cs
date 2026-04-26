@@ -6,6 +6,7 @@ namespace ConsoleAppSeven
 {
    internal class Program
    {
+      [STAThread]
       static void Main()
       {
          Console.WriteLine(@"Консольное приложение с Windows Forms");
