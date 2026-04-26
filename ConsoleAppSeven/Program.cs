@@ -81,10 +81,7 @@ namespace ConsoleAppSeven
 
 
 
-            for (  )
-            {
-
-            }
+            
          }
       }
 
