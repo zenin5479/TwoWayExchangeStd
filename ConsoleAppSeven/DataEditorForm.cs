@@ -83,7 +83,7 @@ namespace ConsoleAppSeven
          }
          else
          {
-            MessageBox.Show("Выберите элемент для удаления!");
+            MessageBox.Show(@"Выберите элемент для удаления!");
          }
       }
 
