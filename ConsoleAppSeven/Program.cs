@@ -8,7 +8,7 @@ namespace ConsoleAppSeven
    {
       static void Main()
       {
-         Console.WriteLine("Консольное приложение с Windows Forms");
+         Console.WriteLine(@"Консольное приложение с Windows Forms");
          Console.WriteLine("1 — Ввести данные в консоли");
          Console.WriteLine("2 — Открыть редактор Windows Forms");
          Console.WriteLine("3 — Показать все данные");
