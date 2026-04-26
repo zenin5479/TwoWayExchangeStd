@@ -39,7 +39,7 @@ namespace ConsoleAppSeven
       {
          if (int.TryParse(ageTextBox.Text, out int age))
          {
-            var newPerson = new Person
+            Person newPerson = new Person
             {
                Name = nameTextBox.Text,
                Age = age,
