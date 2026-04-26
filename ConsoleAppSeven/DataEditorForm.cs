@@ -17,7 +17,7 @@ namespace ConsoleAppSeven
          for (int i = 0; i < GlobalDataStore.People.Count; i++)
          {
             Person person = GlobalDataStore.People[i];
-            dataListBox.Items.Add(person.ToString());
+            dataListBox.Items.Add(person);
          }
       }
 
