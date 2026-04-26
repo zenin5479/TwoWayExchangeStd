@@ -45,7 +45,7 @@ namespace ConsoleAppSeven
       static void EnterDataInConsole()
       {
          Console.Write(@"Имя: ");
-         var name = Console.ReadLine();
+         string name = Console.ReadLine();
 
          Console.Write(@"Возраст: ");
          if (int.TryParse(Console.ReadLine(), out int age))
