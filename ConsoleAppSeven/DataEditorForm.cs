@@ -48,7 +48,7 @@ namespace ConsoleAppSeven
          }
          else
          {
-            MessageBox.Show("Некорректный возраст!");
+            MessageBox.Show(@"Некорректный возраст!");
          }
       }
 
