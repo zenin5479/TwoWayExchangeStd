@@ -44,7 +44,7 @@ namespace ConsoleAppSeven
 
       static void EnterDataInConsole()
       {
-         Console.Write("Имя: ");
+         Console.Write(@"Имя: ");
          var name = Console.ReadLine();
 
          Console.Write("Возраст: ");
