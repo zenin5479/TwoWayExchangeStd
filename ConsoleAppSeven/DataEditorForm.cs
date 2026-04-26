@@ -59,7 +59,7 @@ namespace ConsoleAppSeven
       {
          if (dataListBox.SelectedIndex >= 0 && int.TryParse(ageTextBox.Text, out int age))
          {
-            var selectedIndex = dataListBox.SelectedIndex;
+            int selectedIndex = dataListBox.SelectedIndex;
             GlobalDataStore.People[selectedIndex] = new Person
             {
                Name = nameTextBox.Text,
