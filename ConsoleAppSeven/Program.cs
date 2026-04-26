@@ -64,8 +64,7 @@ namespace ConsoleAppSeven
 
       static void ShowAllData()
       {
-         Console.WriteLine(@"
---- Все данные ---");
+         Console.WriteLine(@"Все данные");
          if (GlobalDataStore.People.Count == 0)
          {
             Console.WriteLine(@"Нет данных");
