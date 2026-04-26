@@ -47,10 +47,10 @@ namespace ConsoleAppSeven
          Console.Write(@"Имя: ");
          var name = Console.ReadLine();
 
-         Console.Write("Возраст: ");
+         Console.Write(@"Возраст: ");
          if (int.TryParse(Console.ReadLine(), out int age))
          {
-            Console.Write("Email: ");
+            Console.Write(@"Email: ");
             var email = Console.ReadLine();
 
             GlobalDataStore.People.Add(new Person { Name = name, Age = age, Email = email });
