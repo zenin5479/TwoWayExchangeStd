@@ -31,7 +31,7 @@ namespace ConsoleAppSeven
             nameTextBox.Text = person.Name;
             ageTextBox.Text = person.Age.ToString();
             emailTextBox.Text = person.Email;
-            selectedIndexLabel.Text = $"Выбран элемент: {dataListBox.SelectedIndex + 1}";
+            selectedIndexLabel.Text = string.Format(@"Выбран элемент: {0}", dataListBox.SelectedIndex + 1);
          }
       }
 
