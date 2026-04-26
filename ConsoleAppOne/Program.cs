@@ -7,6 +7,7 @@ namespace ConsoleAppOne
 {
    internal class Program
    {
+      [STAThread]
       static void Main()
       {
          Console.WriteLine(@"Нажмите любую клавишу для запуска Windows Forms формы");

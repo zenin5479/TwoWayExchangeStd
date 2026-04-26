@@ -7,6 +7,7 @@ namespace ConsoleAppTwo
 {
    internal class Program
    {
+      [STAThread]
       static void Main()
       {
          // Консоль передаёт данные в форму
