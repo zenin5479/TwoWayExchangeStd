@@ -79,7 +79,7 @@ namespace ConsoleAppSeven
             GlobalDataStore.People.RemoveAt(dataListBox.SelectedIndex);
             LoadData();
             ClearInputs();
-            MessageBox.Show("Элемент удалён!");
+            MessageBox.Show(@"Элемент удалён!");
          }
          else
          {
