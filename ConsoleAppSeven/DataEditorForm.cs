@@ -14,19 +14,12 @@ namespace ConsoleAppSeven
       private void LoadData()
       {
          dataListBox.Items.Clear();
-
          int i = 0;
          while (i < GlobalDataStore.People.Count)
          {
             Person person = GlobalDataStore.People[i];
             dataListBox.Items.Add(person);
             i++;
-         }
-
-
-         for ( )
-         {
-
          }
       }
 
