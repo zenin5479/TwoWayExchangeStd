@@ -74,14 +74,9 @@ namespace ConsoleAppSeven
             int i = 0;
             while (i < GlobalDataStore.People.Count)
             {
-
                Console.WriteLine(@"{0}. {1}", i + 1, GlobalDataStore.People[i]);
                i++;
             }
-
-
-
-            
          }
       }
 
