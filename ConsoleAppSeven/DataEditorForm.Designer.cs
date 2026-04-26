@@ -36,6 +36,7 @@
          saveButton = new System.Windows.Forms.Button();
          deleteButton = new System.Windows.Forms.Button();
          selectedIndexLabel = new System.Windows.Forms.Label();
+         LabelName = new System.Windows.Forms.Label();
          SuspendLayout();
          // 
          // dataListBox
@@ -108,11 +109,21 @@
          selectedIndexLabel.TabIndex = 7;
          selectedIndexLabel.Text = "Выбран элемент: нет";
          // 
+         // LabelName
+         // 
+         LabelName.AutoSize = true;
+         LabelName.Location = new System.Drawing.Point(73, 282);
+         LabelName.Name = "LabelName";
+         LabelName.Size = new System.Drawing.Size(38, 15);
+         LabelName.TabIndex = 8;
+         LabelName.Text = "label1";
+         // 
          // DataEditorForm
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(484, 361);
+         Controls.Add(LabelName);
          Controls.Add(selectedIndexLabel);
          Controls.Add(deleteButton);
          Controls.Add(saveButton);
@@ -138,5 +149,6 @@
       private System.Windows.Forms.Button saveButton;
       private System.Windows.Forms.Button deleteButton;
       private System.Windows.Forms.Label selectedIndexLabel;
+      private System.Windows.Forms.Label LabelName;
    }
 }
