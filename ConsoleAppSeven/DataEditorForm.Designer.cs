@@ -114,9 +114,9 @@
          LabelName.AutoSize = true;
          LabelName.Location = new System.Drawing.Point(73, 282);
          LabelName.Name = "LabelName";
-         LabelName.Size = new System.Drawing.Size(38, 15);
+         LabelName.Size = new System.Drawing.Size(34, 15);
          LabelName.TabIndex = 8;
-         LabelName.Text = "label1";
+         LabelName.Text = "Имя:";
          // 
          // DataEditorForm
          // 
