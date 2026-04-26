@@ -14,8 +14,9 @@ namespace ConsoleAppSeven
       private void LoadData()
       {
          dataListBox.Items.Clear();
-         foreach (Person person in GlobalDataStore.People)
+         for (var i = 0; i < GlobalDataStore.People.Count; i++)
          {
+            var person = GlobalDataStore.People[i];
             dataListBox.Items.Add(person.ToString());
          }
       }
