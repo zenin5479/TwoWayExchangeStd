@@ -68,7 +68,7 @@ namespace ConsoleAppSeven
          }
          else
          {
-            MessageBox.Show("Выберите элемент и введите корректный возраст!");
+            MessageBox.Show(@"Выберите элемент и введите корректный возраст!");
          }
       }
 
