@@ -53,28 +53,28 @@
          // 
          // nameTextBox
          // 
-         nameTextBox.Location = new System.Drawing.Point(322, 30);
+         nameTextBox.Location = new System.Drawing.Point(322, 33);
          nameTextBox.Name = "nameTextBox";
          nameTextBox.Size = new System.Drawing.Size(150, 23);
          nameTextBox.TabIndex = 1;
          // 
          // ageTextBox
          // 
-         ageTextBox.Location = new System.Drawing.Point(322, 74);
+         ageTextBox.Location = new System.Drawing.Point(322, 88);
          ageTextBox.Name = "ageTextBox";
          ageTextBox.Size = new System.Drawing.Size(150, 23);
          ageTextBox.TabIndex = 2;
          // 
          // emailTextBox
          // 
-         emailTextBox.Location = new System.Drawing.Point(322, 118);
+         emailTextBox.Location = new System.Drawing.Point(319, 144);
          emailTextBox.Name = "emailTextBox";
          emailTextBox.Size = new System.Drawing.Size(150, 23);
          emailTextBox.TabIndex = 3;
          // 
          // addButton
          // 
-         addButton.Location = new System.Drawing.Point(322, 147);
+         addButton.Location = new System.Drawing.Point(322, 173);
          addButton.Name = "addButton";
          addButton.Size = new System.Drawing.Size(68, 23);
          addButton.TabIndex = 4;
@@ -84,7 +84,7 @@
          // 
          // saveButton
          // 
-         saveButton.Location = new System.Drawing.Point(399, 147);
+         saveButton.Location = new System.Drawing.Point(396, 206);
          saveButton.Name = "saveButton";
          saveButton.Size = new System.Drawing.Size(73, 23);
          saveButton.TabIndex = 5;
@@ -94,7 +94,7 @@
          // 
          // deleteButton
          // 
-         deleteButton.Location = new System.Drawing.Point(322, 176);
+         deleteButton.Location = new System.Drawing.Point(322, 214);
          deleteButton.Name = "deleteButton";
          deleteButton.Size = new System.Drawing.Size(68, 23);
          deleteButton.TabIndex = 6;
@@ -123,7 +123,7 @@
          // LabelAge
          // 
          LabelAge.AutoSize = true;
-         LabelAge.Location = new System.Drawing.Point(322, 56);
+         LabelAge.Location = new System.Drawing.Point(319, 70);
          LabelAge.Name = "LabelAge";
          LabelAge.Size = new System.Drawing.Size(53, 15);
          LabelAge.TabIndex = 9;
@@ -132,7 +132,7 @@
          // LabelAddress
          // 
          LabelAddress.AutoSize = true;
-         LabelAddress.Location = new System.Drawing.Point(322, 100);
+         LabelAddress.Location = new System.Drawing.Point(319, 126);
          LabelAddress.Name = "LabelAddress";
          LabelAddress.Size = new System.Drawing.Size(43, 15);
          LabelAddress.TabIndex = 10;
