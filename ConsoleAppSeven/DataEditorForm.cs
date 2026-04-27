@@ -27,7 +27,7 @@ namespace ConsoleAppSeven
       {
          if (dataListBox.SelectedIndex >= 0)
          {
-            var person = GlobalDataStore.People[dataListBox.SelectedIndex];
+            Person person = GlobalDataStore.People[dataListBox.SelectedIndex];
             nameTextBox.Text = person.Name;
             ageTextBox.Text = person.Age.ToString();
             emailTextBox.Text = person.Email;
