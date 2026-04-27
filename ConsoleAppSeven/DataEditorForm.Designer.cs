@@ -132,7 +132,7 @@
          // LabelAddress
          // 
          LabelAddress.AutoSize = true;
-         LabelAddress.Location = new System.Drawing.Point(263, 284);
+         LabelAddress.Location = new System.Drawing.Point(322, 100);
          LabelAddress.Name = "LabelAddress";
          LabelAddress.Size = new System.Drawing.Size(43, 15);
          LabelAddress.TabIndex = 10;
