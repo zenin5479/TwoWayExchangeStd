@@ -53,7 +53,7 @@
          // 
          // nameTextBox
          // 
-         nameTextBox.Location = new System.Drawing.Point(322, 75);
+         nameTextBox.Location = new System.Drawing.Point(322, 30);
          nameTextBox.Name = "nameTextBox";
          nameTextBox.Size = new System.Drawing.Size(150, 23);
          nameTextBox.TabIndex = 1;
