@@ -155,6 +155,7 @@
          Controls.Add(nameTextBox);
          Controls.Add(dataListBox);
          MaximizeBox = false;
+         MinimizeBox = false;
          Name = "DataEditorForm";
          StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
          Text = "Редактор данных";
