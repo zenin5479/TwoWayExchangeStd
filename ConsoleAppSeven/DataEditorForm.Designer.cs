@@ -74,9 +74,9 @@
          // 
          // addButton
          // 
-         addButton.Location = new System.Drawing.Point(291, 148);
+         addButton.Location = new System.Drawing.Point(268, 99);
          addButton.Name = "addButton";
-         addButton.Size = new System.Drawing.Size(68, 23);
+         addButton.Size = new System.Drawing.Size(70, 23);
          addButton.TabIndex = 4;
          addButton.Text = "Добавить";
          addButton.UseVisualStyleBackColor = true;
@@ -84,9 +84,9 @@
          // 
          // saveButton
          // 
-         saveButton.Location = new System.Drawing.Point(385, 148);
+         saveButton.Location = new System.Drawing.Point(385, 99);
          saveButton.Name = "saveButton";
-         saveButton.Size = new System.Drawing.Size(73, 23);
+         saveButton.Size = new System.Drawing.Size(75, 23);
          saveButton.TabIndex = 5;
          saveButton.Text = "Сохранить";
          saveButton.UseVisualStyleBackColor = true;
