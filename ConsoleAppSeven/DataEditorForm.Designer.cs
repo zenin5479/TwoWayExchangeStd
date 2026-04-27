@@ -76,7 +76,7 @@
          // 
          addButton.Location = new System.Drawing.Point(268, 99);
          addButton.Name = "addButton";
-         addButton.Size = new System.Drawing.Size(70, 23);
+         addButton.Size = new System.Drawing.Size(75, 23);
          addButton.TabIndex = 4;
          addButton.Text = "Добавить";
          addButton.UseVisualStyleBackColor = true;
