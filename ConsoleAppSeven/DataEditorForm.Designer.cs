@@ -105,7 +105,7 @@
          // selectedIndexLabel
          // 
          selectedIndexLabel.AutoSize = true;
-         selectedIndexLabel.Location = new System.Drawing.Point(12, 234);
+         selectedIndexLabel.Location = new System.Drawing.Point(12, 214);
          selectedIndexLabel.Name = "selectedIndexLabel";
          selectedIndexLabel.Size = new System.Drawing.Size(123, 15);
          selectedIndexLabel.TabIndex = 7;
