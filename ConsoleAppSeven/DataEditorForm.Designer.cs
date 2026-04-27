@@ -74,7 +74,7 @@
          // 
          // addButton
          // 
-         addButton.Location = new System.Drawing.Point(322, 173);
+         addButton.Location = new System.Drawing.Point(291, 148);
          addButton.Name = "addButton";
          addButton.Size = new System.Drawing.Size(68, 23);
          addButton.TabIndex = 4;
@@ -84,7 +84,7 @@
          // 
          // saveButton
          // 
-         saveButton.Location = new System.Drawing.Point(396, 206);
+         saveButton.Location = new System.Drawing.Point(385, 148);
          saveButton.Name = "saveButton";
          saveButton.Size = new System.Drawing.Size(73, 23);
          saveButton.TabIndex = 5;
@@ -94,7 +94,7 @@
          // 
          // deleteButton
          // 
-         deleteButton.Location = new System.Drawing.Point(322, 214);
+         deleteButton.Location = new System.Drawing.Point(291, 188);
          deleteButton.Name = "deleteButton";
          deleteButton.Size = new System.Drawing.Size(68, 23);
          deleteButton.TabIndex = 6;
@@ -142,7 +142,7 @@
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         ClientSize = new System.Drawing.Size(613, 361);
+         ClientSize = new System.Drawing.Size(470, 361);
          Controls.Add(LabelAddress);
          Controls.Add(LabelAge);
          Controls.Add(LabelName);
