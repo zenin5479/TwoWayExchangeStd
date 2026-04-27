@@ -96,7 +96,7 @@
          // 
          deleteButton.Location = new System.Drawing.Point(322, 176);
          deleteButton.Name = "deleteButton";
-         deleteButton.Size = new System.Drawing.Size(75, 23);
+         deleteButton.Size = new System.Drawing.Size(68, 23);
          deleteButton.TabIndex = 6;
          deleteButton.Text = "Удалить";
          deleteButton.UseVisualStyleBackColor = true;
