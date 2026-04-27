@@ -84,7 +84,7 @@
          // 
          // saveButton
          // 
-         saveButton.Location = new System.Drawing.Point(385, 99);
+         saveButton.Location = new System.Drawing.Point(383, 99);
          saveButton.Name = "saveButton";
          saveButton.Size = new System.Drawing.Size(75, 23);
          saveButton.TabIndex = 5;
@@ -94,7 +94,7 @@
          // 
          // deleteButton
          // 
-         deleteButton.Location = new System.Drawing.Point(291, 188);
+         deleteButton.Location = new System.Drawing.Point(268, 128);
          deleteButton.Name = "deleteButton";
          deleteButton.Size = new System.Drawing.Size(75, 23);
          deleteButton.TabIndex = 6;
