@@ -53,21 +53,21 @@
          // 
          // nameTextBox
          // 
-         nameTextBox.Location = new System.Drawing.Point(322, 12);
+         nameTextBox.Location = new System.Drawing.Point(322, 75);
          nameTextBox.Name = "nameTextBox";
          nameTextBox.Size = new System.Drawing.Size(150, 23);
          nameTextBox.TabIndex = 1;
          // 
          // ageTextBox
          // 
-         ageTextBox.Location = new System.Drawing.Point(322, 41);
+         ageTextBox.Location = new System.Drawing.Point(322, 123);
          ageTextBox.Name = "ageTextBox";
          ageTextBox.Size = new System.Drawing.Size(150, 23);
          ageTextBox.TabIndex = 2;
          // 
          // emailTextBox
          // 
-         emailTextBox.Location = new System.Drawing.Point(322, 70);
+         emailTextBox.Location = new System.Drawing.Point(322, 173);
          emailTextBox.Name = "emailTextBox";
          emailTextBox.Size = new System.Drawing.Size(150, 23);
          emailTextBox.TabIndex = 3;
@@ -114,7 +114,7 @@
          // LabelName
          // 
          LabelName.AutoSize = true;
-         LabelName.Location = new System.Drawing.Point(73, 282);
+         LabelName.Location = new System.Drawing.Point(322, 12);
          LabelName.Name = "LabelName";
          LabelName.Size = new System.Drawing.Size(34, 15);
          LabelName.TabIndex = 8;
