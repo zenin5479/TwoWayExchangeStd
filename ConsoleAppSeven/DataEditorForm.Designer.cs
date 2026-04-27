@@ -154,6 +154,7 @@
          Controls.Add(ageTextBox);
          Controls.Add(nameTextBox);
          Controls.Add(dataListBox);
+         MaximizeBox = false;
          Name = "DataEditorForm";
          StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
          Text = "Редактор данных";
