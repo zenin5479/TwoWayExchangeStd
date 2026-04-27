@@ -47,29 +47,29 @@
          dataListBox.ItemHeight = 15;
          dataListBox.Location = new System.Drawing.Point(12, 12);
          dataListBox.Name = "dataListBox";
-         dataListBox.Size = new System.Drawing.Size(304, 199);
+         dataListBox.Size = new System.Drawing.Size(250, 199);
          dataListBox.TabIndex = 0;
          dataListBox.SelectedIndexChanged += DataListBox_SelectedIndexChanged;
          // 
          // nameTextBox
          // 
-         nameTextBox.Location = new System.Drawing.Point(322, 33);
+         nameTextBox.Location = new System.Drawing.Point(308, 12);
          nameTextBox.Name = "nameTextBox";
          nameTextBox.Size = new System.Drawing.Size(150, 23);
          nameTextBox.TabIndex = 1;
          // 
          // ageTextBox
          // 
-         ageTextBox.Location = new System.Drawing.Point(322, 88);
+         ageTextBox.Location = new System.Drawing.Point(327, 41);
          ageTextBox.Name = "ageTextBox";
-         ageTextBox.Size = new System.Drawing.Size(150, 23);
+         ageTextBox.Size = new System.Drawing.Size(131, 23);
          ageTextBox.TabIndex = 2;
          // 
          // emailTextBox
          // 
-         emailTextBox.Location = new System.Drawing.Point(319, 144);
+         emailTextBox.Location = new System.Drawing.Point(317, 70);
          emailTextBox.Name = "emailTextBox";
-         emailTextBox.Size = new System.Drawing.Size(150, 23);
+         emailTextBox.Size = new System.Drawing.Size(141, 23);
          emailTextBox.TabIndex = 3;
          // 
          // addButton
@@ -114,7 +114,7 @@
          // LabelName
          // 
          LabelName.AutoSize = true;
-         LabelName.Location = new System.Drawing.Point(322, 12);
+         LabelName.Location = new System.Drawing.Point(268, 15);
          LabelName.Name = "LabelName";
          LabelName.Size = new System.Drawing.Size(34, 15);
          LabelName.TabIndex = 8;
@@ -123,7 +123,7 @@
          // LabelAge
          // 
          LabelAge.AutoSize = true;
-         LabelAge.Location = new System.Drawing.Point(319, 70);
+         LabelAge.Location = new System.Drawing.Point(268, 44);
          LabelAge.Name = "LabelAge";
          LabelAge.Size = new System.Drawing.Size(53, 15);
          LabelAge.TabIndex = 9;
@@ -132,7 +132,7 @@
          // LabelAddress
          // 
          LabelAddress.AutoSize = true;
-         LabelAddress.Location = new System.Drawing.Point(319, 126);
+         LabelAddress.Location = new System.Drawing.Point(268, 73);
          LabelAddress.Name = "LabelAddress";
          LabelAddress.Size = new System.Drawing.Size(43, 15);
          LabelAddress.TabIndex = 10;
@@ -142,7 +142,7 @@
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         ClientSize = new System.Drawing.Size(484, 361);
+         ClientSize = new System.Drawing.Size(613, 361);
          Controls.Add(LabelAddress);
          Controls.Add(LabelAge);
          Controls.Add(LabelName);
