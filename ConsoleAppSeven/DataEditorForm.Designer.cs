@@ -67,7 +67,7 @@
          // 
          // emailTextBox
          // 
-         emailTextBox.Location = new System.Drawing.Point(317, 70);
+         emailTextBox.Location = new System.Drawing.Point(327, 70);
          emailTextBox.Name = "emailTextBox";
          emailTextBox.Size = new System.Drawing.Size(141, 23);
          emailTextBox.TabIndex = 3;
