@@ -104,11 +104,11 @@ namespace ConsoleAppSeven
 
          // Ни один элемент не выбран
          dataListBox.SelectedItem = null;
-
+         
+         // Очищаем поля
          nameTextBox.Clear();
          ageTextBox.Clear();
          emailTextBox.Clear();
-
       }
    }
 }
