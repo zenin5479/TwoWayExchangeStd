@@ -59,7 +59,7 @@ namespace ConsoleAppSeven
          }
          else
          {
-            Console.WriteLine(@"Некорректный возраст!");
+            Console.WriteLine(@"Некорректный возраст");
          }
       }
 
