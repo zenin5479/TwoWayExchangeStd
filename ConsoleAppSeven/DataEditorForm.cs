@@ -99,7 +99,7 @@ namespace ConsoleAppSeven
 
       private void buttonClear_Click(object sender, EventArgs e)
       {
-         bool b = dataListBox.SelectedIndex == -1;
+         dataListBox.SelectedIndex = -1;
 
          if ()
          {
