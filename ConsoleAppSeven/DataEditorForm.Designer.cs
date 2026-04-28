@@ -39,7 +39,7 @@
          LabelName = new System.Windows.Forms.Label();
          LabelAge = new System.Windows.Forms.Label();
          LabelAddress = new System.Windows.Forms.Label();
-         button1 = new System.Windows.Forms.Button();
+         buttonClear = new System.Windows.Forms.Button();
          SuspendLayout();
          // 
          // dataListBox
@@ -139,21 +139,21 @@
          LabelAddress.TabIndex = 10;
          LabelAddress.Text = "Email:";
          // 
-         // button1
+         // buttonClear
          // 
-         button1.Location = new System.Drawing.Point(382, 132);
-         button1.Name = "button1";
-         button1.Size = new System.Drawing.Size(75, 23);
-         button1.TabIndex = 11;
-         button1.Text = "button1";
-         button1.UseVisualStyleBackColor = true;
+         buttonClear.Location = new System.Drawing.Point(382, 132);
+         buttonClear.Name = "buttonClear";
+         buttonClear.Size = new System.Drawing.Size(75, 23);
+         buttonClear.TabIndex = 11;
+         buttonClear.Text = "button1";
+         buttonClear.UseVisualStyleBackColor = true;
          // 
          // DataEditorForm
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(470, 241);
-         Controls.Add(button1);
+         Controls.Add(buttonClear);
          Controls.Add(LabelAddress);
          Controls.Add(LabelAge);
          Controls.Add(LabelName);
@@ -187,6 +187,6 @@
       private System.Windows.Forms.Label LabelName;
       private System.Windows.Forms.Label LabelAge;
       private System.Windows.Forms.Label LabelAddress;
-      private System.Windows.Forms.Button button1;
+      private System.Windows.Forms.Button buttonClear;
    }
 }
