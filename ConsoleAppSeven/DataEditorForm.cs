@@ -96,5 +96,10 @@ namespace ConsoleAppSeven
          ageTextBox.Clear();
          emailTextBox.Clear();
       }
+
+      private void buttonClear_Click(object sender, EventArgs e)
+      {
+
+      }
    }
 }

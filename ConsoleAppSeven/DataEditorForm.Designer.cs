@@ -141,12 +141,13 @@
          // 
          // buttonClear
          // 
-         buttonClear.Location = new System.Drawing.Point(382, 132);
+         buttonClear.Location = new System.Drawing.Point(383, 128);
          buttonClear.Name = "buttonClear";
          buttonClear.Size = new System.Drawing.Size(75, 23);
          buttonClear.TabIndex = 11;
          buttonClear.Text = "Очистить";
          buttonClear.UseVisualStyleBackColor = true;
+         buttonClear.Click += buttonClear_Click;
          // 
          // DataEditorForm
          // 
