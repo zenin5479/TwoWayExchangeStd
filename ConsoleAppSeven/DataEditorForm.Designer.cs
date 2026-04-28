@@ -134,9 +134,9 @@
          LabelAddress.AutoSize = true;
          LabelAddress.Location = new System.Drawing.Point(268, 73);
          LabelAddress.Name = "LabelAddress";
-         LabelAddress.Size = new System.Drawing.Size(43, 15);
+         LabelAddress.Size = new System.Drawing.Size(39, 15);
          LabelAddress.TabIndex = 10;
-         LabelAddress.Text = "Адрес:";
+         LabelAddress.Text = "Email:";
          // 
          // DataEditorForm
          // 
