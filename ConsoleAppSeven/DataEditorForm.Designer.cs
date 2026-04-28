@@ -145,7 +145,7 @@
          buttonClear.Name = "buttonClear";
          buttonClear.Size = new System.Drawing.Size(75, 23);
          buttonClear.TabIndex = 11;
-         buttonClear.Text = "button1";
+         buttonClear.Text = "Очистить";
          buttonClear.UseVisualStyleBackColor = true;
          // 
          // DataEditorForm
