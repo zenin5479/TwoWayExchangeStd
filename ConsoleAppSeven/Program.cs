@@ -55,7 +55,7 @@ namespace ConsoleAppSeven
             string email = Console.ReadLine();
 
             GlobalDataStore.People.Add(new Person { Name = name, Age = age, Email = email });
-            Console.WriteLine(@"Данные сохранены!");
+            Console.WriteLine(@"Данные сохранены");
          }
          else
          {
