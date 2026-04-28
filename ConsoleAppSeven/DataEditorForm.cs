@@ -51,7 +51,7 @@ namespace ConsoleAppSeven
          }
          else
          {
-            MessageBox.Show(@"Некорректный возраст!");
+            MessageBox.Show(@"Некорректный возраст");
          }
       }
 
@@ -67,11 +67,11 @@ namespace ConsoleAppSeven
                Email = emailTextBox.Text
             };
             LoadData();
-            MessageBox.Show(@"Данные обновлены!");
+            MessageBox.Show(@"Данные обновлены");
          }
          else
          {
-            MessageBox.Show(@"Выберите элемент и введите корректный возраст!");
+            MessageBox.Show(@"Выберите элемент и введите корректный возраст");
          }
       }
 
@@ -82,11 +82,11 @@ namespace ConsoleAppSeven
             GlobalDataStore.People.RemoveAt(dataListBox.SelectedIndex);
             LoadData();
             ClearInputs();
-            MessageBox.Show(@"Элемент удалён!");
+            MessageBox.Show(@"Элемент удалён");
          }
          else
          {
-            MessageBox.Show(@"Выберите элемент для удаления!");
+            MessageBox.Show(@"Выберите элемент для удаления");
          }
       }
 
