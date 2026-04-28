@@ -38,7 +38,7 @@ namespace ConsoleAppSeven
             }
             else
             {
-               Console.WriteLine(@"Неверный выбор!");
+               Console.WriteLine(@"Неверный выбор");
             }
          }
       }
