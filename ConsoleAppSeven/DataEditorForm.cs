@@ -102,14 +102,10 @@ namespace ConsoleAppSeven
          // Ни один элемент не выбран
          dataListBox.SelectedIndex = -1;
 
-         if ()
-         {
-
-         }
-         // или
+         // Ни один элемент не выбран
          if (dataListBox.SelectedItem == null)
          {
-            // Ни один элемент не выбран
+
          }
       }
    }
