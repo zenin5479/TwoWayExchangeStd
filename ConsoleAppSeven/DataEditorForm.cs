@@ -99,11 +99,12 @@ namespace ConsoleAppSeven
 
       private void buttonClear_Click(object sender, EventArgs e)
       {
+         // Ни один элемент не выбран
          dataListBox.SelectedIndex = -1;
 
          if ()
          {
-            // Ни один элемент не выбран
+
          }
          // или
          if (dataListBox.SelectedItem == null)
