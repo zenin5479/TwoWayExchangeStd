@@ -110,7 +110,7 @@ namespace ConsoleAppSeven
          nameTextBox.Clear();
          ageTextBox.Clear();
          emailTextBox.Clear();
-         selectedIndexLabel.Text = string.Format(@"Выбран элемент: нет");
+         selectedIndexLabel.Text = @"Выбран элемент: нет";
       }
    }
 }
