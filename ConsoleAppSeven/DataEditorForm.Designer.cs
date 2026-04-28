@@ -69,7 +69,7 @@
          // 
          emailTextBox.Location = new System.Drawing.Point(313, 70);
          emailTextBox.Name = "emailTextBox";
-         emailTextBox.Size = new System.Drawing.Size(141, 23);
+         emailTextBox.Size = new System.Drawing.Size(81, 23);
          emailTextBox.TabIndex = 3;
          // 
          // addButton
