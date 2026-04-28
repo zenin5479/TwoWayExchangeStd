@@ -99,7 +99,7 @@ namespace ConsoleAppSeven
 
       private void buttonClear_Click(object sender, EventArgs e)
       {
-         if (listBox1.SelectedIndex == -1)
+         if (dataListBox.SelectedIndex == -1)
          {
             // Ни один элемент не выбран
          }
