@@ -92,6 +92,7 @@ namespace ConsoleAppSeven
 
       private void ClearInputs()
       {
+         // Очищаем поля
          nameTextBox.Clear();
          ageTextBox.Clear();
          emailTextBox.Clear();
