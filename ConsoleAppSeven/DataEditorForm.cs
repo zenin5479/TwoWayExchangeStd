@@ -104,7 +104,7 @@ namespace ConsoleAppSeven
             // Ни один элемент не выбран
          }
          // или
-         if (listBox1.SelectedItem == null)
+         if (dataListBox.SelectedItem == null)
          {
             // Ни один элемент не выбран
          }
